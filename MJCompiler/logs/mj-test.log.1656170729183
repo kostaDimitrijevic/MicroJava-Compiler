@@ -1,0 +1,65 @@
+INFO  17:15:52,616 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:15:52,645 - #2 program
+INFO  17:15:52,645 - #51 prog
+INFO  17:15:52,645 - #51 int
+INFO  17:15:52,646 - #51 a
+INFO  17:15:52,646 - #8 ;
+INFO  17:15:52,646 - #3 {
+INFO  17:15:52,646 - #9 void
+INFO  17:15:52,646 - #51 main
+INFO  17:15:52,647 - #15 (
+INFO  17:15:52,648 - #16 )
+INFO  17:15:52,648 - #3 {
+INFO  17:15:52,649 - #25 return
+INFO  17:15:52,649 - #33 +
+ERROR 17:15:52,649 - 
+Sintaksna greska na liniji 5
+INFO  17:15:52,649 - #8 ;
+INFO  17:15:52,649 - #4 }
+INFO  17:15:52,649 - #4 }
+ERROR 17:15:52,649 - Izvrsen oporavak do ; u liniji5
+INFO  17:15:52,654 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         a
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementDerived1(
+            ) [DesignatorStatementDerived1]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:15:52,666 - ===================================
+INFO  17:15:52,668 - Obradjuje se funkcija main na liniji 4
+INFO  17:15:52,668 - ===================================

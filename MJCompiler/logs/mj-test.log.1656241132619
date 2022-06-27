@@ -1,0 +1,23 @@
+INFO  12:58:03,798 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  12:58:03,829 - #2 program
+INFO  12:58:03,829 - #51 prog
+INFO  12:58:03,829 - #51 int
+INFO  12:58:03,830 - #51 a
+INFO  12:58:03,830 - #8 ;
+INFO  12:58:03,830 - #3 {
+INFO  12:58:03,830 - #9 void
+INFO  12:58:03,830 - #51 main
+INFO  12:58:03,831 - #15 (
+INFO  12:58:03,832 - #16 )
+INFO  12:58:03,832 - #51 char
+INFO  12:58:03,832 - #51 b
+INFO  12:58:03,832 - #3 {
+ERROR 12:58:03,833 - 
+Sintaksna greska na liniji 4
+INFO  12:58:03,833 - #51 b
+INFO  12:58:03,833 - #7 =
+INFO  12:58:03,833 - #51 a
+INFO  12:58:03,833 - #8 ;
+INFO  12:58:03,834 - #4 }
+INFO  12:58:03,834 - #4 }
+ERROR 12:58:03,834 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9

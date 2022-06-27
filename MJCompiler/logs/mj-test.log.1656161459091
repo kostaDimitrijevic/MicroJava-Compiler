@@ -1,0 +1,77 @@
+INFO  14:25:22,482 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:25:22,508 - #2 program
+INFO  14:25:22,508 - #51 prog
+INFO  14:25:22,508 - #6 const
+INFO  14:25:22,509 - #51 int
+INFO  14:25:22,509 - #51 x
+INFO  14:25:22,509 - #7 =
+INFO  14:25:22,509 - #48 1
+INFO  14:25:22,509 - #5 ,
+INFO  14:25:22,509 - #51 y
+INFO  14:25:22,509 - #7 =
+INFO  14:25:22,510 - #48 6
+INFO  14:25:22,510 - #8 ;
+INFO  14:25:22,510 - #51 int
+INFO  14:25:22,510 - #51 a
+INFO  14:25:22,510 - #7 =
+ERROR 14:25:22,510 - 
+Sintaksna greska na liniji 3
+INFO  14:25:22,510 - #48 1
+INFO  14:25:22,510 - #8 ;
+INFO  14:25:22,510 - #3 {
+INFO  14:25:22,511 - #9 void
+INFO  14:25:22,511 - #51 main
+ERROR 14:25:22,521 - Izvrsen oporavak do ; u liniji3
+INFO  14:25:22,522 - #15 (
+INFO  14:25:22,522 - #16 )
+INFO  14:25:22,522 - #3 {
+INFO  14:25:22,523 - #4 }
+INFO  14:25:22,523 - #4 }
+INFO  14:25:22,529 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    ConstDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      ConstDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        ConstantList(
+          OneConstant(
+            NumConstant(
+             x
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+          NumConstant(
+           y
+           6
+          ) [NumConstant]
+        ) [ConstantList]
+      ) [ConstDeclerations]
+    ) [ConstDeclarationList]
+    VarDecListDerived1(
+    ) [VarDecListDerived1]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      NoStatement(
+      ) [NoStatement]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  14:25:22,530 - ===================================
+INFO  14:25:22,531 - Obradjuje se funkcija main na liniji 5
+INFO  14:25:22,532 - ===================================

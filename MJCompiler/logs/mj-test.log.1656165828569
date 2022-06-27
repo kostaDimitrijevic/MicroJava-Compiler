@@ -1,0 +1,80 @@
+INFO  14:50:59,093 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:50:59,124 - #2 program
+INFO  14:50:59,124 - #51 prog
+INFO  14:50:59,125 - #6 const
+INFO  14:50:59,125 - #51 int
+INFO  14:50:59,125 - #51 x
+INFO  14:50:59,125 - #7 =
+INFO  14:50:59,125 - #48 1
+INFO  14:50:59,125 - #5 ,
+INFO  14:50:59,125 - #51 y
+INFO  14:50:59,126 - #7 =
+INFO  14:50:59,126 - #48 6
+INFO  14:50:59,126 - #8 ;
+INFO  14:50:59,126 - #51 int
+INFO  14:50:59,126 - #51 a
+INFO  14:50:59,126 - #8 ;
+INFO  14:50:59,126 - #3 {
+INFO  14:50:59,127 - #9 void
+INFO  14:50:59,127 - #51 main
+INFO  14:50:59,127 - #15 (
+INFO  14:50:59,128 - #16 )
+INFO  14:50:59,128 - #3 {
+INFO  14:50:59,136 - #4 }
+INFO  14:50:59,136 - #4 }
+INFO  14:50:59,139 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    ConstDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      ConstDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        ConstantList(
+          OneConstant(
+            NumConstant(
+             x
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+          NumConstant(
+           y
+           6
+          ) [NumConstant]
+        ) [ConstantList]
+      ) [ConstDeclerations]
+    ) [ConstDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         a
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      NoStatement(
+      ) [NoStatement]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  14:50:59,140 - ===================================
+INFO  14:50:59,142 - Obradjuje se funkcija main na liniji 5
+INFO  14:50:59,142 - ===================================

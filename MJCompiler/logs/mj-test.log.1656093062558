@@ -1,0 +1,19 @@
+INFO  19:49:03,012 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:49:03,047 - #2 program
+INFO  19:49:03,047 - #51 prog
+INFO  19:49:03,047 - #6 const
+INFO  19:49:03,048 - #51 int
+INFO  19:49:03,048 - #51 x
+INFO  19:49:03,048 - #7 =
+INFO  19:49:03,048 - #48 1
+INFO  19:49:03,048 - #5 ,
+INFO  19:49:03,048 - #51 y
+INFO  19:49:03,048 - #7 =
+INFO  19:49:03,048 - #48 6
+INFO  19:49:03,048 - #8 ;
+INFO  19:49:03,049 - #51 int
+INFO  19:49:03,049 - #51 a
+INFO  19:49:03,049 - #7 =
+ERROR 19:49:03,049 - 
+Sintaksna greska na liniji 3
+ERROR 19:49:03,049 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

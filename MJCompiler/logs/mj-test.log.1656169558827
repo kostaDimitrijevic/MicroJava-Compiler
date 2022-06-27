@@ -1,0 +1,84 @@
+INFO  17:04:50,677 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:04:50,704 - #2 program
+INFO  17:04:50,704 - #51 prog
+INFO  17:04:50,704 - #51 int
+INFO  17:04:50,704 - #51 a
+INFO  17:04:50,704 - #8 ;
+INFO  17:04:50,705 - #6 const
+INFO  17:04:50,705 - #51 char
+INFO  17:04:50,705 - #51 b
+INFO  17:04:50,705 - #7 =
+INFO  17:04:50,705 - #50 'v'
+INFO  17:04:50,705 - #8 ;
+INFO  17:04:50,705 - #3 {
+INFO  17:04:50,705 - #9 void
+INFO  17:04:50,705 - #51 main
+INFO  17:04:50,706 - #15 (
+INFO  17:04:50,706 - #16 )
+INFO  17:04:50,707 - #3 {
+INFO  17:04:50,707 - #51 a
+INFO  17:04:50,707 - #7 =
+INFO  17:04:50,707 - #48 1
+INFO  17:04:50,707 - #33 +
+INFO  17:04:50,719 - #51 b
+INFO  17:04:50,720 - #27 ++
+ERROR 17:04:50,720 - 
+Sintaksna greska na liniji 6
+INFO  17:04:50,720 - #8 ;
+INFO  17:04:50,720 - #4 }
+INFO  17:04:50,721 - #4 }
+ERROR 17:04:50,721 - Izvrsen oporavak do ; u liniji6
+INFO  17:04:50,728 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  ConstDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           a
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    ConstDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      OneConstant(
+        CharConstant(
+         b
+         'v'
+        ) [CharConstant]
+      ) [OneConstant]
+    ) [ConstDeclerations]
+  ) [ConstDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:04:50,728 - ===================================

@@ -1,0 +1,80 @@
+INFO  16:59:31,588 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:59:31,622 - #2 program
+INFO  16:59:31,622 - #51 prog
+INFO  16:59:31,622 - #51 int
+INFO  16:59:31,623 - #51 a
+INFO  16:59:31,623 - #8 ;
+INFO  16:59:31,623 - #6 const
+INFO  16:59:31,623 - #51 char
+INFO  16:59:31,623 - #51 b
+INFO  16:59:31,624 - #7 =
+INFO  16:59:31,624 - #51 v
+ERROR 16:59:31,624 - 
+Sintaksna greska na liniji 3
+INFO  16:59:31,624 - #8 ;
+INFO  16:59:31,624 - #3 {
+INFO  16:59:31,624 - #9 void
+INFO  16:59:31,625 - #51 main
+ERROR 16:59:31,625 - Izvrsen oporavak do ; u liniji3
+INFO  16:59:31,626 - #15 (
+INFO  16:59:31,628 - #16 )
+INFO  16:59:31,628 - #3 {
+INFO  16:59:31,629 - #51 a
+INFO  16:59:31,629 - #7 =
+INFO  16:59:31,629 - #48 1
+INFO  16:59:31,629 - #33 +
+INFO  16:59:31,629 - #51 b
+INFO  16:59:31,630 - #27 ++
+ERROR 16:59:31,630 - 
+Sintaksna greska na liniji 6
+INFO  16:59:31,630 - #8 ;
+INFO  16:59:31,630 - #4 }
+INFO  16:59:31,630 - #4 }
+ERROR 16:59:31,630 - Izvrsen oporavak do ; u liniji6
+INFO  16:59:31,635 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           a
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDecListDerived1(
+    ) [VarDecListDerived1]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  16:59:31,635 - ===================================
+INFO  16:59:31,637 - Obradjuje se funkcija main na liniji 5
+INFO  16:59:31,637 - ===================================

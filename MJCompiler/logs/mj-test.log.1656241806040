@@ -1,0 +1,19 @@
+INFO  13:08:23,170 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:08:23,198 - #2 program
+INFO  13:08:23,198 - #51 prog
+INFO  13:08:23,198 - #51 int
+INFO  13:08:23,199 - #51 a
+INFO  13:08:23,199 - #8 ;
+INFO  13:08:23,199 - #3 {
+INFO  13:08:23,200 - #9 void
+INFO  13:08:23,200 - #51 main
+INFO  13:08:23,200 - #15 (
+INFO  13:08:23,200 - #16 )
+INFO  13:08:23,201 - #51 char
+INFO  13:08:23,201 - #51 b
+INFO  13:08:23,201 - #8 ;
+INFO  13:08:23,201 - #3 {
+INFO  13:08:23,201 - #51 b
+INFO  13:08:23,202 - #7 =
+INFO  13:08:23,202 - #50 c
+INFO  13:08:23,202 - #8 ;

@@ -1,0 +1,80 @@
+INFO  17:51:19,481 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:51:19,516 - #2 program
+INFO  17:51:19,516 - #51 prog
+INFO  17:51:19,516 - #51 int
+INFO  17:51:19,517 - #51 a
+INFO  17:51:19,517 - #8 ;
+INFO  17:51:19,517 - #51 char
+INFO  17:51:19,517 - #51 b
+INFO  17:51:19,518 - #8 ;
+INFO  17:51:19,518 - #3 {
+INFO  17:51:19,518 - #9 void
+INFO  17:51:19,518 - #51 main
+INFO  17:51:19,518 - #15 (
+INFO  17:51:19,518 - #16 )
+INFO  17:51:19,519 - #3 {
+INFO  17:51:19,519 - #51 a
+INFO  17:51:19,520 - #7 =
+INFO  17:51:19,521 - #48 1
+INFO  17:51:19,521 - #33 +
+INFO  17:51:19,521 - #8 ;
+ERROR 17:51:19,521 - 
+Sintaksna greska na liniji 6
+INFO  17:51:19,521 - #4 }
+INFO  17:51:19,521 - #4 }
+ERROR 17:51:19,522 - Izvrsen oporavak do ; u liniji6
+INFO  17:51:19,526 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           a
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         b
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:51:19,526 - ===================================
+INFO  17:51:19,528 - Obradjuje se funkcija main na liniji 5
+INFO  17:51:19,528 - ===================================

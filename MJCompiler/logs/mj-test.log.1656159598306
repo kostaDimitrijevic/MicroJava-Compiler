@@ -1,0 +1,96 @@
+INFO  14:19:44,632 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:19:44,658 - #2 program
+INFO  14:19:44,658 - #51 prog
+INFO  14:19:44,658 - #6 const
+INFO  14:19:44,658 - #51 int
+INFO  14:19:44,659 - #51 x
+INFO  14:19:44,659 - #7 =
+INFO  14:19:44,659 - #48 1
+INFO  14:19:44,659 - #5 ,
+INFO  14:19:44,659 - #51 y
+INFO  14:19:44,659 - #7 =
+INFO  14:19:44,659 - #48 6
+INFO  14:19:44,659 - #8 ;
+INFO  14:19:44,659 - #51 int
+INFO  14:19:44,660 - #51 a
+INFO  14:19:44,660 - #5 ,
+INFO  14:19:44,660 - #51 b
+INFO  14:19:44,660 - #5 ,
+INFO  14:19:44,660 - #51 c
+INFO  14:19:44,660 - #10 [
+INFO  14:19:44,660 - #11 ]
+INFO  14:19:44,660 - #8 ;
+INFO  14:19:44,660 - #3 {
+INFO  14:19:44,661 - #9 void
+INFO  14:19:44,661 - #51 main
+INFO  14:19:44,662 - #15 (
+INFO  14:19:44,662 - #16 )
+INFO  14:19:44,662 - #3 {
+INFO  14:19:44,663 - #4 }
+INFO  14:19:44,664 - #4 }
+INFO  14:19:44,667 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    ConstDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      ConstDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        ConstantList(
+          OneConstant(
+            NumConstant(
+             x
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+          NumConstant(
+           y
+           6
+          ) [NumConstant]
+        ) [ConstantList]
+      ) [ConstDeclerations]
+    ) [ConstDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        VariableList(
+          SingleVar(
+            VarNoArray(
+             a
+            ) [VarNoArray]
+          ) [SingleVar]
+          VarNoArray(
+           b
+          ) [VarNoArray]
+        ) [VariableList]
+        VarArray(
+         c
+        ) [VarArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      NoStatement(
+      ) [NoStatement]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  14:19:44,667 - ===================================
+INFO  14:19:44,669 - Obradjuje se funkcija main na liniji 5
+INFO  14:19:44,669 - ===================================

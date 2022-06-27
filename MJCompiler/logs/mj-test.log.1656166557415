@@ -1,0 +1,81 @@
+INFO  16:03:48,572 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:03:48,603 - #2 program
+INFO  16:03:48,603 - #51 prog
+INFO  16:03:48,603 - #51 int
+INFO  16:03:48,603 - #51 a
+INFO  16:03:48,603 - #8 ;
+INFO  16:03:48,603 - #3 {
+INFO  16:03:48,604 - #9 void
+INFO  16:03:48,604 - #51 main
+INFO  16:03:48,604 - #15 (
+INFO  16:03:48,604 - #16 )
+INFO  16:03:48,605 - #3 {
+INFO  16:03:48,605 - #51 a
+INFO  16:03:48,606 - #7 =
+INFO  16:03:48,606 - #48 1
+INFO  16:03:48,606 - #8 ;
+INFO  16:03:48,606 - #4 }
+INFO  16:03:48,606 - #4 }
+INFO  16:03:48,610 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         a
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               a
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        NumberConst(
+                         1
+                        ) [NumberConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  16:03:48,624 - ===================================
+INFO  16:03:48,626 - Obradjuje se funkcija main na liniji 4
+INFO  16:03:48,626 - koriscen globalni simbol: a na liniji 5
+ERROR 16:03:48,626 - Greska na liniji 5 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  16:03:48,626 - ===================================

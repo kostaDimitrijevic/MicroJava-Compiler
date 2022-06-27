@@ -1,0 +1,115 @@
+INFO  16:19:39,318 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:19:39,344 - #2 program
+INFO  16:19:39,344 - #51 prog
+INFO  16:19:39,344 - #51 int
+INFO  16:19:39,346 - #51 a
+INFO  16:19:39,346 - #8 ;
+INFO  16:19:39,347 - #51 char
+INFO  16:19:39,347 - #51 b
+INFO  16:19:39,347 - #8 ;
+INFO  16:19:39,347 - #3 {
+INFO  16:19:39,347 - #9 void
+INFO  16:19:39,348 - #51 main
+INFO  16:19:39,348 - #15 (
+INFO  16:19:39,349 - #16 )
+INFO  16:19:39,349 - #3 {
+INFO  16:19:39,349 - #51 b
+INFO  16:19:39,350 - #7 =
+INFO  16:19:39,350 - #51 a
+INFO  16:19:39,350 - #8 ;
+INFO  16:19:39,350 - #51 a
+INFO  16:19:39,350 - #7 =
+INFO  16:19:39,350 - #48 1
+INFO  16:19:39,363 - #33 +
+INFO  16:19:39,363 - #51 b
+INFO  16:19:39,364 - #27 ++
+ERROR 16:19:39,364 - 
+Sintaksna greska na liniji 7
+INFO  16:19:39,364 - #8 ;
+INFO  16:19:39,364 - #4 }
+INFO  16:19:39,364 - #4 }
+ERROR 16:19:39,365 - Izvrsen oporavak do ; u liniji7
+INFO  16:19:39,368 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           a
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         b
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          NoStatement(
+          ) [NoStatement]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 b
+                ) [SingleDesig]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        SingleFactor(
+                          VarDesig(
+                            SingleDesig(
+                             a
+                            ) [SingleDesig]
+                          ) [VarDesig]
+                        ) [SingleFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  16:19:39,368 - ===================================
+INFO  16:19:39,370 - Obradjuje se funkcija main na liniji 5
+INFO  16:19:39,370 - koriscen globalni simbol: b na liniji 6
+INFO  16:19:39,370 - koriscen globalni simbol: a na liniji 6
+ERROR 16:19:39,370 - Greska na liniji 6 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  16:19:39,370 - ===================================

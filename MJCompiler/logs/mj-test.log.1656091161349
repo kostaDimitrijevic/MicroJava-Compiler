@@ -1,0 +1,514 @@
+INFO  19:15:38,998 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:15:39,029 - #2 program
+INFO  19:15:39,029 - #51 prog
+INFO  19:15:39,029 - #6 const
+INFO  19:15:39,030 - #51 int
+INFO  19:15:39,030 - #51 x
+INFO  19:15:39,030 - #7 =
+INFO  19:15:39,031 - #48 1
+INFO  19:15:39,031 - #5 ,
+INFO  19:15:39,031 - #51 y
+INFO  19:15:39,031 - #7 =
+INFO  19:15:39,031 - #48 6
+INFO  19:15:39,031 - #8 ;
+INFO  19:15:39,031 - #51 int
+INFO  19:15:39,031 - #51 a
+INFO  19:15:39,031 - #8 ;
+INFO  19:15:39,032 - #51 int
+INFO  19:15:39,032 - #51 a
+INFO  19:15:39,032 - #5 ,
+INFO  19:15:39,032 - #51 b
+INFO  19:15:39,032 - #5 ,
+INFO  19:15:39,032 - #51 c
+INFO  19:15:39,045 - #10 [
+INFO  19:15:39,045 - #11 ]
+INFO  19:15:39,045 - #8 ;
+INFO  19:15:39,045 - #51 int
+INFO  19:15:39,045 - #51 niz
+INFO  19:15:39,045 - #10 [
+INFO  19:15:39,045 - #11 ]
+INFO  19:15:39,045 - #8 ;
+INFO  19:15:39,045 - #3 {
+INFO  19:15:39,045 - #9 void
+INFO  19:15:39,045 - #51 main
+INFO  19:15:39,046 - #15 (
+INFO  19:15:39,046 - #51 int
+INFO  19:15:39,047 - #51 arg
+INFO  19:15:39,047 - #5 ,
+INFO  19:15:39,047 - #51 char
+INFO  19:15:39,047 - #51 c
+INFO  19:15:39,047 - #16 )
+INFO  19:15:39,047 - #51 int
+INFO  19:15:39,048 - #51 a
+INFO  19:15:39,048 - #8 ;
+INFO  19:15:39,048 - #51 int
+INFO  19:15:39,048 - #51 b
+INFO  19:15:39,048 - #8 ;
+INFO  19:15:39,048 - #51 rec
+INFO  19:15:39,048 - #51 r
+INFO  19:15:39,048 - #8 ;
+INFO  19:15:39,048 - #3 {
+INFO  19:15:39,048 - #51 a
+INFO  19:15:39,048 - #7 =
+INFO  19:15:39,049 - #34 -
+INFO  19:15:39,049 - #48 1
+INFO  19:15:39,049 - #8 ;
+INFO  19:15:39,049 - #51 a
+INFO  19:15:39,049 - #7 =
+INFO  19:15:39,049 - #51 a
+INFO  19:15:39,049 - #47 ^
+INFO  19:15:39,050 - #51 b
+INFO  19:15:39,050 - #8 ;
+INFO  19:15:39,051 - #4 }
+INFO  19:15:39,051 - #51 int
+INFO  19:15:39,051 - #51 vezba
+INFO  19:15:39,051 - #15 (
+INFO  19:15:39,051 - #16 )
+INFO  19:15:39,051 - #51 int
+INFO  19:15:39,051 - #51 a
+INFO  19:15:39,051 - #5 ,
+INFO  19:15:39,051 - #51 aa
+INFO  19:15:39,051 - #5 ,
+INFO  19:15:39,051 - #51 b
+INFO  19:15:39,051 - #10 [
+INFO  19:15:39,051 - #11 ]
+INFO  19:15:39,051 - #8 ;
+INFO  19:15:39,051 - #51 char
+INFO  19:15:39,051 - #51 c
+INFO  19:15:39,051 - #10 [
+INFO  19:15:39,051 - #11 ]
+INFO  19:15:39,051 - #8 ;
+INFO  19:15:39,052 - #51 reco
+INFO  19:15:39,052 - #51 re
+INFO  19:15:39,052 - #8 ;
+INFO  19:15:39,052 - #51 bool
+INFO  19:15:39,052 - #51 bb
+INFO  19:15:39,052 - #8 ;
+INFO  19:15:39,052 - #3 {
+INFO  19:15:39,052 - #51 a
+INFO  19:15:39,052 - #7 =
+INFO  19:15:39,052 - #51 main
+INFO  19:15:39,052 - #15 (
+INFO  19:15:39,052 - #51 aa
+INFO  19:15:39,052 - #5 ,
+INFO  19:15:39,052 - #51 re
+INFO  19:15:39,052 - #29 .
+INFO  19:15:39,052 - #51 ni
+INFO  19:15:39,052 - #16 )
+INFO  19:15:39,053 - #8 ;
+INFO  19:15:39,053 - #23 read
+INFO  19:15:39,054 - #15 (
+INFO  19:15:39,054 - #51 re
+INFO  19:15:39,054 - #29 .
+INFO  19:15:39,054 - #51 ni
+INFO  19:15:39,054 - #16 )
+INFO  19:15:39,054 - #8 ;
+INFO  19:15:39,054 - #22 print
+INFO  19:15:39,054 - #15 (
+INFO  19:15:39,054 - #51 bb
+INFO  19:15:39,054 - #5 ,
+INFO  19:15:39,054 - #48 3
+INFO  19:15:39,055 - #16 )
+INFO  19:15:39,055 - #8 ;
+INFO  19:15:39,055 - #4 }
+INFO  19:15:39,055 - #4 }
+INFO  19:15:39,059 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      VarDeclarationList(
+        ConstDeclarationList(
+          NoDeclaration(
+          ) [NoDeclaration]
+          ConstDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            ConstantList(
+              OneConstant(
+                NumConstant(
+                 x
+                 1
+                ) [NumConstant]
+              ) [OneConstant]
+              NumConstant(
+               y
+               6
+              ) [NumConstant]
+            ) [ConstantList]
+          ) [ConstDeclerations]
+        ) [ConstDeclarationList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             a
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [VarDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        VariableList(
+          VariableList(
+            SingleVar(
+              VarNoArray(
+               a
+              ) [VarNoArray]
+            ) [SingleVar]
+            VarNoArray(
+             b
+            ) [VarNoArray]
+          ) [VariableList]
+          VarArray(
+           c
+          ) [VarArray]
+        ) [VariableList]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         niz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  MethodDeclerations(
+    SingleMethodDeclaration(
+      Method(
+        MethodTypeName(
+          VoidType(
+          ) [VoidType]
+         main
+        ) [MethodTypeName]
+        ParamList(
+          FormParams(
+            SingleParam(
+              Parameter(
+                IdentType(
+                 int
+                ) [IdentType]
+               arg
+              ) [Parameter]
+            ) [SingleParam]
+            Parameter(
+              IdentType(
+               char
+              ) [IdentType]
+             c
+            ) [Parameter]
+          ) [FormParams]
+        ) [ParamList]
+        HasVarDecList(
+          HasVarDecList(
+            HasVarDecList(
+              NoMethodVarDecList(
+              ) [NoMethodVarDecList]
+              VarDeclerations(
+                IdentType(
+                 int
+                ) [IdentType]
+                SingleVar(
+                  VarNoArray(
+                   a
+                  ) [VarNoArray]
+                ) [SingleVar]
+              ) [VarDeclerations]
+            ) [HasVarDecList]
+            VarDeclerations(
+              IdentType(
+               int
+              ) [IdentType]
+              SingleVar(
+                VarNoArray(
+                 b
+                ) [VarNoArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
+          VarDeclerations(
+            IdentType(
+             rec
+            ) [IdentType]
+            SingleVar(
+              VarNoArray(
+               r
+              ) [VarNoArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   a
+                  ) [SingleDesig]
+                  AssignOperation(
+                    MinusExpress(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             1
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [MinusExpress]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 a
+                ) [SingleDesig]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        ListFactor(
+                          SingleFactor(
+                            VarDesig(
+                              SingleDesig(
+                               a
+                              ) [SingleDesig]
+                            ) [VarDesig]
+                          ) [SingleFactor]
+                          Exponent(
+                          ) [Exponent]
+                          VarDesig(
+                            SingleDesig(
+                             b
+                            ) [SingleDesig]
+                          ) [VarDesig]
+                        ) [ListFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+      ) [Method]
+    ) [SingleMethodDeclaration]
+    Method(
+      MethodTypeName(
+        IdentType(
+         int
+        ) [IdentType]
+       vezba
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          HasVarDecList(
+            HasVarDecList(
+              NoMethodVarDecList(
+              ) [NoMethodVarDecList]
+              VarDeclerations(
+                IdentType(
+                 int
+                ) [IdentType]
+                VariableList(
+                  VariableList(
+                    SingleVar(
+                      VarNoArray(
+                       a
+                      ) [VarNoArray]
+                    ) [SingleVar]
+                    VarNoArray(
+                     aa
+                    ) [VarNoArray]
+                  ) [VariableList]
+                  VarArray(
+                   b
+                  ) [VarArray]
+                ) [VariableList]
+              ) [VarDeclerations]
+            ) [HasVarDecList]
+            VarDeclerations(
+              IdentType(
+               char
+              ) [IdentType]
+              SingleVar(
+                VarArray(
+                 c
+                ) [VarArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
+          VarDeclerations(
+            IdentType(
+             reco
+            ) [IdentType]
+            SingleVar(
+              VarNoArray(
+               re
+              ) [VarNoArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           bool
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             bb
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   a
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            FuncCall(
+                              SingleDesig(
+                               main
+                              ) [SingleDesig]
+                              ActParams(
+                                SingleActPars(
+                                  Express(
+                                    TermExpr(
+                                      SingleTerm(
+                                        SingleFactor(
+                                          VarDesig(
+                                            SingleDesig(
+                                             aa
+                                            ) [SingleDesig]
+                                          ) [VarDesig]
+                                        ) [SingleFactor]
+                                      ) [SingleTerm]
+                                    ) [TermExpr]
+                                  ) [Express]
+                                ) [SingleActPars]
+                                Express(
+                                  TermExpr(
+                                    SingleTerm(
+                                      SingleFactor(
+                                        VarDesig(
+                                          DesigList(
+                                            DesigName(
+                                             re
+                                            ) [DesigName]
+                                            SingleField(
+                                              FieldNoBox(
+                                               ni
+                                              ) [FieldNoBox]
+                                            ) [SingleField]
+                                          ) [DesigList]
+                                        ) [VarDesig]
+                                      ) [SingleFactor]
+                                    ) [SingleTerm]
+                                  ) [TermExpr]
+                                ) [Express]
+                              ) [ActParams]
+                            ) [FuncCall]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            ReadStatement(
+              DesigList(
+                DesigName(
+                 re
+                ) [DesigName]
+                SingleField(
+                  FieldNoBox(
+                   ni
+                  ) [FieldNoBox]
+                ) [SingleField]
+              ) [DesigList]
+            ) [ReadStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       bb
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+              NoPrintable(
+              ) [NoPrintable]
+             3
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [MethodDeclerations]
+) [Program]
+INFO  19:15:39,059 - ===================================
+ERROR 19:15:39,060 - Greska! Promenljiva sa tim nazivom vec postoji! na liniji 4
+INFO  19:15:39,060 - Obradjuje se funkcija main na liniji 7
+ERROR 19:15:39,060 - Nije pronadjen tip rec u tabeli simbola! 
+INFO  19:15:39,061 - koriscen lokalni simbol: a na liniji 8
+ERROR 19:15:39,061 - Greska na liniji 8 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  19:15:39,061 - koriscen lokalni simbol: a na liniji 9
+INFO  19:15:39,061 - koriscen lokalni simbol: a na liniji 9
+INFO  19:15:39,061 - koriscen lokalni simbol: b na liniji 9
+ERROR 19:15:39,061 - Greska na liniji 9 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  19:15:39,061 - Obradjuje se funkcija vezba na liniji 13
+ERROR 19:15:39,061 - Nije pronadjen tip reco u tabeli simbola! 
+INFO  19:15:39,061 - koriscen lokalni simbol: a na liniji 14
+INFO  19:15:39,061 - koriscen lokalni simbol: aa na liniji 14
+INFO  19:15:39,061 - koriscen lokalni simbol: re na liniji 14
+ERROR 19:15:39,061 - Greska na liniji 14 : polje ni nije tipa klase! 
+ERROR 19:15:39,061 - Greska! Prosledjeni argument funkcije se ne poklapa po tipu sa paramtrom funkcije  na liniji 14
+INFO  19:15:39,061 - Pronadjen poziv funkcije main na liniji 14
+ERROR 19:15:39,061 - Greska na liniji 14 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  19:15:39,061 - koriscen lokalni simbol: re na liniji 15
+ERROR 19:15:39,061 - Greska na liniji 15 : polje ni nije tipa klase! 
+INFO  19:15:39,061 - koriscen lokalni simbol: bb na liniji 16
+ERROR 19:15:39,061 - Greska! Nevalidan tip na liniji 16
+ERROR 19:15:39,061 - Semanticka greska na liniji 13: funkcija vezba nema return iskaz!
+INFO  19:15:39,061 - ===================================

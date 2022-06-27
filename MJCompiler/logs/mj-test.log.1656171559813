@@ -1,0 +1,18 @@
+INFO  17:30:37,090 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:30:37,116 - #2 program
+INFO  17:30:37,116 - #51 prog
+INFO  17:30:37,116 - #51 int
+INFO  17:30:37,117 - #51 a
+INFO  17:30:37,117 - #8 ;
+INFO  17:30:37,118 - #51 char
+INFO  17:30:37,118 - #51 b
+INFO  17:30:37,118 - #8 ;
+INFO  17:30:37,118 - #3 {
+INFO  17:30:37,118 - #51 b
+INFO  17:30:37,118 - #7 =
+ERROR 17:30:37,118 - 
+Sintaksna greska na liniji 5
+INFO  17:30:37,118 - #50 'c
+INFO  17:30:37,118 - #50 ';
+INFO  17:30:37,119 - #4 }
+ERROR 17:30:37,120 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 8

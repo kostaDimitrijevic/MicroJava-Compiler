@@ -1,0 +1,99 @@
+INFO  12:53:47,738 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  12:53:47,761 - #2 program
+INFO  12:53:47,762 - #51 prog
+INFO  12:53:47,762 - #51 int
+INFO  12:53:47,762 - #51 a
+INFO  12:53:47,762 - #8 ;
+INFO  12:53:47,762 - #51 char
+INFO  12:53:47,763 - #51 b
+INFO  12:53:47,763 - #8 ;
+INFO  12:53:47,763 - #3 {
+INFO  12:53:47,763 - #9 void
+INFO  12:53:47,763 - #51 main
+INFO  12:53:47,763 - #15 (
+INFO  12:53:47,764 - #16 )
+INFO  12:53:47,765 - #3 {
+INFO  12:53:47,765 - #51 b
+INFO  12:53:47,766 - #7 =
+INFO  12:53:47,766 - #51 a
+INFO  12:53:47,766 - #8 ;
+INFO  12:53:47,766 - #4 }
+INFO  12:53:47,767 - #4 }
+INFO  12:53:47,771 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           a
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         b
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               b
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        VarDesig(
+                          SingleDesig(
+                           a
+                          ) [SingleDesig]
+                        ) [VarDesig]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  12:53:47,771 - ===================================
+INFO  12:53:47,773 - Obradjuje se funkcija main na liniji 5
+INFO  12:53:47,773 - koriscen globalni simbol: b na liniji 6
+INFO  12:53:47,773 - koriscen globalni simbol: a na liniji 6
+ERROR 12:53:47,773 - Greska na liniji 6 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  12:53:47,773 - ===================================

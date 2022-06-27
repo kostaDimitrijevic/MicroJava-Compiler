@@ -1,0 +1,96 @@
+INFO  17:07:28,599 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:07:28,627 - #2 program
+INFO  17:07:28,628 - #51 prog
+INFO  17:07:28,628 - #51 char
+INFO  17:07:28,628 - #51 a
+INFO  17:07:28,628 - #8 ;
+INFO  17:07:28,629 - #6 const
+INFO  17:07:28,629 - #51 char
+INFO  17:07:28,629 - #51 b
+INFO  17:07:28,629 - #7 =
+INFO  17:07:28,629 - #50 'v'
+INFO  17:07:28,629 - #8 ;
+INFO  17:07:28,629 - #3 {
+INFO  17:07:28,629 - #9 void
+INFO  17:07:28,629 - #51 main
+INFO  17:07:28,630 - #15 (
+INFO  17:07:28,630 - #16 )
+INFO  17:07:28,631 - #3 {
+INFO  17:07:28,631 - #51 a
+INFO  17:07:28,631 - #7 =
+INFO  17:07:28,631 - #50 '1'
+INFO  17:07:28,631 - #8 ;
+INFO  17:07:28,632 - #4 }
+INFO  17:07:28,632 - #4 }
+INFO  17:07:28,635 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  ConstDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         char
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           a
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    ConstDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      OneConstant(
+        CharConstant(
+         b
+         'v'
+        ) [CharConstant]
+      ) [OneConstant]
+    ) [ConstDeclerations]
+  ) [ConstDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               a
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        CharacterConst(
+                         '1'
+                        ) [CharacterConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:07:28,635 - ===================================
