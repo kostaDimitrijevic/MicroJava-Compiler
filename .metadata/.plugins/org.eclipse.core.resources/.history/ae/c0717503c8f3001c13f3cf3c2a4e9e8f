@@ -1,0 +1,20 @@
+program prog
+const int x = 1, y = 6;
+int a, b, c[];
+int niz[];
+record reco{char a; int ni;}
+record rec{reco r;}
+{
+	void main(int arg, char c) int a; char b; rec r;{
+		a = -1;
+		niz[niz[3]] = niz[niz[niz[3]]];
+		
+	}	
+	
+	int vezba() int a,aa, b[]; char c[]; reco re; bool bb;{
+		a = main(aa, re.ni);
+		read(re.ni);
+		print(bb, 3);
+	}
+}
+

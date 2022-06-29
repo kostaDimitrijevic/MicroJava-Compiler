@@ -1,0 +1,10 @@
+program prog
+int a;
+char b;
+{
+	void main(){
+		b = 'c';
+		a = 1 + b++;
+	}
+}
+

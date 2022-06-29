@@ -1,0 +1,78 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticAnalyzer extends VisitorAdaptor{
+	private boolean returnFound = false;
+	public boolean errorDetected = false;
+	
+	private Struct boolType = new Struct(Struct.Bool);
+	private Struct currentType = null;
+	private Logger log = Logger.getLogger(getClass());
+	
+	public int nVars = 0;
+	
+	private Obj currentMethod = null;
+	private int currentLvl = 0;
+	
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+	
+	public void visit(ProgName progName) {
+		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		Tab.insert(Obj.Type, "bool", boolType);
+		Tab.openScope();
+	}
+	
+	public void visit(Program program) {
+		nVars = Tab.currentScope.getnVars();
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+	}
+	
+	public void visit(VarNoArray var) {
+		Obj v = Tab.find(var.getVarName());
+		if(v == null) {
+			Tab.insert(Obj.Var, var.getVarName(), currentType);
+		}
+		report_info("Deklarisana promenljiva "+ var.getVarName(), var);
+	}
+	
+	public void visit(VarDecList varList) {
+		
+	}
+	
+	public void visit(IdentType type) {
+		Obj typeNode = Tab.find(type.getTypeName());
+		if (typeNode == Tab.noObj) {
+			report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", null);
+			type.struct = Tab.noType;
+		} else {
+			if (Obj.Type == typeNode.getKind()) {
+				type.struct = typeNode.getType();
+			} else {
+				report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip!", type);
+				type.struct = Tab.noType;
+			}
+			currentType = type.struct;
+		}
+	}
+}

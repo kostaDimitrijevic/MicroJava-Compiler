@@ -1,0 +1,6 @@
+program prog
+const int x = 1, y = 6;
+int a = 10, b, c[];
+{
+}
+

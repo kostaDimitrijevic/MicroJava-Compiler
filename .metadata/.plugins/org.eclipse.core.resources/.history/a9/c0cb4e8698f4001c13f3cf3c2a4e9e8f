@@ -1,0 +1,9 @@
+program prog
+int a;
+const char b = 'v';
+{
+	void main(){
+		a = 1;
+	}
+}
+

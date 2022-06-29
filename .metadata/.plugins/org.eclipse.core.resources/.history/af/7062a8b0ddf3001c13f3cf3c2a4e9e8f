@@ -1,0 +1,298 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROGRAM, LBRACES, RBRACES, COMMA, CONST, ASSIGN, SEMICOLON, VOID, LBOX, RBOX, CLASS, EXTENDS, RECORD, LPAREN, RPAREN;
+terminal COLON, IF, ELSE, DO, WHILE, PRINT, READ, BREAK, RETURN, CONTINUE, INC, DEC, STOP, MUL, DIV, MOD, PLUS, MINUS, NEW, AND, OR, EQUAL, NEQUAL, GREATER;
+terminal GEQ, LOWER, LEQ, SUPER, THIS, ENUM, POWER;
+nonterminal Declaration, ConstDecList, ConstList, Const, OptionalVarDecList, StatementList, ClassDecList, RecordDecList, MethodDecList, Method;
+nonterminal FormPars, Statement, Statements, Else, Label, DesignatorStatement, Field, FieldList;
+nonterminal Addop, Mulop, ActPars, Printable, Relop, ConstructorDecl, MethodPart, FormParamList, RecordName;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarDecList, VarList, Var, MethodTypeName, Param, Designator, DesignatorName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expr, Expression, Term, Factor, Operations, CondFact, CondTerm, Condition, SingleStatement;
+
+terminal Integer NUMCONST;
+terminal String BOOLCONST;
+terminal String CHARCONST;
+terminal String IDENT;
+
+precedence left ELSE;
+
+Program ::= (Program) PROGRAM ProgName:p Declaration LBRACES MethodDecList RBRACES;
+
+ProgName ::= (ProgName) IDENT:progName;
+
+Declaration ::= (ConstDeclarationList) Declaration ConstDecList
+	|
+	(VarDeclarationList) Declaration VarDecList 
+	|
+	(ClassDeclarationList) Declaration ClassDecList 
+	| 
+	(RecordDecLarationList) Declaration RecordDecList 
+	|
+	(NoDeclaration)
+	;
+
+ConstDecList ::= (ConstDeclerations) CONST Type:constType ConstList SEMICOLON;
+
+ConstList ::= (ConstantList) ConstList COMMA Const
+		  |
+		  (OneConstant) Const
+		  ;
+
+Const ::= (NumConstant) IDENT:varName ASSIGN NUMCONST:val 
+	  | (CharConstant) IDENT:varName ASSIGN CHARCONST:val 
+	  | (BoolConstant) IDENT:varName ASSIGN BOOLCONST:val
+	  ;
+
+VarDecList ::= (VarDeclerations) Type:varType VarList SEMICOLON;
+
+VarList ::= (VariableList) VarList COMMA Var
+		|
+		(SingleVar) Var
+		;
+		
+Var ::= (VarNoArray) IDENT:varName
+	|
+	(VarArray) IDENT:varName LBOX RBOX
+	;
+
+ClassDecList ::= (ClassExtendsDeclerations) CLASS IDENT:className EXTENDS Type:classType LBRACES OptionalVarDecList MethodPart RBRACES
+			 |
+			 (ClassDeclarations) CLASS IDENT:className LBRACES OptionalVarDecList MethodPart RBRACES
+			 ;
+
+MethodPart ::= (ConstructorAndMethod) LBRACES ConstructorDecl MethodDecList RBRACES
+		   |
+		   (Methods) LBRACES MethodDecList RBRACES
+		   |
+		   (NoMethodPart)
+		   ;
+
+ConstructorDecl ::= (ConstructorDecleration) IDENT LPAREN RPAREN OptionalVarDecList LBRACES Statement RBRACES;
+
+RecordDecList ::= (RecordDecleration) RECORD RecordName LBRACES OptionalVarDecList RBRACES;
+				
+RecordName ::= (RecordName) IDENT:recordName;
+
+MethodDecList ::= (MethodDeclerations) MethodDecList Method
+			  |
+			  (SingleMethodDeclaration) Method
+			  ;
+			  
+Method ::= (Method) MethodTypeName LPAREN FormParamList RPAREN OptionalVarDecList LBRACES StatementList RBRACES;
+			  
+MethodTypeName ::= (MethodTypeName) Type:returnType IDENT:methodName;
+			  
+OptionalVarDecList ::= (HasVarDecList) OptionalVarDecList VarDecList
+				   |
+				   (NoMethodVarDecList)
+				   ;
+
+FormParamList ::= (ParamList) FormPars
+			  |
+			  (NoParams)
+			  ; 
+		
+FormPars ::= (FormParams) FormPars COMMA Param
+		 |
+		 (SingleParam) Param
+		 ;
+		 
+Param ::= (Parameter) Type:paramType IDENT:paramName
+	  |
+	  (ParamBox) Type:paramType IDENT:paramName LBOX RBOX
+	  ;
+
+StatementList ::= (ListOfStatements) StatementList Statement
+			  |
+			  (NoStatement)
+			  ;
+
+Statement ::= (LabelStatement) Label COLON SingleStatement
+		  |
+		  (SingleStat) SingleStatement
+	 	  |
+		  (Stats) Statements 
+		  ;
+			  
+SingleStatement ::= (DesignatorStat) DesignatorStatement SEMICOLON
+				|
+				(IfStatement) IF LPAREN Condition RPAREN Statement Else
+				|
+				(DoWhileStatement) DO Statement WHILE LPAREN Condition RPAREN SEMICOLON
+				|
+				(BreakStatement) BREAK SEMICOLON
+				|
+				(ContinueStatement) CONTINUE SEMICOLON
+				|
+				(ReturnExprStatement) RETURN Expr SEMICOLON
+				|
+				(VoidReturn) RETURN SEMICOLON
+				|
+				(ReadStatement) READ LPAREN Designator RPAREN SEMICOLON
+				|
+				(PrintStatement) PRINT LPAREN Expr Printable RPAREN SEMICOLON
+				;
+
+Printable ::= (Prints) Printable COMMA NUMCONST
+		  |
+		  (NoPrintable)
+		  ;
+
+Else ::= (ElseStatement) ELSE Statement
+	 |
+	 (NoElse)
+	 ;	
+	
+Statements ::= (StatementsBraces) LBRACES StatementList RBRACES;
+
+DesignatorStatement ::= (DesignatorStatementOp) Designator Operations;
+		
+Designator ::= (DesigList) DesignatorName FieldList
+		   |
+		   (SingleDesig) IDENT:name
+		   ;
+
+DesignatorName ::= (DesigName) IDENT:name;
+
+FieldList ::= (Fields) FieldList Field
+	   |
+	   (SingleField) Field
+	   ;
+	   
+Field ::= (FieldNoBox) STOP IDENT:fieldName
+	  |
+	  (FieldBox) LBOX Expr RBOX
+	  ;
+
+Operations ::= (AssignOperation) ASSIGN Expr
+		   |
+		   (ActParameters) LPAREN ActPars RPAREN
+		   |
+		   (Inc) INC
+		   |
+		   (Dec) DEC
+		   ;
+		   
+ActPars ::= (ActParams) ActPars COMMA Expr
+		|
+		(SingleActPars) Expr
+		|
+		(NoActPars)
+		;
+		
+Condition ::= (Conditions) Condition OR CondTerm
+          |
+          (SignleCondition) CondTerm
+          ; 
+          
+CondTerm ::= (CondiTerm) CondTerm AND CondFact
+		 |
+		 (SingleCondTerm) CondFact
+		 ;
+
+CondFact ::= (CondFactor) Expr Relop CondFact
+		 |
+		 (SingleCondFact) Expr
+		 ;
+
+Expr ::= (MinusExpress) MINUS Expression
+	 |
+	 (Express) Expression
+	 ;
+	 
+Expression ::= (AddExpr) Expression:ex Addop Term:term
+		   |
+		   (TermExpr) Term:term
+		   ;
+
+Term ::= (Terms) Term:t Mulop Factor:f
+	 |
+	 (SingleTerm) Factor
+	 ;
+
+Factor ::= (FuncCall) Designator LPAREN ActPars RPAREN
+	   |
+	   (VarDesig) Designator
+	   |
+	   (NumberConst) NUMCONST:val
+	   |
+	   (CharacterConst) CHARCONST:val
+	   |
+	   (BooleanConst) BOOLCONST:val
+	   |
+	   (NewExpr) NEW Type LBOX Expr RBOX
+	   |
+	   (New) NEW Type
+	   |
+	   (FactorExpr) LPAREN Expr RPAREN
+	   ;
+
+Label ::= (Labels) IDENT;
+
+Type ::= (IdentType) IDENT:typeName
+	 |
+	 (VoidType) VOID:voidType
+	 ;		
+	 
+Relop ::= (Equal) EQUAL
+	  |
+	  (NoEqual) NEQUAL
+	  |
+	  (Greater) GREATER
+	  |
+	  (GreaterEqual) GEQ
+	  |
+	  (Lower) LOWER
+	  |
+	  (LowerEqual) LEQ
+	  ;
+
+Addop ::= (Plus) PLUS
+	  |
+	  (Minus) MINUS
+	  ;
+
+Mulop ::= (Mul) MUL | (Div) DIV | (Mod) MOD;	
