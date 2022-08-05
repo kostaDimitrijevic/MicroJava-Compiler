@@ -44,9 +44,9 @@ scan with {:
 
 terminal PROGRAM, LBRACES, RBRACES, COMMA, CONST, ASSIGN, SEMICOLON, VOID, LBOX, RBOX, CLASS, EXTENDS, RECORD, LPAREN, RPAREN;
 terminal COLON, IF, ELSE, DO, WHILE, PRINT, READ, BREAK, RETURN, CONTINUE, INC, DEC, STOP, MUL, DIV, MOD, PLUS, MINUS, NEW, AND, OR, EQUAL, NEQUAL, GREATER;
-terminal GEQ, LOWER, LEQ, SUPER, THIS, ENUM, POWER;
+terminal GEQ, LOWER, LEQ, SUPER, THIS, ENUM, COALESCE;
 nonterminal Declaration, ConstDecList, ConstList, OptionalVarDecList, StatementList, ClassDecList, RecordDecList, MethodDecList, Method;
-nonterminal FormPars, Statement, Statements, Else, Label, DesignatorStatement, Field, FieldList, Expop;
+nonterminal FormPars, Statement, Statements, Else, Label, DesignatorStatement, Field, FieldList, CoalExpr;
 nonterminal Addop, Mulop, ActPars, Printable, Relop, ConstructorDecl, MethodPart, FormParamList, RecordName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Const, ProgName, Program, VarDecList, VarList, Var, MethodTypeName, Param, Designator, DesignatorName;
@@ -260,7 +260,7 @@ Term ::= (Terms) Term:t Mulop Factor:f
 	 (SingleTerm) Factor
 	 ;
 
-Factor 	::= (ListFactor) Factor Expop BaseExp
+Factor 	::= (ListFactor) Factor CoalExpr BaseExp
 		|
 		(SingleFactor) BaseExp
 		;
@@ -282,7 +282,7 @@ BaseExp ::= (FuncCall) Designator LPAREN ActPars RPAREN
 	   	(FactorExpr) LPAREN Expr RPAREN
 	   	;
 
-Expop ::= (Exponent) POWER;
+CoalExpr ::= (Coalesce) COALESCE;
 
 Label ::= (Labels) IDENT;
 

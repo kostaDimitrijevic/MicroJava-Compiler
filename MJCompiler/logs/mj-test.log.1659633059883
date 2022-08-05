@@ -1,0 +1,40 @@
+INFO  19:10:32,423 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:10:32,449 - #2 program
+INFO  19:10:32,449 - #51 prog
+INFO  19:10:32,449 - #6 const
+INFO  19:10:32,450 - #51 bool
+INFO  19:10:32,450 - #51 cc
+INFO  19:10:32,450 - #7 =
+INFO  19:10:32,450 - #49 true
+INFO  19:10:32,450 - #8 ;
+INFO  19:10:32,450 - #6 const
+INFO  19:10:32,450 - #51 int
+INFO  19:10:32,450 - #51 a
+INFO  19:10:32,450 - #7 =
+INFO  19:10:32,451 - #48 1
+INFO  19:10:32,451 - #8 ;
+INFO  19:10:32,451 - #51 int
+INFO  19:10:32,451 - #51 d
+INFO  19:10:32,451 - #10 [
+INFO  19:10:32,451 - #11 ]
+INFO  19:10:32,451 - #3 {
+ERROR 19:10:32,451 - 
+Sintaksna greska na liniji 5
+INFO  19:10:32,463 - #9 void
+INFO  19:10:32,463 - #51 main
+INFO  19:10:32,463 - #15 (
+INFO  19:10:32,463 - #16 )
+INFO  19:10:32,463 - #51 char
+INFO  19:10:32,464 - #51 b
+INFO  19:10:32,464 - #8 ;
+INFO  19:10:32,464 - #3 {
+INFO  19:10:32,464 - #51 b
+INFO  19:10:32,464 - #7 =
+ERROR 19:10:32,464 - Izvrsen oporavak do ; u liniji4
+ERROR 19:10:32,465 - 
+Sintaksna greska na liniji 7
+INFO  19:10:32,465 - #50 '\n'
+INFO  19:10:32,465 - #8 ;
+INFO  19:10:32,465 - #4 }
+INFO  19:10:32,465 - #4 }
+ERROR 19:10:32,465 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

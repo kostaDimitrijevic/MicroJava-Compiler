@@ -1,0 +1,115 @@
+INFO  18:40:13,165 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:40:13,204 - #2 program
+INFO  18:40:13,205 - #51 prog
+INFO  18:40:13,205 - #6 const
+INFO  18:40:13,206 - #51 bool
+INFO  18:40:13,206 - #51 cc
+INFO  18:40:13,207 - #7 =
+INFO  18:40:13,207 - #49 true
+INFO  18:40:13,207 - #8 ;
+INFO  18:40:13,207 - #6 const
+INFO  18:40:13,207 - #51 int
+INFO  18:40:13,207 - #51 a
+INFO  18:40:13,208 - #7 =
+INFO  18:40:13,208 - #48 1
+INFO  18:40:13,208 - #8 ;
+INFO  18:40:13,208 - #3 {
+INFO  18:40:13,208 - #9 void
+INFO  18:40:13,208 - #51 main
+INFO  18:40:13,209 - #15 (
+INFO  18:40:13,210 - #16 )
+INFO  18:40:13,210 - #51 char
+INFO  18:40:13,211 - #51 b
+INFO  18:40:13,211 - #8 ;
+INFO  18:40:13,212 - #3 {
+INFO  18:40:13,212 - #51 b
+INFO  18:40:13,212 - #7 =
+INFO  18:40:13,212 - #50 '\n'
+INFO  18:40:13,212 - #8 ;
+INFO  18:40:13,213 - #4 }
+INFO  18:40:13,213 - #4 }
+INFO  18:40:13,217 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  ConstDeclarationList(
+    ConstDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      ConstDeclerations(
+        IdentType(
+         bool
+        ) [IdentType]
+        OneConstant(
+          BoolConstant(
+           cc
+           true
+          ) [BoolConstant]
+        ) [OneConstant]
+      ) [ConstDeclerations]
+    ) [ConstDeclarationList]
+    ConstDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      OneConstant(
+        NumConstant(
+         a
+         1
+        ) [NumConstant]
+      ) [OneConstant]
+    ) [ConstDeclerations]
+  ) [ConstDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        NoMethodVarDecList(
+        ) [NoMethodVarDecList]
+        VarDeclerations(
+          IdentType(
+           char
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             b
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               b
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        CharacterConst(
+                         '\n'
+                        ) [CharacterConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:40:13,217 - ===================================

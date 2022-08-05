@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/5/2022 0:4:42
+// 5/7/2022 17:8:23
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,14 +8,14 @@ package rs.ac.bg.etf.pp1.ast;
 public class ListFactor extends Factor {
 
     private Factor Factor;
-    private Expop Expop;
+    private CoalExpr CoalExpr;
     private BaseExp BaseExp;
 
-    public ListFactor (Factor Factor, Expop Expop, BaseExp BaseExp) {
+    public ListFactor (Factor Factor, CoalExpr CoalExpr, BaseExp BaseExp) {
         this.Factor=Factor;
         if(Factor!=null) Factor.setParent(this);
-        this.Expop=Expop;
-        if(Expop!=null) Expop.setParent(this);
+        this.CoalExpr=CoalExpr;
+        if(CoalExpr!=null) CoalExpr.setParent(this);
         this.BaseExp=BaseExp;
         if(BaseExp!=null) BaseExp.setParent(this);
     }
@@ -28,12 +28,12 @@ public class ListFactor extends Factor {
         this.Factor=Factor;
     }
 
-    public Expop getExpop() {
-        return Expop;
+    public CoalExpr getCoalExpr() {
+        return CoalExpr;
     }
 
-    public void setExpop(Expop Expop) {
-        this.Expop=Expop;
+    public void setCoalExpr(CoalExpr CoalExpr) {
+        this.CoalExpr=CoalExpr;
     }
 
     public BaseExp getBaseExp() {
@@ -50,20 +50,20 @@ public class ListFactor extends Factor {
 
     public void childrenAccept(Visitor visitor) {
         if(Factor!=null) Factor.accept(visitor);
-        if(Expop!=null) Expop.accept(visitor);
+        if(CoalExpr!=null) CoalExpr.accept(visitor);
         if(BaseExp!=null) BaseExp.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Factor!=null) Factor.traverseTopDown(visitor);
-        if(Expop!=null) Expop.traverseTopDown(visitor);
+        if(CoalExpr!=null) CoalExpr.traverseTopDown(visitor);
         if(BaseExp!=null) BaseExp.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Factor!=null) Factor.traverseBottomUp(visitor);
-        if(Expop!=null) Expop.traverseBottomUp(visitor);
+        if(CoalExpr!=null) CoalExpr.traverseBottomUp(visitor);
         if(BaseExp!=null) BaseExp.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -79,8 +79,8 @@ public class ListFactor extends Factor {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Expop!=null)
-            buffer.append(Expop.toString("  "+tab));
+        if(CoalExpr!=null)
+            buffer.append(CoalExpr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

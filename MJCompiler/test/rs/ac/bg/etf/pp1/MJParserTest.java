@@ -51,7 +51,7 @@ public class MJParserTest {
 			SemanticAnalyzer v = new SemanticAnalyzer();
 			prog.traverseBottomUp(v);
 			log.info("===================================");
-			Tab.dump();
+			Tab.dump(new MyDumpSymbolTableVisitor());
 			log.info("Parsiranje koda uspesno zavrseno");
 			
 			

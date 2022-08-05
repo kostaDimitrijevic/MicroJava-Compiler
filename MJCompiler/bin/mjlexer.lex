@@ -79,7 +79,7 @@ import java_cup.runtime.Symbol;
 "]"	  { return new_symbol(sym.RBOX, yytext()); }
 "{"	  { return new_symbol(sym.LBRACES, yytext()); }
 "}"	  { return new_symbol(sym.RBRACES, yytext()); }
-"^"	  { return new_symbol(sym.POWER, yytext()); }
+"??"	  { return new_symbol(sym.COALESCE, yytext()); }
 
 "//"	  { yybegin(COMMENT); }
 <COMMENT> . { yybegin(COMMENT); }

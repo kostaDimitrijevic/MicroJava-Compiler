@@ -1,7 +1,0 @@
-program prog
-int a;
-char b;
-{
-	b = 'c';
-}
-

@@ -1,0 +1,121 @@
+INFO  18:56:37,204 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:56:37,231 - #2 program
+INFO  18:56:37,231 - #51 prog
+INFO  18:56:37,231 - #6 const
+INFO  18:56:37,232 - #51 bool
+INFO  18:56:37,232 - #51 cc
+INFO  18:56:37,232 - #7 =
+INFO  18:56:37,232 - #49 true
+INFO  18:56:37,232 - #8 ;
+INFO  18:56:37,232 - #6 const
+INFO  18:56:37,233 - #51 int
+INFO  18:56:37,233 - #51 a
+INFO  18:56:37,233 - #7 =
+INFO  18:56:37,233 - #48 1
+INFO  18:56:37,233 - #8 ;
+INFO  18:56:37,233 - #3 {
+INFO  18:56:37,233 - #9 void
+INFO  18:56:37,233 - #51 main
+INFO  18:56:37,233 - #15 (
+INFO  18:56:37,233 - #16 )
+INFO  18:56:37,234 - #51 char
+INFO  18:56:37,234 - #51 b
+INFO  18:56:37,235 - #8 ;
+INFO  18:56:37,235 - #3 {
+INFO  18:56:37,235 - #51 b
+INFO  18:56:37,236 - #7 =
+INFO  18:56:37,236 - #50 '\n'
+INFO  18:56:37,236 - #8 ;
+INFO  18:56:37,236 - #4 }
+INFO  18:56:37,236 - #4 }
+INFO  18:56:37,240 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  ConstDeclarationList(
+    ConstDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      ConstDeclerations(
+        IdentType(
+         bool
+        ) [IdentType]
+        OneConstant(
+          BoolConstant(
+           cc
+           true
+          ) [BoolConstant]
+        ) [OneConstant]
+      ) [ConstDeclerations]
+    ) [ConstDeclarationList]
+    ConstDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      OneConstant(
+        NumConstant(
+         a
+         1
+        ) [NumConstant]
+      ) [OneConstant]
+    ) [ConstDeclerations]
+  ) [ConstDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        NoMethodVarDecList(
+        ) [NoMethodVarDecList]
+        VarDeclerations(
+          IdentType(
+           char
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             b
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               b
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        CharacterConst(
+                         '\n'
+                        ) [CharacterConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:56:37,240 - ===================================
+INFO  18:56:37,243 - Definicija constantecc na liniji 2
+INFO  18:56:37,243 - Definicija constante a na liniji 3
+INFO  18:56:37,243 - Deklarisana promenljiva b na liniji 5
+INFO  18:56:37,243 - ===================================
+INFO  18:56:37,243 - Parsiranje koda uspesno zavrseno
+INFO  18:56:37,245 - Generisanje koda uspesno zavrseno

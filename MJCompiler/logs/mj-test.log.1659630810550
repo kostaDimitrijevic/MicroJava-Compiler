@@ -1,0 +1,117 @@
+INFO  18:31:06,519 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:31:06,547 - #2 program
+INFO  18:31:06,547 - #51 prog
+INFO  18:31:06,547 - #6 const
+INFO  18:31:06,548 - #51 bool
+INFO  18:31:06,548 - #51 cc
+INFO  18:31:06,548 - #7 =
+INFO  18:31:06,548 - #49 true
+INFO  18:31:06,548 - #8 ;
+INFO  18:31:06,548 - #51 int
+INFO  18:31:06,548 - #51 a
+INFO  18:31:06,549 - #8 ;
+INFO  18:31:06,549 - #3 {
+INFO  18:31:06,549 - #9 void
+INFO  18:31:06,549 - #51 main
+INFO  18:31:06,549 - #15 (
+INFO  18:31:06,550 - #16 )
+INFO  18:31:06,551 - #51 char
+INFO  18:31:06,551 - #51 b
+INFO  18:31:06,552 - #8 ;
+INFO  18:31:06,552 - #3 {
+INFO  18:31:06,552 - #51 b
+INFO  18:31:06,552 - #7 =
+INFO  18:31:06,553 - #50 '\n'
+INFO  18:31:06,553 - #8 ;
+INFO  18:31:06,553 - #4 }
+INFO  18:31:06,553 - #4 }
+INFO  18:31:06,557 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    ConstDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      ConstDeclerations(
+        IdentType(
+         bool
+        ) [IdentType]
+        OneConstant(
+          BoolConstant(
+           cc
+           true
+          ) [BoolConstant]
+        ) [OneConstant]
+      ) [ConstDeclerations]
+    ) [ConstDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         a
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        NoMethodVarDecList(
+        ) [NoMethodVarDecList]
+        VarDeclerations(
+          IdentType(
+           char
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             b
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               b
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        CharacterConst(
+                         '\n'
+                        ) [CharacterConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:31:06,557 - ===================================
+ERROR 18:31:06,559 - Greska! Konstanta ccje vec definisana na liniji 2
+ERROR 18:31:06,559 - Greska! Deklarisana promenljiva avec postoji! na liniji 3
+ERROR 18:31:06,559 - Greska! Deklarisana promenljiva bvec postoji! na liniji 5
+INFO  18:31:06,559 - ===================================
+INFO  18:31:06,559 - Parsiranje koda uspesno zavrseno
+INFO  18:31:06,559 - Parsiranje koda nije uspesno zavrseno

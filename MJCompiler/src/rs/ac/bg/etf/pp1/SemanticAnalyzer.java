@@ -50,23 +50,33 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	
 	public void visit(VarNoArray var) {
 		Obj v = Tab.find(var.getVarName());
-		if(v == null) {
+		if(v == Tab.noObj) {
 			var.obj = Tab.insert(Obj.Var, var.getVarName(), currentType);
-			report_info("Deklarisana promenljiva "+ var.getVarName(), var);
+			if(currentMethod != null) {
+				report_info("Deklarisana lokalna promenljiva " + var.getVarName() + " metode " + currentMethod.getName(), var);
+			}
+			else {
+				report_info("Deklarisana promenljiva "+ var.getVarName(), var);
+			}
 		}
 		else {
-			report_error("Greska! Deklarisana promenljiva "+ var.getVarName() + "vec postoji!", var);
+			report_error("Greska! Deklarisana promenljiva "+ var.getVarName() + " vec postoji!", var);
 		}
 	}
 	
 	public void visit(VarArray varArr) {
 		Obj v = Tab.find(varArr.getVarName());
-		if(v == null) {
+		if(v == Tab.noObj) {
 			varArr.obj = Tab.insert(Obj.Var, varArr.getVarName(), currentType);
-			report_info("Deklarisana niz "+ varArr.getVarName(), varArr);
+			if(currentMethod != null) {
+				report_info("Deklarisana lokalni niz "+ varArr.getVarName() + " metode " + currentMethod.getName(), varArr);
+			}
+			else {
+				report_info("Deklarisana niz "+ varArr.getVarName(), varArr);
+			}
 		}
 		else {
-			report_error("Greska! Deklarisana niz "+ varArr.getVarName() + "vec postoji!", varArr);
+			report_error("Greska! Deklarisana niz "+ varArr.getVarName() + " vec postoji!", varArr);
 		}
 	}
 	
@@ -86,54 +96,82 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 	}
 	
+	public void visit(VoidType voidmethod) {
+		voidmethod.struct = Tab.noType;
+	}
+	
 	public void visit(NumConstant numConst) {
 		Obj c = Tab.find(numConst.getVarName());
-		if(c == null) {
+		if(c == Tab.noObj) {
 			if(currentType.equals(Tab.intType)) {
 				Obj con = Tab.insert(Obj.Con, numConst.getVarName(), Tab.intType);
 				con.setAdr(numConst.getVal());
-				report_info("Definicija constante" + numConst.getVarName(), numConst);
+				report_info("Definicija constante " + numConst.getVarName(), numConst);
 			}
 			else {
 				report_error("Greska! Los tip konstante", numConst);
 			}
 		}
 		else {
-			report_error("Greska! Konstanta " + numConst.getVarName() + "je vec definisana", numConst);
+			report_error("Greska! Konstanta " + numConst.getVarName() + " je vec definisana", numConst);
 		}
 	}
 
 	public void visit(CharConstant charConst) {
 		Obj c = Tab.find(charConst.getVarName());
-		if(c == null) {
+		if(c == Tab.noObj) {
 			if(currentType.equals(Tab.charType)) {
 				Obj con = Tab.insert(Obj.Con, charConst.getVarName(), Tab.charType);
 				con.setAdr(Integer.parseInt(charConst.getVal()));
 				charConst.obj = con;
-				report_info("Definicija constante" + charConst.getVarName(), charConst);
+				report_info("Definicija constante " + charConst.getVarName(), charConst);
 			}
 			else {
 				report_error("Greska! Los tip konstante", charConst);
 			}
 		}
 		else {
-			report_error("Greska! Konstanta " + charConst.getVarName() + "je vec definisana", charConst);
+			report_error("Greska! Konstanta " + charConst.getVarName() + " je vec definisana", charConst);
 		}
 	}
 
 	public void visit(BoolConstant boolConst) {
 		Obj c = Tab.find(boolConst.getVarName());
-		if(c == null) {
-			if(currentType.equals(boolType)) {
+		if(c == Tab.noObj) {
+			if(currentType.equals(boolType) && (boolConst.getVal().equals("true") || boolConst.getVal().equals("false"))) {
 				boolConst.obj = Tab.insert(Obj.Con, boolConst.getVarName(), boolType);
-				report_info("Definicija constante" + boolConst.getVarName(), boolConst);
+				report_info("Definicija constante " + boolConst.getVarName(), boolConst);
 			}
 			else {
 				report_error("Greska! Los tip konstante", boolConst);
 			}
 		}
 		else {
-			report_error("Greska! Konstanta " + boolConst.getVarName() + "je vec definisana", boolConst);
+			report_error("Greska! Konstanta " + boolConst.getVarName() + " je vec definisana", boolConst);
 		}
+	}
+	
+	public void visit(MethodTypeName method) {
+		if(method.getMethodName().equals("main") && method.getType().struct.getKind() != Struct.None) {
+			report_error("metoda main mora da bude tipa void!", method);
+			method.obj = Tab.noObj;
+		}
+		else {
+			currentMethod = Tab.insert(Obj.Meth, method.getMethodName(), method.getType().struct);
+			method.obj = currentMethod;
+			method.obj.setLevel(0);
+			Tab.openScope();
+		}
+		
+		report_info("Obradjuje se funkcija " + method.getMethodName(), method);
+	}
+	
+	public void visit(Method methodDecl) {
+		if(currentMethod != null) {
+			Tab.chainLocalSymbols(currentMethod);
+			Tab.closeScope();
+		}
+		
+		currentMethod = null;
 	}
 }

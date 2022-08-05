@@ -44,7 +44,7 @@ scan with {:
 
 terminal PROGRAM, LBRACES, RBRACES, COMMA, CONST, ASSIGN, SEMICOLON, VOID, LBOX, RBOX, CLASS, EXTENDS, RECORD, LPAREN, RPAREN;
 terminal COLON, IF, ELSE, DO, WHILE, PRINT, READ, BREAK, RETURN, CONTINUE, INC, DEC, STOP, MUL, DIV, MOD, PLUS, MINUS, NEW, AND, OR, EQUAL, NEQUAL, GREATER;
-terminal GEQ, LOWER, LEQ, SUPER, THIS, ENUM, POWER;
+terminal GEQ, LOWER, LEQ, SUPER, THIS, ENUM, COALESCE;
 nonterminal Declaration Declaration;
 nonterminal ConstDecList ConstDecList;
 nonterminal ConstList ConstList;
@@ -62,7 +62,7 @@ nonterminal Label Label;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Field Field;
 nonterminal FieldList FieldList;
-nonterminal Expop Expop;
+nonterminal CoalExpr CoalExpr;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
 nonterminal ActPars ActPars;
@@ -284,7 +284,7 @@ Term ::= (Terms) Term:t Mulop:M1 Factor:f {: RESULT=new Terms(t, M1, f); RESULT.
 	 (SingleTerm) Factor:F1 {: RESULT=new SingleTerm(F1); RESULT.setLine(F1left); :}
 	 ;
 
-Factor 	::= (ListFactor) Factor:F1 Expop:E2 BaseExp:B3 {: RESULT=new ListFactor(F1, E2, B3); RESULT.setLine(F1left); :}
+Factor 	::= (ListFactor) Factor:F1 CoalExpr:C2 BaseExp:B3 {: RESULT=new ListFactor(F1, C2, B3); RESULT.setLine(F1left); :}
 		|
 		(SingleFactor) BaseExp:B1 {: RESULT=new SingleFactor(B1); RESULT.setLine(B1left); :}
 		;
@@ -306,7 +306,7 @@ BaseExp ::= (FuncCall) Designator:D1 LPAREN ActPars:A2 RPAREN {: RESULT=new Func
 	   	(FactorExpr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorExpr(E1); RESULT.setLine(E1left); :}
 	   	;
 
-Expop ::= (Exponent) POWER {: RESULT=new Exponent(); :};
+CoalExpr ::= (Coalesce) COALESCE {: RESULT=new Coalesce(); :};
 
 Label ::= (Labels) IDENT:I1 {: RESULT=new Labels(I1); RESULT.setLine(I1left); :};
 

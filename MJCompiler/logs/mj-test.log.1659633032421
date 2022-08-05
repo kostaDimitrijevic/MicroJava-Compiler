@@ -1,0 +1,40 @@
+INFO  19:10:26,760 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:10:26,792 - #2 program
+INFO  19:10:26,792 - #51 prog
+INFO  19:10:26,792 - #6 const
+INFO  19:10:26,793 - #51 bool
+INFO  19:10:26,793 - #51 cc
+INFO  19:10:26,793 - #7 =
+INFO  19:10:26,793 - #49 true
+INFO  19:10:26,793 - #8 ;
+INFO  19:10:26,793 - #6 const
+INFO  19:10:26,793 - #51 int
+INFO  19:10:26,793 - #51 a
+INFO  19:10:26,794 - #7 =
+INFO  19:10:26,794 - #48 1
+INFO  19:10:26,794 - #8 ;
+INFO  19:10:26,794 - #51 int
+INFO  19:10:26,794 - #51 d
+INFO  19:10:26,794 - #10 [
+INFO  19:10:26,794 - #11 ]
+INFO  19:10:26,794 - #3 {
+ERROR 19:10:26,794 - 
+Sintaksna greska na liniji 5
+INFO  19:10:26,807 - #9 void
+INFO  19:10:26,807 - #51 main
+INFO  19:10:26,807 - #15 (
+INFO  19:10:26,808 - #16 )
+INFO  19:10:26,808 - #51 char
+INFO  19:10:26,808 - #51 b
+INFO  19:10:26,808 - #8 ;
+INFO  19:10:26,808 - #3 {
+INFO  19:10:26,808 - #51 b
+INFO  19:10:26,808 - #7 =
+ERROR 19:10:26,808 - Izvrsen oporavak do ; u liniji4
+ERROR 19:10:26,808 - 
+Sintaksna greska na liniji 7
+INFO  19:10:26,808 - #50 '\n'
+INFO  19:10:26,808 - #8 ;
+INFO  19:10:26,808 - #4 }
+INFO  19:10:26,809 - #4 }
+ERROR 19:10:26,809 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11
