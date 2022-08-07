@@ -1,0 +1,156 @@
+INFO  16:24:40,167 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:24:40,193 - #2 program
+INFO  16:24:40,193 - #51 prog
+INFO  16:24:40,193 - #6 const
+INFO  16:24:40,193 - #51 int
+INFO  16:24:40,193 - #51 a
+INFO  16:24:40,193 - #7 =
+INFO  16:24:40,193 - #48 1
+INFO  16:24:40,194 - #8 ;
+INFO  16:24:40,194 - #51 int
+INFO  16:24:40,194 - #51 prob
+INFO  16:24:40,194 - #8 ;
+INFO  16:24:40,194 - #51 int
+INFO  16:24:40,194 - #51 nizz
+INFO  16:24:40,194 - #10 [
+INFO  16:24:40,195 - #11 ]
+INFO  16:24:40,195 - #8 ;
+INFO  16:24:40,195 - #3 {
+INFO  16:24:40,195 - #9 void
+INFO  16:24:40,195 - #51 main
+INFO  16:24:40,195 - #15 (
+INFO  16:24:40,195 - #16 )
+INFO  16:24:40,196 - #51 char
+INFO  16:24:40,197 - #51 b
+INFO  16:24:40,197 - #8 ;
+INFO  16:24:40,197 - #51 int
+INFO  16:24:40,197 - #51 niz
+INFO  16:24:40,197 - #10 [
+INFO  16:24:40,197 - #11 ]
+INFO  16:24:40,197 - #8 ;
+INFO  16:24:40,197 - #51 int
+INFO  16:24:40,197 - #51 sd
+INFO  16:24:40,197 - #8 ;
+INFO  16:24:40,197 - #3 {
+INFO  16:24:40,197 - #51 sd
+INFO  16:24:40,197 - #7 =
+INFO  16:24:40,197 - #51 prob
+INFO  16:24:40,197 - #27 ++
+ERROR 16:24:40,197 - 
+Sintaksna greska na liniji 7
+INFO  16:24:40,197 - #8 ;
+INFO  16:24:40,197 - #4 }
+INFO  16:24:40,197 - #4 }
+ERROR 16:24:40,198 - Izvrsen oporavak do ; u liniji7
+INFO  16:24:40,201 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        NoDeclaration(
+        ) [NoDeclaration]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             a
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           prob
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          HasVarDecList(
+            NoMethodVarDecList(
+            ) [NoMethodVarDecList]
+            VarDeclerations(
+              IdentType(
+               char
+              ) [IdentType]
+              SingleVar(
+                VarNoArray(
+                 b
+                ) [VarNoArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
+          VarDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            SingleVar(
+              VarArray(
+               niz
+              ) [VarArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             sd
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  16:24:40,202 - ===================================
+INFO  16:24:40,204 - Definicija constante a na liniji 2
+INFO  16:24:40,204 - Deklarisana promenljiva prob na liniji 3
+INFO  16:24:40,205 - Deklarisana niz nizz na liniji 4
+INFO  16:24:40,205 - Obradjuje se funkcija main na liniji 6
+INFO  16:24:40,205 - Deklarisana lokalna promenljiva b metode main na liniji 6
+INFO  16:24:40,205 - Deklarisana lokalni niz niz metode main na liniji 6
+INFO  16:24:40,205 - Deklarisana lokalna promenljiva sd metode main na liniji 6
+INFO  16:24:40,205 - ===================================
+INFO  16:24:40,205 - Parsiranje koda uspesno zavrseno
+INFO  16:24:40,207 - Generisanje koda uspesno zavrseno

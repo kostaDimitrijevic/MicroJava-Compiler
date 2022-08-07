@@ -1,0 +1,51 @@
+INFO  13:11:47,591 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:11:47,616 - #2 program
+INFO  13:11:47,616 - #51 prog
+INFO  13:11:47,616 - #6 const
+INFO  13:11:47,617 - #51 int
+INFO  13:11:47,617 - #51 a
+INFO  13:11:47,617 - #7 =
+INFO  13:11:47,617 - #48 1
+INFO  13:11:47,617 - #8 ;
+INFO  13:11:47,617 - #51 int
+INFO  13:11:47,617 - #51 prob
+INFO  13:11:47,617 - #8 ;
+INFO  13:11:47,618 - #51 int
+INFO  13:11:47,618 - #51 nizz
+INFO  13:11:47,618 - #10 [
+INFO  13:11:47,618 - #11 ]
+INFO  13:11:47,618 - #3 {
+ERROR 13:11:47,618 - 
+Sintaksna greska na liniji 5
+INFO  13:11:47,618 - #9 void
+INFO  13:11:47,618 - #51 main
+INFO  13:11:47,618 - #15 (
+INFO  13:11:47,619 - #16 )
+INFO  13:11:47,619 - #51 char
+INFO  13:11:47,619 - #51 b
+INFO  13:11:47,619 - #8 ;
+INFO  13:11:47,619 - #51 int
+INFO  13:11:47,619 - #51 niz
+INFO  13:11:47,619 - #10 [
+ERROR 13:11:47,619 - Izvrsen oporavak do ; u liniji4
+INFO  13:11:47,620 - #11 ]
+INFO  13:11:47,620 - #8 ;
+INFO  13:11:47,620 - #51 int
+INFO  13:11:47,620 - #51 sd
+INFO  13:11:47,620 - #8 ;
+INFO  13:11:47,620 - #3 {
+INFO  13:11:47,620 - #51 prob
+INFO  13:11:47,620 - #7 =
+ERROR 13:11:47,620 - 
+Sintaksna greska na liniji 7
+INFO  13:11:47,620 - #51 niz
+INFO  13:11:47,620 - #10 [
+INFO  13:11:47,620 - #51 nizz
+INFO  13:11:47,620 - #10 [
+INFO  13:11:47,620 - #48 1
+INFO  13:11:47,620 - #11 ]
+INFO  13:11:47,620 - #11 ]
+INFO  13:11:47,620 - #8 ;
+INFO  13:11:47,621 - #4 }
+INFO  13:11:47,621 - #4 }
+ERROR 13:11:47,621 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

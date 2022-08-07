@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.Stack;
+
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
@@ -17,7 +19,10 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	public int nVars = 0;
 	
 	private Obj currentMethod = null;
+	private Obj currentDesig = null;
 	private int currentLvl = 0;
+	
+	private Stack<Obj> stack = new Stack<Obj>();
 	
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -173,5 +178,190 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 		
 		currentMethod = null;
+	}
+	
+	public void visit(SingleDesig desig) {
+		Obj d = Tab.find(desig.getName());
+		if(d == Tab.noObj || (d.getKind() != Obj.Con && d.getKind() != Obj.Var)) {
+			desig.obj = Tab.noObj;
+			report_error("Greska na liniji " + desig.getLine() + " : ime " + desig.getName() + " nije deklarisano! ",
+					null);
+		}
+		else {
+			String message = d.getLevel() > 0 ? "koriscen lokalni simbol: " : "koriscen globalni simbol: ";
+			report_info(message + d.getName(), desig);
+		}
+		
+		desig.obj = d;
+	}
+	
+	public void visit(DesigList list) {
+		list.obj = list.getDesignatorName().obj;
+	}
+	
+	public void visit(DesigName des) {
+		Obj d = Tab.find(des.getName());
+		if(d == Tab.noObj || (d.getKind() != Obj.Var && d.getKind() != Obj.Con)) {
+			report_error("Greska na liniji " + des.getLine() + " : ime " + des.getName() + " nije deklarisano! ",
+					null);
+			d = Tab.noObj;
+		}
+		else {
+			currentDesig = d;
+		}
+		
+		String message = d.getLevel() > 0 ? "koriscen lokalni simbol: " : "koriscen globalni simbol: ";
+		report_info(message + d.getName(), des);
+		
+		stack.push(currentDesig);
+		des.obj = d;
+	}
+	
+	public void visit(FieldBox fieldArr) {
+		if(fieldArr.getExpr().struct.getKind() == Struct.Int) {
+			Obj o = stack.pop();
+			stack.push(new Obj(Obj.Var, o.getName(), o.getType()));
+		}
+		else {
+			report_error("Index niza mora biti tipa int", fieldArr);
+		}
+	}
+	
+	public void visit(VarDesig var) {
+		if(var.getDesignator() instanceof DesigList) {
+			Obj d = stack.pop();
+			if(d != null) {
+				var.struct = d.getType();
+			}
+		}
+		else {
+			Obj d = var.getDesignator().obj;
+			if(d != null) {
+				var.struct = d.getType();
+			}
+		}
+	}
+	
+	public void visit(Terms mulop) {
+		Struct t = mulop.getTerm().struct;
+		Struct f = mulop.getFactor().struct;
+		if(t == Tab.intType && f == Tab.intType) {
+			mulop.struct = Tab.intType;
+		}
+		else {
+			report_error("Greska na liniji " + mulop.getLine() + " : nekompatibilni tipovi u izrazu racunske operacije.",
+					null);
+			mulop.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(ListFactor coal) {
+		Struct f1 = coal.getFactor().struct;
+		Struct f2 = coal.getBaseExp().struct;
+		if(f1 == Tab.intType && f2 == Tab.intType) {
+			coal.struct = Tab.intType;
+		}
+		else {
+			report_error("Greska na liniji " + coal.getLine() + " : nekompatibilni tipovi u izrazu coalesce operacije.",
+					null);
+			coal.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(AddExpr addOp) {
+		Struct ex = addOp.getExpression().struct;
+		Struct term = addOp.getTerm().struct;
+		if (ex.compatibleWith(term) && ex == Tab.intType) {
+			addOp.struct = Tab.intType;
+		} else {
+			report_error("Greska na liniji " + addOp.getLine() + " : nekompatibilni tipovi u izrazu za sabiranje.",
+					null);
+			addOp.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(AssignOperation assign) {
+		assign.struct = assign.getExpr().struct;
+	}
+	
+	public void visit(Inc incOp) {
+		incOp.struct = Tab.intType;
+	}
+	
+	public void visit(Dec decOp) {
+		decOp.struct = Tab.intType;
+	}
+	
+	public void visit(NumberConst num) {
+		num.struct = Tab.intType;
+	}
+	
+	public void visit(CharacterConst ch) {
+		ch.struct = Tab.charType;
+	}
+	
+	public void visit(BooleanConst bl) {
+		bl.struct = boolType;
+	}
+	
+	public void visit(SingleTerm term) {
+		term.struct = term.getFactor().struct;
+	}
+	
+	public void visit(SingleFactor fact) {
+		fact.struct = fact.getBaseExp().struct;
+	}
+	
+	public void visit(TermExpr termExpr) {
+		termExpr.struct = termExpr.getTerm().struct;
+	}
+	
+	public void visit(Express expr) {
+		expr.struct = expr.getExpression().struct;
+	}
+	
+	public void visit(MinusExpress expr) {
+		expr.struct = expr.getExpression().struct;
+	}
+	
+	public void visit(DesignatorStatementOp op) {
+		if(op.getDesignator() instanceof SingleDesig) {
+			Obj d = op.getDesignator().obj;
+			if(op.getOperations().struct != Tab.noType) {
+				if (!op.getOperations().struct.assignableTo(d.getType())) {
+					report_error("Greska na liniji " + op.getLine() + " : "
+							+ "nekompatibilni tipovi u dodeli vrednosti! ", null);
+				}
+			}
+			else {
+				report_error(
+						"Greska na liniji " + op.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ",
+						null);
+			}
+		}
+		else {
+			Obj d = stack.pop();
+			if(op.getOperations().struct != Tab.noType) {
+				if(!op.getOperations().struct.assignableTo(d.getType())) {
+					report_error("Greska na liniji " + op.getLine() + " : "
+							+ "nekompatibilni tipovi u dodeli vrednosti! ", null);
+				}
+			}
+			else {
+				report_error(
+						"Greska na liniji " + op.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ",
+						null);
+			}
+		}
+	}
+	
+	public void visit(NewExpr newArr) {
+		if(newArr.getExpr().struct.getKind() != Struct.Int) {
+			report_error("Index niza mora biti tipa int", newArr);
+			newArr.struct = Tab.noType;
+		}
+		else {
+			newArr.struct = newArr.getType().struct;
+		}
 	}
 }

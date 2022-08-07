@@ -1,0 +1,185 @@
+INFO  16:27:24,343 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:27:24,370 - #2 program
+INFO  16:27:24,370 - #51 prog
+INFO  16:27:24,370 - #6 const
+INFO  16:27:24,371 - #51 int
+INFO  16:27:24,371 - #51 a
+INFO  16:27:24,371 - #7 =
+INFO  16:27:24,371 - #48 1
+INFO  16:27:24,371 - #8 ;
+INFO  16:27:24,371 - #51 int
+INFO  16:27:24,371 - #51 prob
+INFO  16:27:24,371 - #8 ;
+INFO  16:27:24,372 - #51 int
+INFO  16:27:24,372 - #51 nizz
+INFO  16:27:24,372 - #10 [
+INFO  16:27:24,372 - #11 ]
+INFO  16:27:24,372 - #8 ;
+INFO  16:27:24,372 - #3 {
+INFO  16:27:24,372 - #9 void
+INFO  16:27:24,372 - #51 main
+INFO  16:27:24,372 - #15 (
+INFO  16:27:24,373 - #16 )
+INFO  16:27:24,373 - #51 char
+INFO  16:27:24,374 - #51 b
+INFO  16:27:24,374 - #8 ;
+INFO  16:27:24,374 - #51 int
+INFO  16:27:24,374 - #51 niz
+INFO  16:27:24,374 - #10 [
+INFO  16:27:24,374 - #11 ]
+INFO  16:27:24,374 - #8 ;
+INFO  16:27:24,375 - #51 int
+INFO  16:27:24,375 - #51 sd
+INFO  16:27:24,375 - #8 ;
+INFO  16:27:24,375 - #3 {
+INFO  16:27:24,375 - #51 niz
+INFO  16:27:24,375 - #7 =
+INFO  16:27:24,375 - #35 new
+INFO  16:27:24,375 - #51 int
+INFO  16:27:24,375 - #10 [
+INFO  16:27:24,375 - #48 3
+INFO  16:27:24,375 - #11 ]
+INFO  16:27:24,375 - #8 ;
+INFO  16:27:24,375 - #4 }
+INFO  16:27:24,376 - #4 }
+INFO  16:27:24,379 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        NoDeclaration(
+        ) [NoDeclaration]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             a
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           prob
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          HasVarDecList(
+            NoMethodVarDecList(
+            ) [NoMethodVarDecList]
+            VarDeclerations(
+              IdentType(
+               char
+              ) [IdentType]
+              SingleVar(
+                VarNoArray(
+                 b
+                ) [VarNoArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
+          VarDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            SingleVar(
+              VarArray(
+               niz
+              ) [VarArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             sd
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               niz
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        NewExpr(
+                          IdentType(
+                           int
+                          ) [IdentType]
+                          Express(
+                            TermExpr(
+                              SingleTerm(
+                                SingleFactor(
+                                  NumberConst(
+                                   3
+                                  ) [NumberConst]
+                                ) [SingleFactor]
+                              ) [SingleTerm]
+                            ) [TermExpr]
+                          ) [Express]
+                        ) [NewExpr]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  16:27:24,379 - ===================================
+INFO  16:27:24,381 - Definicija constante a na liniji 2
+INFO  16:27:24,381 - Deklarisana promenljiva prob na liniji 3
+INFO  16:27:24,381 - Deklarisana niz nizz na liniji 4
+INFO  16:27:24,381 - Obradjuje se funkcija main na liniji 6
+INFO  16:27:24,381 - Deklarisana lokalna promenljiva b metode main na liniji 6
+INFO  16:27:24,381 - Deklarisana lokalni niz niz metode main na liniji 6
+INFO  16:27:24,381 - Deklarisana lokalna promenljiva sd metode main na liniji 6
+INFO  16:27:24,381 - koriscen lokalni simbol: niz na liniji 7

@@ -1,12 +1,10 @@
 program prog
-const bool cc = true;
 const int a = 1;
-bool bo;
-int d[];
+int prob;
+int nizz[];
 {
-	void main() char b; int niz[];{
-		b = '\n';
-		bo = false;
+	void main() char b; int niz[]; int sd;{
+		sd = sd ?? prob;
 	}
 }
 

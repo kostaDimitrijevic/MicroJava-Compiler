@@ -1,72 +1,54 @@
-INFO  12:23:49,235 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
-INFO  12:23:49,261 - #2 program
-INFO  12:23:49,261 - #51 prog
-INFO  12:23:49,261 - #6 const
-INFO  12:23:49,261 - #51 bool
-INFO  12:23:49,262 - #51 cc
-INFO  12:23:49,262 - #7 =
-INFO  12:23:49,262 - #49 true
-INFO  12:23:49,262 - #8 ;
-INFO  12:23:49,262 - #6 const
-INFO  12:23:49,262 - #51 int
-INFO  12:23:49,262 - #51 a
-INFO  12:23:49,262 - #7 =
-INFO  12:23:49,262 - #48 1
-INFO  12:23:49,262 - #8 ;
-INFO  12:23:49,262 - #51 bool
-INFO  12:23:49,262 - #51 bo
-INFO  12:23:49,262 - #8 ;
-INFO  12:23:49,263 - #51 int
-INFO  12:23:49,263 - #51 d
-INFO  12:23:49,263 - #10 [
-INFO  12:23:49,263 - #11 ]
-INFO  12:23:49,275 - #8 ;
-INFO  12:23:49,275 - #3 {
-INFO  12:23:49,275 - #9 void
-INFO  12:23:49,275 - #51 main
-INFO  12:23:49,275 - #15 (
-INFO  12:23:49,276 - #16 )
-INFO  12:23:49,276 - #51 char
-INFO  12:23:49,276 - #51 b
-INFO  12:23:49,276 - #8 ;
-INFO  12:23:49,276 - #51 int
-INFO  12:23:49,276 - #51 niz
-INFO  12:23:49,276 - #10 [
-INFO  12:23:49,276 - #11 ]
-INFO  12:23:49,276 - #8 ;
-INFO  12:23:49,276 - #3 {
-INFO  12:23:49,277 - #51 b
-INFO  12:23:49,277 - #7 =
-INFO  12:23:49,277 - #50 '\n'
-INFO  12:23:49,277 - #8 ;
-INFO  12:23:49,277 - #51 bo
-INFO  12:23:49,277 - #7 =
-INFO  12:23:49,277 - #49 false
-INFO  12:23:49,277 - #8 ;
-INFO  12:23:49,277 - #4 }
-INFO  12:23:49,278 - #4 }
-INFO  12:23:49,281 - Program(
+INFO  18:21:38,481 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:21:38,507 - #2 program
+INFO  18:21:38,507 - #51 prog
+INFO  18:21:38,507 - #6 const
+INFO  18:21:38,508 - #51 int
+INFO  18:21:38,508 - #51 a
+INFO  18:21:38,508 - #7 =
+INFO  18:21:38,508 - #48 1
+INFO  18:21:38,508 - #8 ;
+INFO  18:21:38,508 - #51 int
+INFO  18:21:38,509 - #51 prob
+INFO  18:21:38,509 - #8 ;
+INFO  18:21:38,509 - #51 int
+INFO  18:21:38,509 - #51 nizz
+INFO  18:21:38,509 - #10 [
+INFO  18:21:38,509 - #11 ]
+INFO  18:21:38,509 - #8 ;
+INFO  18:21:38,509 - #3 {
+INFO  18:21:38,509 - #9 void
+INFO  18:21:38,509 - #51 main
+INFO  18:21:38,510 - #15 (
+INFO  18:21:38,510 - #16 )
+INFO  18:21:38,510 - #51 char
+INFO  18:21:38,511 - #51 b
+INFO  18:21:38,511 - #8 ;
+INFO  18:21:38,511 - #51 int
+INFO  18:21:38,511 - #51 niz
+INFO  18:21:38,511 - #10 [
+INFO  18:21:38,511 - #11 ]
+INFO  18:21:38,511 - #8 ;
+INFO  18:21:38,511 - #51 int
+INFO  18:21:38,511 - #51 sd
+INFO  18:21:38,511 - #8 ;
+INFO  18:21:38,511 - #3 {
+INFO  18:21:38,511 - #51 sd
+INFO  18:21:38,512 - #7 =
+INFO  18:21:38,512 - #51 sd
+INFO  18:21:38,512 - #47 ??
+INFO  18:21:38,512 - #51 prob
+INFO  18:21:38,512 - #8 ;
+INFO  18:21:38,513 - #4 }
+INFO  18:21:38,513 - #4 }
+INFO  18:21:38,516 - Program(
   ProgName(
    prog
   ) [ProgName]
   VarDeclarationList(
     VarDeclarationList(
       ConstDeclarationList(
-        ConstDeclarationList(
-          NoDeclaration(
-          ) [NoDeclaration]
-          ConstDeclerations(
-            IdentType(
-             bool
-            ) [IdentType]
-            OneConstant(
-              BoolConstant(
-               cc
-               true
-              ) [BoolConstant]
-            ) [OneConstant]
-          ) [ConstDeclerations]
-        ) [ConstDeclarationList]
+        NoDeclaration(
+        ) [NoDeclaration]
         ConstDeclerations(
           IdentType(
            int
@@ -81,11 +63,11 @@ INFO  12:23:49,281 - Program(
       ) [ConstDeclarationList]
       VarDeclerations(
         IdentType(
-         bool
+         int
         ) [IdentType]
         SingleVar(
           VarNoArray(
-           bo
+           prob
           ) [VarNoArray]
         ) [SingleVar]
       ) [VarDeclerations]
@@ -96,7 +78,7 @@ INFO  12:23:49,281 - Program(
       ) [IdentType]
       SingleVar(
         VarArray(
-         d
+         nizz
         ) [VarArray]
       ) [SingleVar]
     ) [VarDeclerations]
@@ -112,16 +94,28 @@ INFO  12:23:49,281 - Program(
       ) [NoParams]
       HasVarDecList(
         HasVarDecList(
-          NoMethodVarDecList(
-          ) [NoMethodVarDecList]
+          HasVarDecList(
+            NoMethodVarDecList(
+            ) [NoMethodVarDecList]
+            VarDeclerations(
+              IdentType(
+               char
+              ) [IdentType]
+              SingleVar(
+                VarNoArray(
+                 b
+                ) [VarNoArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
           VarDeclerations(
             IdentType(
-             char
+             int
             ) [IdentType]
             SingleVar(
-              VarNoArray(
-               b
-              ) [VarNoArray]
+              VarArray(
+               niz
+              ) [VarArray]
             ) [SingleVar]
           ) [VarDeclerations]
         ) [HasVarDecList]
@@ -130,54 +124,41 @@ INFO  12:23:49,281 - Program(
            int
           ) [IdentType]
           SingleVar(
-            VarArray(
-             niz
-            ) [VarArray]
+            VarNoArray(
+             sd
+            ) [VarNoArray]
           ) [SingleVar]
         ) [VarDeclerations]
       ) [HasVarDecList]
       ListOfStatements(
-        ListOfStatements(
-          NoStatement(
-          ) [NoStatement]
-          SingleStat(
-            DesignatorStat(
-              DesignatorStatementOp(
-                SingleDesig(
-                 b
-                ) [SingleDesig]
-                AssignOperation(
-                  Express(
-                    TermExpr(
-                      SingleTerm(
-                        SingleFactor(
-                          CharacterConst(
-                           '\n'
-                          ) [CharacterConst]
-                        ) [SingleFactor]
-                      ) [SingleTerm]
-                    ) [TermExpr]
-                  ) [Express]
-                ) [AssignOperation]
-              ) [DesignatorStatementOp]
-            ) [DesignatorStat]
-          ) [SingleStat]
-        ) [ListOfStatements]
+        NoStatement(
+        ) [NoStatement]
         SingleStat(
           DesignatorStat(
             DesignatorStatementOp(
               SingleDesig(
-               bo
+               sd
               ) [SingleDesig]
               AssignOperation(
                 Express(
                   TermExpr(
                     SingleTerm(
-                      SingleFactor(
-                        BooleanConst(
-                         false
-                        ) [BooleanConst]
-                      ) [SingleFactor]
+                      ListFactor(
+                        SingleFactor(
+                          VarDesig(
+                            SingleDesig(
+                             sd
+                            ) [SingleDesig]
+                          ) [VarDesig]
+                        ) [SingleFactor]
+                        Coalesce(
+                        ) [Coalesce]
+                        VarDesig(
+                          SingleDesig(
+                           prob
+                          ) [SingleDesig]
+                        ) [VarDesig]
+                      ) [ListFactor]
                     ) [SingleTerm]
                   ) [TermExpr]
                 ) [Express]
@@ -189,14 +170,17 @@ INFO  12:23:49,281 - Program(
     ) [Method]
   ) [SingleMethodDeclaration]
 ) [Program]
-INFO  12:23:49,281 - ===================================
-INFO  12:23:49,282 - Definicija constante cc na liniji 2
-INFO  12:23:49,282 - Definicija constante a na liniji 3
-INFO  12:23:49,282 - Deklarisana promenljiva bo na liniji 4
-INFO  12:23:49,282 - Deklarisana niz d na liniji 5
-INFO  12:23:49,282 - Obradjuje se funkcija main na liniji 7
-INFO  12:23:49,282 - Deklarisana lokalna promenljiva b metode main na liniji 7
-INFO  12:23:49,282 - Deklarisana lokalni niz niz metode main na liniji 7
-INFO  12:23:49,283 - ===================================
-INFO  12:23:49,283 - Parsiranje koda uspesno zavrseno
-INFO  12:23:49,285 - Generisanje koda uspesno zavrseno
+INFO  18:21:38,516 - ===================================
+INFO  18:21:38,518 - Definicija constante a na liniji 2
+INFO  18:21:38,518 - Deklarisana promenljiva prob na liniji 3
+INFO  18:21:38,518 - Deklarisana niz nizz na liniji 4
+INFO  18:21:38,518 - Obradjuje se funkcija main na liniji 6
+INFO  18:21:38,518 - Deklarisana lokalna promenljiva b metode main na liniji 6
+INFO  18:21:38,518 - Deklarisana lokalni niz niz metode main na liniji 6
+INFO  18:21:38,518 - Deklarisana lokalna promenljiva sd metode main na liniji 6
+INFO  18:21:38,518 - koriscen lokalni simbol: sd na liniji 7
+INFO  18:21:38,518 - koriscen lokalni simbol: sd na liniji 7
+INFO  18:21:38,518 - koriscen globalni simbol: prob na liniji 7
+INFO  18:21:38,518 - ===================================
+INFO  18:21:38,519 - Parsiranje koda uspesno zavrseno
+INFO  18:21:38,520 - Generisanje koda uspesno zavrseno

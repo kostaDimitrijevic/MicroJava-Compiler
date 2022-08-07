@@ -1,0 +1,65 @@
+INFO  13:11:11,826 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:11:11,883 - #2 program
+INFO  13:11:11,883 - #51 prog
+INFO  13:11:11,883 - #6 const
+INFO  13:11:11,884 - #51 int
+INFO  13:11:11,884 - #51 a
+INFO  13:11:11,884 - #7 =
+INFO  13:11:11,884 - #48 1
+INFO  13:11:11,884 - #8 ;
+INFO  13:11:11,884 - #51 int
+INFO  13:11:11,885 - #51 prob
+INFO  13:11:11,885 - #8 ;
+INFO  13:11:11,885 - #51 int
+INFO  13:11:11,885 - #51 nizz
+INFO  13:11:11,885 - #10 [
+INFO  13:11:11,885 - #11 ]
+INFO  13:11:11,885 - #3 {
+ERROR 13:11:11,885 - 
+Sintaksna greska na liniji 5
+INFO  13:11:11,885 - #9 void
+INFO  13:11:11,886 - #51 main
+INFO  13:11:11,886 - #15 (
+INFO  13:11:11,887 - #16 )
+INFO  13:11:11,887 - #51 char
+INFO  13:11:11,887 - #51 b
+INFO  13:11:11,887 - #8 ;
+INFO  13:11:11,887 - #51 int
+INFO  13:11:11,887 - #51 niz
+INFO  13:11:11,887 - #10 [
+ERROR 13:11:11,887 - Izvrsen oporavak do ; u liniji4
+INFO  13:11:11,887 - #11 ]
+INFO  13:11:11,887 - #8 ;
+INFO  13:11:11,888 - #51 int
+INFO  13:11:11,888 - #51 sd
+INFO  13:11:11,888 - #8 ;
+INFO  13:11:11,888 - #3 {
+INFO  13:11:11,888 - #51 sd
+INFO  13:11:11,888 - #7 =
+ERROR 13:11:11,888 - 
+Sintaksna greska na liniji 7
+INFO  13:11:11,888 - #48 1
+INFO  13:11:11,888 - #8 ;
+INFO  13:11:11,888 - #51 b
+INFO  13:11:11,888 - #7 =
+INFO  13:11:11,888 - #50 '\n'
+INFO  13:11:11,888 - #8 ;
+INFO  13:11:11,888 - #51 prob
+INFO  13:11:11,888 - #7 =
+INFO  13:11:11,888 - #51 a
+INFO  13:11:11,888 - #30 *
+INFO  13:11:11,888 - #51 a
+INFO  13:11:11,889 - #8 ;
+INFO  13:11:11,889 - #51 prob
+INFO  13:11:11,889 - #7 =
+INFO  13:11:11,889 - #51 niz
+INFO  13:11:11,889 - #10 [
+INFO  13:11:11,889 - #51 nizz
+INFO  13:11:11,889 - #10 [
+INFO  13:11:11,889 - #48 1
+INFO  13:11:11,889 - #11 ]
+INFO  13:11:11,889 - #11 ]
+INFO  13:11:11,889 - #8 ;
+INFO  13:11:11,889 - #4 }
+INFO  13:11:11,889 - #4 }
+ERROR 13:11:11,889 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 14

@@ -1,0 +1,200 @@
+INFO  11:52:09,823 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  11:52:09,862 - #2 program
+INFO  11:52:09,862 - #51 prog
+INFO  11:52:09,862 - #6 const
+INFO  11:52:09,862 - #51 bool
+INFO  11:52:09,862 - #51 cc
+INFO  11:52:09,862 - #7 =
+INFO  11:52:09,863 - #49 true
+INFO  11:52:09,863 - #8 ;
+INFO  11:52:09,863 - #6 const
+INFO  11:52:09,863 - #51 int
+INFO  11:52:09,863 - #51 a
+INFO  11:52:09,863 - #7 =
+INFO  11:52:09,863 - #48 1
+INFO  11:52:09,863 - #8 ;
+INFO  11:52:09,863 - #51 bool
+INFO  11:52:09,863 - #51 bo
+INFO  11:52:09,863 - #8 ;
+INFO  11:52:09,863 - #51 int
+INFO  11:52:09,864 - #51 d
+INFO  11:52:09,864 - #10 [
+INFO  11:52:09,864 - #11 ]
+INFO  11:52:09,865 - #8 ;
+INFO  11:52:09,865 - #3 {
+INFO  11:52:09,865 - #9 void
+INFO  11:52:09,865 - #51 main
+INFO  11:52:09,865 - #15 (
+INFO  11:52:09,865 - #16 )
+INFO  11:52:09,866 - #51 char
+INFO  11:52:09,867 - #51 b
+INFO  11:52:09,867 - #8 ;
+INFO  11:52:09,867 - #51 int
+INFO  11:52:09,867 - #51 niz
+INFO  11:52:09,867 - #10 [
+INFO  11:52:09,867 - #11 ]
+INFO  11:52:09,867 - #8 ;
+INFO  11:52:09,867 - #3 {
+INFO  11:52:09,867 - #51 b
+INFO  11:52:09,867 - #7 =
+INFO  11:52:09,868 - #50 '\n'
+INFO  11:52:09,868 - #8 ;
+INFO  11:52:09,868 - #51 bo
+INFO  11:52:09,868 - #7 =
+INFO  11:52:09,868 - #49 false
+INFO  11:52:09,869 - #8 ;
+INFO  11:52:09,869 - #4 }
+INFO  11:52:09,869 - #4 }
+INFO  11:52:09,878 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        ConstDeclarationList(
+          NoDeclaration(
+          ) [NoDeclaration]
+          ConstDeclerations(
+            IdentType(
+             bool
+            ) [IdentType]
+            OneConstant(
+              BoolConstant(
+               cc
+               true
+              ) [BoolConstant]
+            ) [OneConstant]
+          ) [ConstDeclerations]
+        ) [ConstDeclarationList]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             a
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         bool
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           bo
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         d
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          NoMethodVarDecList(
+          ) [NoMethodVarDecList]
+          VarDeclerations(
+            IdentType(
+             char
+            ) [IdentType]
+            SingleVar(
+              VarNoArray(
+               b
+              ) [VarNoArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarArray(
+             niz
+            ) [VarArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          NoStatement(
+          ) [NoStatement]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 b
+                ) [SingleDesig]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        SingleFactor(
+                          CharacterConst(
+                           '\n'
+                          ) [CharacterConst]
+                        ) [SingleFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               bo
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        BooleanConst(
+                         false
+                        ) [BooleanConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  11:52:09,879 - ===================================
+INFO  11:52:09,888 - Definicija constante cc na liniji 2
+INFO  11:52:09,888 - Definicija constante a na liniji 3
+INFO  11:52:09,888 - Deklarisana promenljiva bo na liniji 4
+INFO  11:52:09,888 - Deklarisana niz d na liniji 5
+INFO  11:52:09,888 - Obradjuje se funkcija main na liniji 7
+INFO  11:52:09,888 - Deklarisana lokalna promenljiva b metode main na liniji 7
+INFO  11:52:09,888 - Deklarisana lokalni niz niz metode main na liniji 7
+INFO  11:52:09,888 - koriscen lokalni simbol: b na liniji 8
