@@ -145,6 +145,12 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		if(c == Tab.noObj) {
 			if(currentType.equals(boolType) && (boolConst.getVal().equals("true") || boolConst.getVal().equals("false"))) {
 				boolConst.obj = Tab.insert(Obj.Con, boolConst.getVarName(), boolType);
+				if(boolConst.getVal().equals("true")) {
+					boolConst.obj.setAdr(1);
+				}
+				else {
+					boolConst.obj.setAdr(0);
+				}
 				report_info("Definicija constante " + boolConst.getVarName(), boolConst);
 			}
 			else {
@@ -322,6 +328,29 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	
 	public void visit(MinusExpress expr) {
 		expr.struct = expr.getExpression().struct;
+	}
+	
+	public void visit(PrintStatement pr) {
+		Struct ex = pr.getExpr().struct;
+		if(ex != Tab.intType && ex != Tab.charType && ex != boolType) {
+			report_error("Greska na liniji " + pr.getLine() + " : "
+					+ "nekompatibilni tip promenljive u pozivu print funkcije! ", null);
+		}
+	}
+	
+	public void visit(ReadStatement read) {
+		Obj d = Tab.find(read.getDesignator().obj.getName());
+		if(d != Tab.noObj) {
+			Struct st = d.getType();
+			if(st != Tab.intType && st != Tab.charType && st != boolType) {
+				report_error("Greska na liniji " + read.getLine() + " : "
+						+ "nekompatibilni tip promenljive u pozivu read funkcije! ", null);
+			}
+		}
+		else {
+			report_error("Greska na liniji " + read.getLine() + " : "
+					+ "funkciji read mora da se proslediti promenljiva ili niz! ", null);
+		}
 	}
 	
 	public void visit(DesignatorStatementOp op) {

@@ -1,0 +1,227 @@
+INFO  20:31:35,033 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  20:31:35,067 - #2 program
+INFO  20:31:35,067 - #51 prog
+INFO  20:31:35,067 - #6 const
+INFO  20:31:35,068 - #51 int
+INFO  20:31:35,068 - #51 a
+INFO  20:31:35,068 - #7 =
+INFO  20:31:35,068 - #48 1
+INFO  20:31:35,068 - #8 ;
+INFO  20:31:35,068 - #51 int
+INFO  20:31:35,069 - #51 prob
+INFO  20:31:35,069 - #8 ;
+INFO  20:31:35,069 - #51 int
+INFO  20:31:35,069 - #51 nizz
+INFO  20:31:35,069 - #10 [
+INFO  20:31:35,069 - #11 ]
+INFO  20:31:35,069 - #8 ;
+INFO  20:31:35,069 - #3 {
+INFO  20:31:35,069 - #9 void
+INFO  20:31:35,070 - #51 main
+INFO  20:31:35,071 - #15 (
+INFO  20:31:35,072 - #16 )
+INFO  20:31:35,085 - #51 char
+INFO  20:31:35,086 - #51 b
+INFO  20:31:35,086 - #8 ;
+INFO  20:31:35,086 - #51 int
+INFO  20:31:35,086 - #51 niz
+INFO  20:31:35,086 - #10 [
+INFO  20:31:35,086 - #11 ]
+INFO  20:31:35,086 - #8 ;
+INFO  20:31:35,086 - #51 int
+INFO  20:31:35,086 - #51 sd
+INFO  20:31:35,086 - #8 ;
+INFO  20:31:35,086 - #3 {
+INFO  20:31:35,086 - #51 sd
+INFO  20:31:35,086 - #7 =
+INFO  20:31:35,087 - #51 sd
+INFO  20:31:35,087 - #47 ??
+INFO  20:31:35,087 - #51 prob
+INFO  20:31:35,087 - #8 ;
+INFO  20:31:35,088 - #22 print
+INFO  20:31:35,088 - #15 (
+INFO  20:31:35,088 - #51 sd
+INFO  20:31:35,088 - #16 )
+INFO  20:31:35,088 - #8 ;
+INFO  20:31:35,088 - #23 read
+INFO  20:31:35,089 - #15 (
+INFO  20:31:35,089 - #48 1
+ERROR 20:31:35,089 - 
+Sintaksna greska na liniji 9
+INFO  20:31:35,089 - #16 )
+INFO  20:31:35,089 - #8 ;
+INFO  20:31:35,089 - #4 }
+INFO  20:31:35,089 - #4 }
+ERROR 20:31:35,090 - Izvrsen oporavak do ; u liniji9
+INFO  20:31:35,093 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        NoDeclaration(
+        ) [NoDeclaration]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             a
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           prob
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          HasVarDecList(
+            NoMethodVarDecList(
+            ) [NoMethodVarDecList]
+            VarDeclerations(
+              IdentType(
+               char
+              ) [IdentType]
+              SingleVar(
+                VarNoArray(
+                 b
+                ) [VarNoArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
+          VarDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            SingleVar(
+              VarArray(
+               niz
+              ) [VarArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             sd
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   sd
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          ListFactor(
+                            SingleFactor(
+                              VarDesig(
+                                SingleDesig(
+                                 sd
+                                ) [SingleDesig]
+                              ) [VarDesig]
+                            ) [SingleFactor]
+                            Coalesce(
+                            ) [Coalesce]
+                            VarDesig(
+                              SingleDesig(
+                               prob
+                              ) [SingleDesig]
+                            ) [VarDesig]
+                          ) [ListFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            PrintStatement(
+              Express(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      VarDesig(
+                        SingleDesig(
+                         sd
+                        ) [SingleDesig]
+                      ) [VarDesig]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+              ) [Express]
+              NoPrintable(
+              ) [NoPrintable]
+            ) [PrintStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  20:31:35,093 - ===================================
+INFO  20:31:35,095 - Definicija constante a na liniji 2
+INFO  20:31:35,095 - Deklarisana promenljiva prob na liniji 3
+INFO  20:31:35,095 - Deklarisana niz nizz na liniji 4
+INFO  20:31:35,095 - Obradjuje se funkcija main na liniji 6
+INFO  20:31:35,095 - Deklarisana lokalna promenljiva b metode main na liniji 6
+INFO  20:31:35,095 - Deklarisana lokalni niz niz metode main na liniji 6
+INFO  20:31:35,095 - Deklarisana lokalna promenljiva sd metode main na liniji 6
+INFO  20:31:35,095 - koriscen lokalni simbol: sd na liniji 7
+INFO  20:31:35,095 - koriscen lokalni simbol: sd na liniji 7
+INFO  20:31:35,095 - koriscen globalni simbol: prob na liniji 7
+INFO  20:31:35,095 - koriscen lokalni simbol: sd na liniji 8
+INFO  20:31:35,095 - ===================================
+INFO  20:31:35,095 - Parsiranje koda uspesno zavrseno
+INFO  20:31:35,098 - Generisanje koda uspesno zavrseno

@@ -1,10 +1,8 @@
 program prog
-const int a = 1;
-int prob;
-int nizz[];
 {
-	void main() char b; int niz[]; int sd;{
-		sd = sd ?? prob;
+	void main(){
+		print(1);
+		print(2);
 	}
 }
 

@@ -1,0 +1,229 @@
+INFO  20:32:30,348 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  20:32:30,390 - #2 program
+INFO  20:32:30,391 - #51 prog
+INFO  20:32:30,391 - #6 const
+INFO  20:32:30,391 - #51 int
+INFO  20:32:30,391 - #51 a
+INFO  20:32:30,391 - #7 =
+INFO  20:32:30,391 - #48 1
+INFO  20:32:30,391 - #8 ;
+INFO  20:32:30,391 - #51 int
+INFO  20:32:30,392 - #51 prob
+INFO  20:32:30,392 - #8 ;
+INFO  20:32:30,392 - #51 int
+INFO  20:32:30,392 - #51 nizz
+INFO  20:32:30,392 - #10 [
+INFO  20:32:30,392 - #11 ]
+INFO  20:32:30,392 - #8 ;
+INFO  20:32:30,392 - #3 {
+INFO  20:32:30,392 - #9 void
+INFO  20:32:30,392 - #51 main
+INFO  20:32:30,392 - #15 (
+INFO  20:32:30,393 - #16 )
+INFO  20:32:30,393 - #51 char
+INFO  20:32:30,393 - #51 b
+INFO  20:32:30,393 - #8 ;
+INFO  20:32:30,394 - #51 int
+INFO  20:32:30,394 - #51 niz
+INFO  20:32:30,394 - #10 [
+INFO  20:32:30,394 - #11 ]
+INFO  20:32:30,394 - #8 ;
+INFO  20:32:30,394 - #51 int
+INFO  20:32:30,394 - #51 sd
+INFO  20:32:30,394 - #8 ;
+INFO  20:32:30,394 - #3 {
+INFO  20:32:30,394 - #51 sd
+INFO  20:32:30,394 - #7 =
+INFO  20:32:30,395 - #51 sd
+INFO  20:32:30,395 - #47 ??
+INFO  20:32:30,395 - #51 prob
+INFO  20:32:30,396 - #8 ;
+INFO  20:32:30,396 - #22 print
+INFO  20:32:30,397 - #15 (
+INFO  20:32:30,397 - #51 sd
+INFO  20:32:30,397 - #16 )
+INFO  20:32:30,397 - #8 ;
+INFO  20:32:30,397 - #23 read
+INFO  20:32:30,397 - #15 (
+INFO  20:32:30,397 - #51 aaa
+INFO  20:32:30,397 - #16 )
+INFO  20:32:30,398 - #8 ;
+INFO  20:32:30,398 - #4 }
+INFO  20:32:30,398 - #4 }
+INFO  20:32:30,401 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        NoDeclaration(
+        ) [NoDeclaration]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             a
+             1
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           prob
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          HasVarDecList(
+            NoMethodVarDecList(
+            ) [NoMethodVarDecList]
+            VarDeclerations(
+              IdentType(
+               char
+              ) [IdentType]
+              SingleVar(
+                VarNoArray(
+                 b
+                ) [VarNoArray]
+              ) [SingleVar]
+            ) [VarDeclerations]
+          ) [HasVarDecList]
+          VarDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            SingleVar(
+              VarArray(
+               niz
+              ) [VarArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             sd
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   sd
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          ListFactor(
+                            SingleFactor(
+                              VarDesig(
+                                SingleDesig(
+                                 sd
+                                ) [SingleDesig]
+                              ) [VarDesig]
+                            ) [SingleFactor]
+                            Coalesce(
+                            ) [Coalesce]
+                            VarDesig(
+                              SingleDesig(
+                               prob
+                              ) [SingleDesig]
+                            ) [VarDesig]
+                          ) [ListFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            PrintStatement(
+              Express(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      VarDesig(
+                        SingleDesig(
+                         sd
+                        ) [SingleDesig]
+                      ) [VarDesig]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+              ) [Express]
+              NoPrintable(
+              ) [NoPrintable]
+            ) [PrintStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          ReadStatement(
+            SingleDesig(
+             aaa
+            ) [SingleDesig]
+          ) [ReadStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  20:32:30,401 - ===================================
+INFO  20:32:30,403 - Definicija constante a na liniji 2
+INFO  20:32:30,404 - Deklarisana promenljiva prob na liniji 3
+INFO  20:32:30,404 - Deklarisana niz nizz na liniji 4
+INFO  20:32:30,404 - Obradjuje se funkcija main na liniji 6
+INFO  20:32:30,404 - Deklarisana lokalna promenljiva b metode main na liniji 6
+INFO  20:32:30,404 - Deklarisana lokalni niz niz metode main na liniji 6
+INFO  20:32:30,404 - Deklarisana lokalna promenljiva sd metode main na liniji 6
+INFO  20:32:30,404 - koriscen lokalni simbol: sd na liniji 7
+INFO  20:32:30,404 - koriscen lokalni simbol: sd na liniji 7
+INFO  20:32:30,404 - koriscen globalni simbol: prob na liniji 7
+INFO  20:32:30,404 - koriscen lokalni simbol: sd na liniji 8
+ERROR 20:32:30,404 - Greska na liniji 9 : ime aaa nije deklarisano! 
+ERROR 20:32:30,404 - Greska na liniji 9 : funkciji read mora da se proslediti promenljiva ili niz! 
+INFO  20:32:30,404 - ===================================
+INFO  20:32:30,405 - Parsiranje koda uspesno zavrseno
+INFO  20:32:30,405 - Parsiranje koda nije uspesno zavrseno

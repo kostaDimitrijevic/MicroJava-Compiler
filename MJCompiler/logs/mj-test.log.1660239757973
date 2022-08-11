@@ -1,0 +1,86 @@
+INFO  12:50:12,832 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  12:50:12,860 - #2 program
+INFO  12:50:12,860 - #51 prog
+INFO  12:50:12,860 - #3 {
+INFO  12:50:12,861 - #9 void
+INFO  12:50:12,861 - #51 main
+INFO  12:50:12,861 - #15 (
+INFO  12:50:12,862 - #16 )
+INFO  12:50:12,862 - #3 {
+INFO  12:50:12,862 - #22 print
+INFO  12:50:12,863 - #15 (
+INFO  12:50:12,863 - #48 1
+INFO  12:50:12,863 - #16 )
+INFO  12:50:12,864 - #8 ;
+INFO  12:50:12,864 - #22 print
+INFO  12:50:12,864 - #15 (
+INFO  12:50:12,864 - #48 2
+INFO  12:50:12,864 - #16 )
+INFO  12:50:12,864 - #8 ;
+INFO  12:50:12,864 - #4 }
+INFO  12:50:12,865 - #4 }
+INFO  12:50:12,868 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  NoDeclaration(
+  ) [NoDeclaration]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          NoStatement(
+          ) [NoStatement]
+          SingleStat(
+            PrintStatement(
+              Express(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      NumberConst(
+                       1
+                      ) [NumberConst]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+              ) [Express]
+              NoPrintable(
+              ) [NoPrintable]
+            ) [PrintStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            NoPrintable(
+            ) [NoPrintable]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  12:50:12,868 - ===================================
+INFO  12:50:12,870 - Obradjuje se funkcija main na liniji 3
+INFO  12:50:12,870 - ===================================
+INFO  12:50:12,871 - Parsiranje koda uspesno zavrseno
+INFO  12:50:12,872 - Generisanje koda uspesno zavrseno
