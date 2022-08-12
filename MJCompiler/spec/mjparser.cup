@@ -183,7 +183,7 @@ SingleStatement ::= (DesignatorStat) DesignatorStatement SEMICOLON
 				{: parser.report_error("Izvrsen oporavak do ; u liniji" + lleft, null); :}
 				;
 
-Printable ::= (Prints) Printable COMMA NUMCONST
+Printable ::= (Prints) COMMA NUMCONST:val
 		  |
 		  (NoPrintable)
 		  ;

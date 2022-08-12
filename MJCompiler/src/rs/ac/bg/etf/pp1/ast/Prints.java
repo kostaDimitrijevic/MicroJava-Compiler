@@ -1,35 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/7/2022 22:45:31
+// 12/7/2022 17:49:35
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class Prints extends Printable {
 
-    private Printable Printable;
-    private Integer N2;
+    private Integer val;
 
-    public Prints (Printable Printable, Integer N2) {
-        this.Printable=Printable;
-        if(Printable!=null) Printable.setParent(this);
-        this.N2=N2;
+    public Prints (Integer val) {
+        this.val=val;
     }
 
-    public Printable getPrintable() {
-        return Printable;
+    public Integer getVal() {
+        return val;
     }
 
-    public void setPrintable(Printable Printable) {
-        this.Printable=Printable;
-    }
-
-    public Integer getN2() {
-        return N2;
-    }
-
-    public void setN2(Integer N2) {
-        this.N2=N2;
+    public void setVal(Integer val) {
+        this.val=val;
     }
 
     public void accept(Visitor visitor) {
@@ -37,16 +26,13 @@ public class Prints extends Printable {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Printable!=null) Printable.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Printable!=null) Printable.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Printable!=null) Printable.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -55,13 +41,7 @@ public class Prints extends Printable {
         buffer.append(tab);
         buffer.append("Prints(\n");
 
-        if(Printable!=null)
-            buffer.append(Printable.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        buffer.append(" "+tab+N2);
+        buffer.append(" "+tab+val);
         buffer.append("\n");
 
         buffer.append(tab);

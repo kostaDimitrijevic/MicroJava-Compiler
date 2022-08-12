@@ -1,0 +1,134 @@
+INFO  17:54:15,324 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:54:15,351 - #2 program
+INFO  17:54:15,351 - #51 prog
+INFO  17:54:15,351 - #51 int
+INFO  17:54:15,352 - #51 x
+INFO  17:54:15,353 - #8 ;
+INFO  17:54:15,353 - #3 {
+INFO  17:54:15,353 - #9 void
+INFO  17:54:15,353 - #51 main
+INFO  17:54:15,354 - #15 (
+INFO  17:54:15,354 - #16 )
+INFO  17:54:15,355 - #3 {
+INFO  17:54:15,355 - #51 x
+INFO  17:54:15,356 - #7 =
+INFO  17:54:15,356 - #48 3
+INFO  17:54:15,356 - #8 ;
+INFO  17:54:15,356 - #22 print
+INFO  17:54:15,356 - #15 (
+INFO  17:54:15,356 - #48 1
+INFO  17:54:15,356 - #16 )
+INFO  17:54:15,357 - #8 ;
+INFO  17:54:15,357 - #22 print
+INFO  17:54:15,369 - #15 (
+INFO  17:54:15,369 - #51 x
+INFO  17:54:15,369 - #16 )
+INFO  17:54:15,369 - #8 ;
+INFO  17:54:15,369 - #4 }
+INFO  17:54:15,369 - #4 }
+INFO  17:54:15,373 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         x
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   x
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            PrintStatement(
+              Express(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      NumberConst(
+                       1
+                      ) [NumberConst]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+              ) [Express]
+              NoPrintable(
+              ) [NoPrintable]
+            ) [PrintStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       x
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            NoPrintable(
+            ) [NoPrintable]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:54:15,373 - ===================================
+INFO  17:54:15,374 - Deklarisana promenljiva x na liniji 2
+INFO  17:54:15,375 - Obradjuje se funkcija main na liniji 4
+INFO  17:54:15,375 - koriscen globalni simbol: x na liniji 5
+INFO  17:54:15,375 - koriscen globalni simbol: x na liniji 8
+INFO  17:54:15,375 - ===================================
+INFO  17:54:15,375 - Parsiranje koda uspesno zavrseno
+INFO  17:54:15,378 - Generisanje koda uspesno zavrseno

@@ -1,0 +1,150 @@
+INFO  18:03:19,759 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:03:19,786 - #2 program
+INFO  18:03:19,786 - #51 prog
+INFO  18:03:19,786 - #51 int
+INFO  18:03:19,786 - #51 x
+INFO  18:03:19,787 - #8 ;
+INFO  18:03:19,787 - #3 {
+INFO  18:03:19,787 - #9 void
+INFO  18:03:19,787 - #51 main
+INFO  18:03:19,787 - #15 (
+INFO  18:03:19,787 - #16 )
+INFO  18:03:19,787 - #3 {
+INFO  18:03:19,788 - #51 x
+INFO  18:03:19,789 - #7 =
+INFO  18:03:19,789 - #48 1
+INFO  18:03:19,789 - #33 +
+INFO  18:03:19,790 - #48 3
+INFO  18:03:19,791 - #8 ;
+INFO  18:03:19,791 - #22 print
+INFO  18:03:19,791 - #15 (
+INFO  18:03:19,791 - #48 1
+INFO  18:03:19,791 - #16 )
+INFO  18:03:19,792 - #8 ;
+INFO  18:03:19,793 - #22 print
+INFO  18:03:19,793 - #15 (
+INFO  18:03:19,793 - #51 x
+INFO  18:03:19,793 - #5 ,
+INFO  18:03:19,793 - #48 5
+INFO  18:03:19,793 - #16 )
+INFO  18:03:19,793 - #8 ;
+INFO  18:03:19,793 - #4 }
+INFO  18:03:19,793 - #4 }
+INFO  18:03:19,797 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         x
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   x
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      AddExpr(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NumberConst(
+                               1
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                        Plus(
+                        ) [Plus]
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [AddExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            PrintStatement(
+              Express(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      NumberConst(
+                       1
+                      ) [NumberConst]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+              ) [Express]
+              NoPrintable(
+              ) [NoPrintable]
+            ) [PrintStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       x
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:03:19,797 - ===================================
+INFO  18:03:19,799 - Deklarisana promenljiva x na liniji 2
+INFO  18:03:19,799 - Obradjuje se funkcija main na liniji 4
+INFO  18:03:19,799 - koriscen globalni simbol: x na liniji 5
+INFO  18:03:19,799 - koriscen globalni simbol: x na liniji 8
+INFO  18:03:19,799 - ===================================
+INFO  18:03:19,800 - Parsiranje koda uspesno zavrseno
+INFO  18:03:19,802 - Generisanje koda uspesno zavrseno

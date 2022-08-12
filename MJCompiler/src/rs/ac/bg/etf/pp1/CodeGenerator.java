@@ -9,22 +9,21 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor{
 	private int mainPc;
 	private Struct boolType = new Struct(Struct.Bool);
+	private boolean printLen = false;
 	
 	public int getMainPc() {
 		return mainPc;
 	}
 
 	public void visit(PrintStatement pr) {
-		if(pr.getExpr().struct == Tab.intType) {
+		if(!printLen) {
 			Code.loadConst(5);
-			Code.put(Code.print);
 		}
-		else if(pr.getExpr().struct == boolType) {
-			Code.loadConst(5);
+		printLen = false;
+		if(pr.getExpr().struct == Tab.intType || pr.getExpr().struct == boolType) {
 			Code.put(Code.print);
 		}
 		else {
-			Code.loadConst(1);
 			Code.put(Code.bprint);
 		}
 	}
@@ -68,5 +67,30 @@ public class CodeGenerator extends VisitorAdaptor{
 	public void visit(Method methodDecl) {
 		Code.put(Code.exit);
 		Code.put(Code.return_);
+	}
+	
+	public void visit(DesignatorStatementOp op) {
+		Code.store(op.getDesignator().obj);
+	}
+	
+	public void visit(VarDesig var) {
+		Code.load(var.getDesignator().obj);
+	}
+	
+	public void visit(Prints prints) {
+		Obj con = Tab.insert(Obj.Con, "#len", Tab.intType);
+		con.setLevel(0);
+		con.setAdr(prints.getVal());
+		printLen = true;
+		Code.load(con);
+	}
+	
+	public void visit(AddExpr addOp) {
+		if(addOp.getAddop().getClass().equals(Minus.class)){
+			Code.put(Code.sub);
+		}
+		else {
+			Code.put(Code.add);
+		}		
 	}
 }

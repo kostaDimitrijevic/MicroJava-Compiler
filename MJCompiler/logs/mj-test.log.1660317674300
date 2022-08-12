@@ -1,0 +1,111 @@
+INFO  17:19:08,594 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:19:08,626 - #2 program
+INFO  17:19:08,626 - #51 prog
+INFO  17:19:08,626 - #51 int
+INFO  17:19:08,627 - #51 x
+INFO  17:19:08,627 - #8 ;
+INFO  17:19:08,627 - #3 {
+INFO  17:19:08,628 - #9 void
+INFO  17:19:08,628 - #51 main
+INFO  17:19:08,628 - #15 (
+INFO  17:19:08,629 - #16 )
+INFO  17:19:08,629 - #3 {
+INFO  17:19:08,630 - #51 x
+INFO  17:19:08,630 - #7 =
+INFO  17:19:08,630 - #48 3
+INFO  17:19:08,630 - #8 ;
+INFO  17:19:08,631 - #22 print
+INFO  17:19:08,631 - #15 (
+INFO  17:19:08,631 - #48 1
+INFO  17:19:08,631 - #16 )
+ERROR 17:19:08,632 - 
+Sintaksna greska na liniji 7
+INFO  17:19:08,644 - #8 ;
+INFO  17:19:08,644 - #22 print
+INFO  17:19:08,644 - #15 (
+INFO  17:19:08,645 - #51 x
+ERROR 17:19:08,645 - Izvrsen oporavak do ; u liniji7
+INFO  17:19:08,646 - #16 )
+ERROR 17:19:08,646 - 
+Sintaksna greska na liniji 8
+INFO  17:19:08,646 - #8 ;
+INFO  17:19:08,646 - #4 }
+INFO  17:19:08,646 - #4 }
+ERROR 17:19:08,646 - Izvrsen oporavak do ; u liniji8
+INFO  17:19:08,650 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarNoArray(
+         x
+        ) [VarNoArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   x
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            SingleStatementDerived1(
+            ) [SingleStatementDerived1]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          SingleStatementDerived1(
+          ) [SingleStatementDerived1]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:19:08,650 - ===================================
+INFO  17:19:08,652 - Deklarisana promenljiva x na liniji 2
+INFO  17:19:08,653 - Obradjuje se funkcija main na liniji 4
+INFO  17:19:08,653 - koriscen globalni simbol: x na liniji 5
+INFO  17:19:08,653 - ===================================
+INFO  17:19:08,654 - Parsiranje koda uspesno zavrseno
+INFO  17:19:08,655 - Generisanje koda uspesno zavrseno

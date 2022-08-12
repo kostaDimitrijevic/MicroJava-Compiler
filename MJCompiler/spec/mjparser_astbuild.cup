@@ -207,7 +207,7 @@ SingleStatement ::= (DesignatorStat) DesignatorStatement:D1 SEMICOLON {: RESULT=
 				{: parser.report_error("Izvrsen oporavak do ; u liniji" + lleft, null); :} {: RESULT=new SingleStatementDerived1(); :}
 				;
 
-Printable ::= (Prints) Printable:P1 COMMA NUMCONST:N2 {: RESULT=new Prints(P1, N2); RESULT.setLine(P1left); :}
+Printable ::= (Prints) COMMA NUMCONST:val {: RESULT=new Prints(val); RESULT.setLine(valleft); :}
 		  |
 		  (NoPrintable) {: RESULT=new NoPrintable(); :}
 		  ;
