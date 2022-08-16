@@ -38,7 +38,7 @@ public class CodeGenerator extends VisitorAdaptor{
 	public void visit(CharacterConst chrCon) {
 		Obj con = Tab.insert(Obj.Con, "const", Tab.charType);
 		con.setLevel(0);
-		con.setAdr(Integer.parseInt(chrCon.getVal()));	
+		con.setAdr(Character.getNumericValue(chrCon.getVal()));	
 	}
 	
 	public void visit(BooleanConst boolCon) {
@@ -73,8 +73,8 @@ public class CodeGenerator extends VisitorAdaptor{
 		Code.store(op.getDesignator().obj);
 	}
 	
-	public void visit(VarDesig var) {
-		Code.load(var.getDesignator().obj);
+	public void visit(SingleDesig des) {
+		Code.load(des.obj);
 	}
 	
 	public void visit(Prints prints) {
@@ -92,5 +92,52 @@ public class CodeGenerator extends VisitorAdaptor{
 		else {
 			Code.put(Code.add);
 		}		
+	}
+	
+	public void visit(Terms mulOp) {
+		if(mulOp.getMulop().getClass().equals(Mul.class)) {
+			Code.put(Code.mul);
+		}
+		else if(mulOp.getMulop().getClass().equals(Div.class)){
+			Code.put(Code.div);
+		}
+		else {
+			Code.put(Code.rem);
+		}
+	}
+	
+	public void visit(Inc inc) {
+		Code.loadConst(1);
+		Code.put(Code.add);
+	}
+	
+	public void visit(Dec dec) {
+		Code.loadConst(1);
+		Code.put(Code.sub);
+	}
+	
+	public void visit(ListFactor coal) {
+		Obj val = Tab.insert(Obj.Var, "#val", Tab.intType);
+		Code.put(Code.dup_x1);
+		Code.put(Code.pop);
+		Code.put(Code.dup);
+		Code.loadConst(0);
+		Code.putFalseJump(Code.ne, Code.pc + 9);
+		Code.store(val);
+		Code.put(Code.pop);
+		Code.load(val);
+		Code.putJump(Code.pc + 4);
+		Code.put(Code.pop);
+	}
+	
+	public void visit(NewExpr newArr) {
+		Code.put(Code.newarray);
+		
+		if(newArr.struct.getElemType() == Tab.intType) {
+			Code.put(1);
+		}
+		else {
+			Code.put(0);
+		}
 	}
 }

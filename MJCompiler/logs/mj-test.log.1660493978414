@@ -1,0 +1,134 @@
+INFO  18:18:49,551 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:18:49,588 - #2 program
+INFO  18:18:49,588 - #51 prog
+INFO  18:18:49,588 - #51 int
+INFO  18:18:49,589 - #51 x
+INFO  18:18:49,589 - #5 ,
+INFO  18:18:49,589 - #51 y
+INFO  18:18:49,589 - #8 ;
+INFO  18:18:49,589 - #3 {
+INFO  18:18:49,590 - #9 void
+INFO  18:18:49,590 - #51 main
+INFO  18:18:49,590 - #15 (
+INFO  18:18:49,590 - #16 )
+INFO  18:18:49,591 - #3 {
+INFO  18:18:49,591 - #51 y
+INFO  18:18:49,591 - #7 =
+INFO  18:18:49,591 - #48 2
+INFO  18:18:49,592 - #8 ;
+INFO  18:18:49,592 - #51 y
+INFO  18:18:49,593 - #28 --
+INFO  18:18:49,593 - #8 ;
+INFO  18:18:49,593 - #22 print
+INFO  18:18:49,605 - #15 (
+INFO  18:18:49,605 - #51 y
+INFO  18:18:49,605 - #16 )
+INFO  18:18:49,605 - #8 ;
+INFO  18:18:49,605 - #4 }
+INFO  18:18:49,606 - #4 }
+INFO  18:18:49,610 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+        VarNoArray(
+         y
+        ) [VarNoArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   y
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 y
+                ) [SingleDesig]
+                Dec(
+                ) [Dec]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       y
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            NoPrintable(
+            ) [NoPrintable]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:18:49,610 - ===================================
+INFO  18:18:49,620 - Deklarisana promenljiva x na liniji 2
+INFO  18:18:49,620 - Deklarisana promenljiva y na liniji 2
+INFO  18:18:49,620 - Obradjuje se funkcija main na liniji 4
+INFO  18:18:49,620 - koriscen globalni simbol: y na liniji 5
+INFO  18:18:49,621 - koriscen globalni simbol: y na liniji 6
+INFO  18:18:49,621 - koriscen globalni simbol: y na liniji 7
+INFO  18:18:49,621 - ===================================
+INFO  18:18:49,621 - Parsiranje koda uspesno zavrseno

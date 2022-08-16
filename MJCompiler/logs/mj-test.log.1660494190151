@@ -1,0 +1,135 @@
+INFO  18:22:09,127 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:22:09,154 - #2 program
+INFO  18:22:09,155 - #51 prog
+INFO  18:22:09,155 - #51 int
+INFO  18:22:09,155 - #51 x
+INFO  18:22:09,156 - #5 ,
+INFO  18:22:09,156 - #51 y
+INFO  18:22:09,156 - #8 ;
+INFO  18:22:09,156 - #3 {
+INFO  18:22:09,156 - #9 void
+INFO  18:22:09,156 - #51 main
+INFO  18:22:09,156 - #15 (
+INFO  18:22:09,157 - #16 )
+INFO  18:22:09,157 - #3 {
+INFO  18:22:09,157 - #51 y
+INFO  18:22:09,157 - #7 =
+INFO  18:22:09,157 - #48 2
+INFO  18:22:09,158 - #8 ;
+INFO  18:22:09,158 - #51 y
+INFO  18:22:09,158 - #28 --
+INFO  18:22:09,158 - #8 ;
+INFO  18:22:09,158 - #22 print
+INFO  18:22:09,159 - #15 (
+INFO  18:22:09,159 - #51 y
+INFO  18:22:09,159 - #16 )
+INFO  18:22:09,159 - #8 ;
+INFO  18:22:09,159 - #4 }
+INFO  18:22:09,160 - #4 }
+INFO  18:22:09,163 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+        VarNoArray(
+         y
+        ) [VarNoArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   y
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 y
+                ) [SingleDesig]
+                Dec(
+                ) [Dec]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       y
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            NoPrintable(
+            ) [NoPrintable]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:22:09,164 - ===================================
+INFO  18:22:09,165 - Deklarisana promenljiva x na liniji 2
+INFO  18:22:09,165 - Deklarisana promenljiva y na liniji 2
+INFO  18:22:09,165 - Obradjuje se funkcija main na liniji 4
+INFO  18:22:09,165 - koriscen globalni simbol: y na liniji 5
+INFO  18:22:09,165 - koriscen globalni simbol: y na liniji 6
+INFO  18:22:09,165 - koriscen globalni simbol: y na liniji 7
+INFO  18:22:09,165 - ===================================
+INFO  18:22:09,165 - Parsiranje koda uspesno zavrseno
+INFO  18:22:09,167 - Generisanje koda uspesno zavrseno

@@ -1,0 +1,279 @@
+INFO  18:23:10,153 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:23:10,181 - #2 program
+INFO  18:23:10,181 - #51 prog
+INFO  18:23:10,181 - #51 int
+INFO  18:23:10,182 - #51 x
+INFO  18:23:10,182 - #5 ,
+INFO  18:23:10,182 - #51 y
+INFO  18:23:10,182 - #8 ;
+INFO  18:23:10,182 - #3 {
+INFO  18:23:10,182 - #9 void
+INFO  18:23:10,182 - #51 main
+INFO  18:23:10,183 - #15 (
+INFO  18:23:10,183 - #16 )
+INFO  18:23:10,184 - #3 {
+INFO  18:23:10,184 - #51 x
+INFO  18:23:10,184 - #7 =
+INFO  18:23:10,184 - #48 1
+INFO  18:23:10,184 - #33 +
+INFO  18:23:10,185 - #48 2
+INFO  18:23:10,186 - #31 /
+INFO  18:23:10,186 - #48 2
+INFO  18:23:10,186 - #34 -
+INFO  18:23:10,187 - #48 2
+INFO  18:23:10,187 - #30 *
+INFO  18:23:10,187 - #48 2
+INFO  18:23:10,188 - #33 +
+INFO  18:23:10,188 - #48 2
+INFO  18:23:10,188 - #30 *
+INFO  18:23:10,188 - #48 2
+INFO  18:23:10,188 - #8 ;
+INFO  18:23:10,188 - #51 y
+INFO  18:23:10,188 - #7 =
+INFO  18:23:10,188 - #48 2
+INFO  18:23:10,188 - #8 ;
+INFO  18:23:10,188 - #51 y
+INFO  18:23:10,189 - #28 --
+INFO  18:23:10,190 - #8 ;
+INFO  18:23:10,190 - #22 print
+INFO  18:23:10,190 - #15 (
+INFO  18:23:10,190 - #51 y
+INFO  18:23:10,190 - #16 )
+INFO  18:23:10,191 - #8 ;
+INFO  18:23:10,191 - #22 print
+INFO  18:23:10,191 - #15 (
+INFO  18:23:10,191 - #51 x
+INFO  18:23:10,191 - #34 -
+INFO  18:23:10,191 - #48 2
+INFO  18:23:10,191 - #5 ,
+INFO  18:23:10,191 - #48 5
+INFO  18:23:10,191 - #16 )
+INFO  18:23:10,191 - #8 ;
+INFO  18:23:10,191 - #4 }
+INFO  18:23:10,191 - #4 }
+INFO  18:23:10,195 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+        VarNoArray(
+         y
+        ) [VarNoArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            ListOfStatements(
+              ListOfStatements(
+                NoStatement(
+                ) [NoStatement]
+                SingleStat(
+                  DesignatorStat(
+                    DesignatorStatementOp(
+                      SingleDesig(
+                       x
+                      ) [SingleDesig]
+                      AssignOperation(
+                        Express(
+                          AddExpr(
+                            AddExpr(
+                              AddExpr(
+                                TermExpr(
+                                  SingleTerm(
+                                    SingleFactor(
+                                      NumberConst(
+                                       1
+                                      ) [NumberConst]
+                                    ) [SingleFactor]
+                                  ) [SingleTerm]
+                                ) [TermExpr]
+                                Plus(
+                                ) [Plus]
+                                Terms(
+                                  SingleTerm(
+                                    SingleFactor(
+                                      NumberConst(
+                                       2
+                                      ) [NumberConst]
+                                    ) [SingleFactor]
+                                  ) [SingleTerm]
+                                  Div(
+                                  ) [Div]
+                                  SingleFactor(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [SingleFactor]
+                                ) [Terms]
+                              ) [AddExpr]
+                              Minus(
+                              ) [Minus]
+                              Terms(
+                                SingleTerm(
+                                  SingleFactor(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [SingleFactor]
+                                ) [SingleTerm]
+                                Mul(
+                                ) [Mul]
+                                SingleFactor(
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [SingleFactor]
+                              ) [Terms]
+                            ) [AddExpr]
+                            Plus(
+                            ) [Plus]
+                            Terms(
+                              SingleTerm(
+                                SingleFactor(
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [SingleFactor]
+                              ) [SingleTerm]
+                              Mul(
+                              ) [Mul]
+                              SingleFactor(
+                                NumberConst(
+                                 2
+                                ) [NumberConst]
+                              ) [SingleFactor]
+                            ) [Terms]
+                          ) [AddExpr]
+                        ) [Express]
+                      ) [AssignOperation]
+                    ) [DesignatorStatementOp]
+                  ) [DesignatorStat]
+                ) [SingleStat]
+              ) [ListOfStatements]
+              SingleStat(
+                DesignatorStat(
+                  DesignatorStatementOp(
+                    SingleDesig(
+                     y
+                    ) [SingleDesig]
+                    AssignOperation(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NumberConst(
+                               2
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                    ) [AssignOperation]
+                  ) [DesignatorStatementOp]
+                ) [DesignatorStat]
+              ) [SingleStat]
+            ) [ListOfStatements]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   y
+                  ) [SingleDesig]
+                  Dec(
+                  ) [Dec]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            PrintStatement(
+              Express(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      VarDesig(
+                        SingleDesig(
+                         y
+                        ) [SingleDesig]
+                      ) [VarDesig]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+              ) [Express]
+              NoPrintable(
+              ) [NoPrintable]
+            ) [PrintStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              AddExpr(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      VarDesig(
+                        SingleDesig(
+                         x
+                        ) [SingleDesig]
+                      ) [VarDesig]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+                Minus(
+                ) [Minus]
+                SingleTerm(
+                  SingleFactor(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [AddExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:23:10,195 - ===================================
+INFO  18:23:10,197 - Deklarisana promenljiva x na liniji 2
+INFO  18:23:10,197 - Deklarisana promenljiva y na liniji 2
+INFO  18:23:10,197 - Obradjuje se funkcija main na liniji 4
+INFO  18:23:10,197 - koriscen globalni simbol: x na liniji 5
+INFO  18:23:10,197 - koriscen globalni simbol: y na liniji 6
+INFO  18:23:10,197 - koriscen globalni simbol: y na liniji 7
+INFO  18:23:10,197 - koriscen globalni simbol: y na liniji 8
+INFO  18:23:10,197 - koriscen globalni simbol: x na liniji 9
+INFO  18:23:10,198 - ===================================
+INFO  18:23:10,198 - Parsiranje koda uspesno zavrseno
+INFO  18:23:10,200 - Generisanje koda uspesno zavrseno

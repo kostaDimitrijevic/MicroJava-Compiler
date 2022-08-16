@@ -1,0 +1,140 @@
+INFO  21:40:06,143 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  21:40:06,189 - #2 program
+INFO  21:40:06,190 - #51 prog
+INFO  21:40:06,190 - #51 int
+INFO  21:40:06,191 - #51 x
+INFO  21:40:06,191 - #5 ,
+INFO  21:40:06,191 - #51 y
+INFO  21:40:06,191 - #8 ;
+INFO  21:40:06,191 - #3 {
+INFO  21:40:06,191 - #9 void
+INFO  21:40:06,191 - #51 main
+INFO  21:40:06,192 - #15 (
+INFO  21:40:06,192 - #16 )
+INFO  21:40:06,193 - #3 {
+INFO  21:40:06,193 - #51 x
+INFO  21:40:06,194 - #7 =
+INFO  21:40:06,194 - #48 2
+INFO  21:40:06,194 - #47 ??
+INFO  21:40:06,194 - #48 1
+INFO  21:40:06,194 - #8 ;
+INFO  21:40:06,195 - #22 print
+INFO  21:40:06,195 - #15 (
+INFO  21:40:06,208 - #51 x
+INFO  21:40:06,208 - #34 -
+INFO  21:40:06,208 - #48 2
+INFO  21:40:06,209 - #5 ,
+INFO  21:40:06,209 - #48 5
+INFO  21:40:06,210 - #16 )
+INFO  21:40:06,210 - #8 ;
+INFO  21:40:06,210 - #4 }
+INFO  21:40:06,210 - #4 }
+INFO  21:40:06,216 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+        VarNoArray(
+         y
+        ) [VarNoArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          NoStatement(
+          ) [NoStatement]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 x
+                ) [SingleDesig]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        ListFactor(
+                          SingleFactor(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [ListFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              AddExpr(
+                TermExpr(
+                  SingleTerm(
+                    SingleFactor(
+                      VarDesig(
+                        SingleDesig(
+                         x
+                        ) [SingleDesig]
+                      ) [VarDesig]
+                    ) [SingleFactor]
+                  ) [SingleTerm]
+                ) [TermExpr]
+                Minus(
+                ) [Minus]
+                SingleTerm(
+                  SingleFactor(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [AddExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  21:40:06,216 - ===================================
+INFO  21:40:06,218 - Deklarisana promenljiva x na liniji 2
+INFO  21:40:06,218 - Deklarisana promenljiva y na liniji 2
+INFO  21:40:06,218 - Obradjuje se funkcija main na liniji 5
+INFO  21:40:06,218 - koriscen globalni simbol: x na liniji 6
+INFO  21:40:06,218 - koriscen globalni simbol: x na liniji 7
+INFO  21:40:06,218 - ===================================
+INFO  21:40:06,219 - Parsiranje koda uspesno zavrseno

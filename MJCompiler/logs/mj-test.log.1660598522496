@@ -1,0 +1,98 @@
+INFO  23:21:32,411 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  23:21:32,459 - #2 program
+INFO  23:21:32,459 - #51 prog
+INFO  23:21:32,459 - #51 int
+INFO  23:21:32,460 - #51 x
+INFO  23:21:32,461 - #5 ,
+INFO  23:21:32,461 - #51 y
+INFO  23:21:32,461 - #8 ;
+INFO  23:21:32,461 - #3 {
+INFO  23:21:32,461 - #9 void
+INFO  23:21:32,461 - #51 main
+INFO  23:21:32,462 - #15 (
+INFO  23:21:32,462 - #16 )
+INFO  23:21:32,463 - #3 {
+INFO  23:21:32,464 - #51 x
+INFO  23:21:32,465 - #7 =
+INFO  23:21:32,465 - #48 1
+INFO  23:21:32,465 - #47 ??
+INFO  23:21:32,465 - #48 0
+INFO  23:21:32,465 - #8 ;
+INFO  23:21:32,466 - #4 }
+INFO  23:21:32,466 - #4 }
+INFO  23:21:32,476 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+        VarNoArray(
+         y
+        ) [VarNoArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               x
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      ListFactor(
+                        SingleFactor(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [SingleFactor]
+                        NumberConst(
+                         0
+                        ) [NumberConst]
+                      ) [ListFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  23:21:32,488 - ===================================
+INFO  23:21:32,491 - Deklarisana promenljiva x na liniji 2
+INFO  23:21:32,492 - Deklarisana promenljiva y na liniji 2
+INFO  23:21:32,492 - Obradjuje se funkcija main na liniji 5
+INFO  23:21:32,492 - koriscen globalni simbol: x na liniji 6
+INFO  23:21:32,493 - ===================================
+INFO  23:21:32,494 - Parsiranje koda uspesno zavrseno
+INFO  23:21:32,497 - Generisanje koda uspesno zavrseno

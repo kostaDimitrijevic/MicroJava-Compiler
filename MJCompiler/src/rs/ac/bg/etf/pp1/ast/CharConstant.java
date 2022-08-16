@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/7/2022 17:49:35
+// 15/7/2022 22:42:26
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,9 +8,9 @@ package rs.ac.bg.etf.pp1.ast;
 public class CharConstant extends Const {
 
     private String varName;
-    private String val;
+    private Character val;
 
-    public CharConstant (String varName, String val) {
+    public CharConstant (String varName, Character val) {
         this.varName=varName;
         this.val=val;
     }
@@ -23,11 +23,11 @@ public class CharConstant extends Const {
         this.varName=varName;
     }
 
-    public String getVal() {
+    public Character getVal() {
         return val;
     }
 
-    public void setVal(String val) {
+    public void setVal(Character val) {
         this.val=val;
     }
 

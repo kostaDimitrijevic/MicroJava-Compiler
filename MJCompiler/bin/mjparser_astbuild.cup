@@ -62,7 +62,6 @@ nonterminal Label Label;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Field Field;
 nonterminal FieldList FieldList;
-nonterminal CoalExpr CoalExpr;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
 nonterminal ActPars ActPars;
@@ -78,7 +77,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expr, Expression, Term,
 
 terminal Integer NUMCONST;
 terminal String BOOLCONST;
-terminal String CHARCONST;
+terminal Character CHARCONST;
 terminal String IDENT;
 
 precedence left ELSE;
@@ -284,7 +283,7 @@ Term ::= (Terms) Term:t Mulop:M1 Factor:f {: RESULT=new Terms(t, M1, f); RESULT.
 	 (SingleTerm) Factor:F1 {: RESULT=new SingleTerm(F1); RESULT.setLine(F1left); :}
 	 ;
 
-Factor 	::= (ListFactor) Factor:F1 CoalExpr:C2 BaseExp:B3 {: RESULT=new ListFactor(F1, C2, B3); RESULT.setLine(F1left); :}
+Factor 	::= (ListFactor) Factor:F1 COALESCE BaseExp:B2 {: RESULT=new ListFactor(F1, B2); RESULT.setLine(F1left); :}
 		|
 		(SingleFactor) BaseExp:B1 {: RESULT=new SingleFactor(B1); RESULT.setLine(B1left); :}
 		;
@@ -305,8 +304,6 @@ BaseExp ::= (FuncCall) Designator:D1 LPAREN ActPars:A2 RPAREN {: RESULT=new Func
 	   	|
 	   	(FactorExpr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorExpr(E1); RESULT.setLine(E1left); :}
 	   	;
-
-CoalExpr ::= (Coalesce) COALESCE {: RESULT=new Coalesce(); :};
 
 Label ::= (Labels) IDENT:I1 {: RESULT=new Labels(I1); RESULT.setLine(I1left); :};
 

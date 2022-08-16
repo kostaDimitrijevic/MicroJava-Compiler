@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/7/2022 17:49:35
+// 15/7/2022 22:42:26
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,14 +8,11 @@ package rs.ac.bg.etf.pp1.ast;
 public class ListFactor extends Factor {
 
     private Factor Factor;
-    private CoalExpr CoalExpr;
     private BaseExp BaseExp;
 
-    public ListFactor (Factor Factor, CoalExpr CoalExpr, BaseExp BaseExp) {
+    public ListFactor (Factor Factor, BaseExp BaseExp) {
         this.Factor=Factor;
         if(Factor!=null) Factor.setParent(this);
-        this.CoalExpr=CoalExpr;
-        if(CoalExpr!=null) CoalExpr.setParent(this);
         this.BaseExp=BaseExp;
         if(BaseExp!=null) BaseExp.setParent(this);
     }
@@ -26,14 +23,6 @@ public class ListFactor extends Factor {
 
     public void setFactor(Factor Factor) {
         this.Factor=Factor;
-    }
-
-    public CoalExpr getCoalExpr() {
-        return CoalExpr;
-    }
-
-    public void setCoalExpr(CoalExpr CoalExpr) {
-        this.CoalExpr=CoalExpr;
     }
 
     public BaseExp getBaseExp() {
@@ -50,20 +39,17 @@ public class ListFactor extends Factor {
 
     public void childrenAccept(Visitor visitor) {
         if(Factor!=null) Factor.accept(visitor);
-        if(CoalExpr!=null) CoalExpr.accept(visitor);
         if(BaseExp!=null) BaseExp.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Factor!=null) Factor.traverseTopDown(visitor);
-        if(CoalExpr!=null) CoalExpr.traverseTopDown(visitor);
         if(BaseExp!=null) BaseExp.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Factor!=null) Factor.traverseBottomUp(visitor);
-        if(CoalExpr!=null) CoalExpr.traverseBottomUp(visitor);
         if(BaseExp!=null) BaseExp.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -75,12 +61,6 @@ public class ListFactor extends Factor {
 
         if(Factor!=null)
             buffer.append(Factor.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(CoalExpr!=null)
-            buffer.append(CoalExpr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,0 +1,165 @@
+INFO  18:09:49,656 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:09:49,690 - #2 program
+INFO  18:09:49,690 - #51 prog
+INFO  18:09:49,690 - #51 int
+INFO  18:09:49,691 - #51 x
+INFO  18:09:49,691 - #5 ,
+INFO  18:09:49,691 - #51 y
+INFO  18:09:49,691 - #8 ;
+INFO  18:09:49,691 - #3 {
+INFO  18:09:49,691 - #9 void
+INFO  18:09:49,692 - #51 main
+INFO  18:09:49,692 - #15 (
+INFO  18:09:49,692 - #16 )
+INFO  18:09:49,693 - #3 {
+INFO  18:09:49,693 - #51 y
+INFO  18:09:49,694 - #7 =
+INFO  18:09:49,694 - #50 a
+INFO  18:09:49,694 - #8 ;
+INFO  18:09:49,694 - #51 x
+INFO  18:09:49,694 - #7 =
+INFO  18:09:49,694 - #48 0
+INFO  18:09:49,695 - #47 ??
+INFO  18:09:49,695 - #48 0
+INFO  18:09:49,721 - #47 ??
+INFO  18:09:49,721 - #48 3
+INFO  18:09:49,721 - #8 ;
+INFO  18:09:49,721 - #22 print
+INFO  18:09:49,721 - #15 (
+INFO  18:09:49,722 - #51 x
+INFO  18:09:49,722 - #5 ,
+INFO  18:09:49,722 - #48 5
+INFO  18:09:49,722 - #16 )
+INFO  18:09:49,722 - #8 ;
+INFO  18:09:49,722 - #4 }
+INFO  18:09:49,722 - #4 }
+INFO  18:09:49,727 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    NoDeclaration(
+    ) [NoDeclaration]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      VariableList(
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+        VarNoArray(
+         y
+        ) [VarNoArray]
+      ) [VariableList]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   y
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            CharacterConst(
+                             a
+                            ) [CharacterConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                SingleDesig(
+                 x
+                ) [SingleDesig]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        ListFactor(
+                          ListFactor(
+                            SingleFactor(
+                              NumberConst(
+                               0
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                            NumberConst(
+                             0
+                            ) [NumberConst]
+                          ) [ListFactor]
+                          NumberConst(
+                           3
+                          ) [NumberConst]
+                        ) [ListFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       x
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  18:09:49,727 - ===================================
+INFO  18:09:49,730 - Deklarisana promenljiva x na liniji 2
+INFO  18:09:49,730 - Deklarisana promenljiva y na liniji 2
+INFO  18:09:49,730 - Obradjuje se funkcija main na liniji 5
+INFO  18:09:49,730 - koriscen globalni simbol: y na liniji 6
+ERROR 18:09:49,730 - Greska na liniji 6 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  18:09:49,730 - koriscen globalni simbol: x na liniji 7
+INFO  18:09:49,730 - koriscen globalni simbol: x na liniji 8
+INFO  18:09:49,730 - ===================================
+INFO  18:09:49,730 - Parsiranje koda uspesno zavrseno
+INFO  18:09:49,730 - Parsiranje koda nije uspesno zavrseno

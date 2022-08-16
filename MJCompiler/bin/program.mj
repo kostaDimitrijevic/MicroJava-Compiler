@@ -1,11 +1,11 @@
 program prog
 int x;
+int niz[];
 {
 	void main(){
-		x = 1 + 3;
-		
-		print(1);
-		print(x - 2, 5);
+		niz[3] = 1;
+		x = 0 ?? 1 ?? 3;
+		print(x, 5);
 	}
 }
 

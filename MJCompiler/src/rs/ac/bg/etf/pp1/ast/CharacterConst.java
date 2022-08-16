@@ -1,23 +1,23 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/7/2022 17:49:35
+// 15/7/2022 22:42:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class CharacterConst extends BaseExp {
 
-    private String val;
+    private Character val;
 
-    public CharacterConst (String val) {
+    public CharacterConst (Character val) {
         this.val=val;
     }
 
-    public String getVal() {
+    public Character getVal() {
         return val;
     }
 
-    public void setVal(String val) {
+    public void setVal(Character val) {
         this.val=val;
     }
 

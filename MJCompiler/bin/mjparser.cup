@@ -46,7 +46,7 @@ terminal PROGRAM, LBRACES, RBRACES, COMMA, CONST, ASSIGN, SEMICOLON, VOID, LBOX,
 terminal COLON, IF, ELSE, DO, WHILE, PRINT, READ, BREAK, RETURN, CONTINUE, INC, DEC, STOP, MUL, DIV, MOD, PLUS, MINUS, NEW, AND, OR, EQUAL, NEQUAL, GREATER;
 terminal GEQ, LOWER, LEQ, SUPER, THIS, ENUM, COALESCE;
 nonterminal Declaration, ConstDecList, ConstList, OptionalVarDecList, StatementList, ClassDecList, RecordDecList, MethodDecList, Method;
-nonterminal FormPars, Statement, Statements, Else, Label, DesignatorStatement, Field, FieldList, CoalExpr;
+nonterminal FormPars, Statement, Statements, Else, Label, DesignatorStatement, Field, FieldList;
 nonterminal Addop, Mulop, ActPars, Printable, Relop, ConstructorDecl, MethodPart, FormParamList, RecordName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Const, ProgName, Program, VarDecList, VarList, Var, MethodTypeName, Param, Designator, DesignatorName;
@@ -54,7 +54,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expr, Expression, Term,
 
 terminal Integer NUMCONST;
 terminal String BOOLCONST;
-terminal String CHARCONST;
+terminal Character CHARCONST;
 terminal String IDENT;
 
 precedence left ELSE;
@@ -260,7 +260,7 @@ Term ::= (Terms) Term:t Mulop Factor:f
 	 (SingleTerm) Factor
 	 ;
 
-Factor 	::= (ListFactor) Factor CoalExpr BaseExp
+Factor 	::= (ListFactor) Factor COALESCE BaseExp
 		|
 		(SingleFactor) BaseExp
 		;
@@ -281,8 +281,6 @@ BaseExp ::= (FuncCall) Designator LPAREN ActPars RPAREN
 	   	|
 	   	(FactorExpr) LPAREN Expr RPAREN
 	   	;
-
-CoalExpr ::= (Coalesce) COALESCE;
 
 Label ::= (Labels) IDENT;
 

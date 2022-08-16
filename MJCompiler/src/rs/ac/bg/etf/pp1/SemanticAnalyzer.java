@@ -72,7 +72,8 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	public void visit(VarArray varArr) {
 		Obj v = Tab.find(varArr.getVarName());
 		if(v == Tab.noObj) {
-			varArr.obj = Tab.insert(Obj.Var, varArr.getVarName(), currentType);
+			//varArr.obj = Tab.insert(Obj.Var, varArr.getVarName(), currentType);
+			varArr.obj = Tab.insert(Obj.Var, varArr.getVarName(), new Struct(Struct.Array, currentType));
 			if(currentMethod != null) {
 				report_info("Deklarisana lokalni niz "+ varArr.getVarName() + " metode " + currentMethod.getName(), varArr);
 			}
@@ -111,6 +112,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 			if(currentType.equals(Tab.intType)) {
 				Obj con = Tab.insert(Obj.Con, numConst.getVarName(), Tab.intType);
 				con.setAdr(numConst.getVal());
+				numConst.obj = con;
 				report_info("Definicija constante " + numConst.getVarName(), numConst);
 			}
 			else {
@@ -127,7 +129,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		if(c == Tab.noObj) {
 			if(currentType.equals(Tab.charType)) {
 				Obj con = Tab.insert(Obj.Con, charConst.getVarName(), Tab.charType);
-				con.setAdr(Integer.parseInt(charConst.getVal()));
+				con.setAdr(Character.getNumericValue(charConst.getVal()));
 				charConst.obj = con;
 				report_info("Definicija constante " + charConst.getVarName(), charConst);
 			}
@@ -202,7 +204,16 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	}
 	
 	public void visit(DesigList list) {
-		list.obj = list.getDesignatorName().obj;
+		Obj o = Tab.find(((DesigName)list.getDesignatorName()).getName());
+		if(o.getType().getKind() != Struct.Array) {
+			report_error("Greska na liniji " + list.getLine() + " : objekat " + ((DesigName)list.getDesignatorName()).getName() + " nije niz! ",
+					null);
+			list.obj = Tab.noObj;
+		}
+		else {
+			list.obj = list.getDesignatorName().obj;
+		}
+
 	}
 	
 	public void visit(DesigName des) {
@@ -318,6 +329,10 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		fact.struct = fact.getBaseExp().struct;
 	}
 	
+	public void visit(FactorExpr fact) {
+		fact.struct = fact.getExpr().struct;
+	}
+	
 	public void visit(TermExpr termExpr) {
 		termExpr.struct = termExpr.getTerm().struct;
 	}
@@ -371,7 +386,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		else {
 			Obj d = stack.pop();
 			if(op.getOperations().struct != Tab.noType) {
-				if(!op.getOperations().struct.assignableTo(d.getType())) {
+				if(!d.getType().getElemType().assignableTo(op.getOperations().struct)) {
 					report_error("Greska na liniji " + op.getLine() + " : "
 							+ "nekompatibilni tipovi u dodeli vrednosti! ", null);
 				}
