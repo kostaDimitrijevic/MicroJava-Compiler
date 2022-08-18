@@ -1,0 +1,217 @@
+INFO  17:16:27,900 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:16:27,925 - #2 program
+INFO  17:16:27,925 - #51 prog
+INFO  17:16:27,925 - #51 int
+INFO  17:16:27,926 - #51 x
+INFO  17:16:27,926 - #8 ;
+INFO  17:16:27,926 - #51 int
+INFO  17:16:27,926 - #51 niz
+INFO  17:16:27,926 - #10 [
+INFO  17:16:27,926 - #11 ]
+INFO  17:16:27,926 - #8 ;
+INFO  17:16:27,926 - #3 {
+INFO  17:16:27,926 - #9 void
+INFO  17:16:27,926 - #51 main
+INFO  17:16:27,927 - #15 (
+INFO  17:16:27,927 - #16 )
+INFO  17:16:27,928 - #3 {
+INFO  17:16:27,928 - #51 niz
+INFO  17:16:27,928 - #7 =
+INFO  17:16:27,929 - #35 new
+INFO  17:16:27,929 - #51 int
+INFO  17:16:27,929 - #10 [
+INFO  17:16:27,941 - #48 3
+INFO  17:16:27,941 - #11 ]
+INFO  17:16:27,941 - #8 ;
+INFO  17:16:27,942 - #51 niz
+INFO  17:16:27,942 - #10 [
+INFO  17:16:27,942 - #48 0
+INFO  17:16:27,942 - #11 ]
+INFO  17:16:27,942 - #7 =
+INFO  17:16:27,942 - #48 1
+INFO  17:16:27,942 - #8 ;
+INFO  17:16:27,942 - #22 print
+INFO  17:16:27,942 - #15 (
+INFO  17:16:27,942 - #51 niz
+INFO  17:16:27,942 - #10 [
+INFO  17:16:27,943 - #48 0
+INFO  17:16:27,943 - #11 ]
+INFO  17:16:27,943 - #5 ,
+INFO  17:16:27,943 - #48 5
+INFO  17:16:27,943 - #16 )
+INFO  17:16:27,943 - #8 ;
+INFO  17:16:27,943 - #4 }
+INFO  17:16:27,943 - #4 }
+INFO  17:16:27,946 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         niz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   niz
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NewExpr(
+                              IdentType(
+                               int
+                              ) [IdentType]
+                              Express(
+                                TermExpr(
+                                  SingleTerm(
+                                    SingleFactor(
+                                      NumberConst(
+                                       3
+                                      ) [NumberConst]
+                                    ) [SingleFactor]
+                                  ) [SingleTerm]
+                                ) [TermExpr]
+                              ) [Express]
+                            ) [NewExpr]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                DesigList(
+                  DesigName(
+                   niz
+                  ) [DesigName]
+                  SingleField(
+                    FieldBox(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NumberConst(
+                               0
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                    ) [FieldBox]
+                  ) [SingleField]
+                ) [DesigList]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        SingleFactor(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [SingleFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      DesigList(
+                        DesigName(
+                         niz
+                        ) [DesigName]
+                        SingleField(
+                          FieldBox(
+                            Express(
+                              TermExpr(
+                                SingleTerm(
+                                  SingleFactor(
+                                    NumberConst(
+                                     0
+                                    ) [NumberConst]
+                                  ) [SingleFactor]
+                                ) [SingleTerm]
+                              ) [TermExpr]
+                            ) [Express]
+                          ) [FieldBox]
+                        ) [SingleField]
+                      ) [DesigList]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:16:27,947 - ===================================
+INFO  17:16:27,948 - Deklarisana promenljiva x na liniji 2
+INFO  17:16:27,948 - Deklarisana niz niz na liniji 3
+INFO  17:16:27,948 - Obradjuje se funkcija main na liniji 5
+INFO  17:16:27,948 - koriscen globalni simbol: niz na liniji 6
+INFO  17:16:27,948 - koriscen globalni simbol: niz na liniji 7
+INFO  17:16:27,949 - koriscen globalni simbol: niz na liniji 8
+INFO  17:16:27,949 - ===================================
+INFO  17:16:27,949 - Parsiranje koda uspesno zavrseno
+INFO  17:16:27,951 - Generisanje koda uspesno zavrseno

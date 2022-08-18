@@ -1,0 +1,347 @@
+INFO  17:37:30,995 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:37:31,022 - #2 program
+INFO  17:37:31,023 - #51 prog
+INFO  17:37:31,023 - #51 int
+INFO  17:37:31,023 - #51 x
+INFO  17:37:31,023 - #8 ;
+INFO  17:37:31,023 - #51 int
+INFO  17:37:31,024 - #51 niz
+INFO  17:37:31,024 - #10 [
+INFO  17:37:31,024 - #11 ]
+INFO  17:37:31,024 - #8 ;
+INFO  17:37:31,024 - #51 int
+INFO  17:37:31,025 - #51 niz2
+INFO  17:37:31,025 - #10 [
+INFO  17:37:31,025 - #11 ]
+INFO  17:37:31,025 - #8 ;
+INFO  17:37:31,025 - #3 {
+INFO  17:37:31,025 - #9 void
+INFO  17:37:31,025 - #51 main
+INFO  17:37:31,025 - #15 (
+INFO  17:37:31,026 - #16 )
+INFO  17:37:31,026 - #3 {
+INFO  17:37:31,038 - #51 niz
+INFO  17:37:31,039 - #7 =
+INFO  17:37:31,039 - #35 new
+INFO  17:37:31,039 - #51 int
+INFO  17:37:31,039 - #10 [
+INFO  17:37:31,039 - #48 3
+INFO  17:37:31,039 - #11 ]
+INFO  17:37:31,039 - #8 ;
+INFO  17:37:31,039 - #51 niz2
+INFO  17:37:31,039 - #7 =
+INFO  17:37:31,039 - #35 new
+INFO  17:37:31,039 - #51 int
+INFO  17:37:31,040 - #10 [
+INFO  17:37:31,040 - #48 2
+INFO  17:37:31,040 - #11 ]
+INFO  17:37:31,040 - #8 ;
+INFO  17:37:31,040 - #51 niz
+INFO  17:37:31,040 - #10 [
+INFO  17:37:31,040 - #48 0
+INFO  17:37:31,040 - #11 ]
+INFO  17:37:31,040 - #7 =
+INFO  17:37:31,040 - #48 1
+INFO  17:37:31,040 - #8 ;
+INFO  17:37:31,040 - #51 niz2
+INFO  17:37:31,040 - #10 [
+INFO  17:37:31,040 - #48 1
+INFO  17:37:31,040 - #11 ]
+INFO  17:37:31,041 - #7 =
+INFO  17:37:31,041 - #48 2
+INFO  17:37:31,041 - #8 ;
+INFO  17:37:31,041 - #22 print
+INFO  17:37:31,041 - #15 (
+INFO  17:37:31,041 - #51 niz2
+INFO  17:37:31,041 - #10 [
+INFO  17:37:31,041 - #51 niz
+INFO  17:37:31,041 - #10 [
+INFO  17:37:31,041 - #48 0
+INFO  17:37:31,041 - #11 ]
+INFO  17:37:31,041 - #11 ]
+INFO  17:37:31,041 - #5 ,
+INFO  17:37:31,041 - #48 5
+INFO  17:37:31,041 - #16 )
+INFO  17:37:31,042 - #8 ;
+INFO  17:37:31,042 - #4 }
+INFO  17:37:31,042 - #4 }
+INFO  17:37:31,046 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      VarDeclarationList(
+        NoDeclaration(
+        ) [NoDeclaration]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             x
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [VarDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarArray(
+           niz
+          ) [VarArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         niz2
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            ListOfStatements(
+              ListOfStatements(
+                NoStatement(
+                ) [NoStatement]
+                SingleStat(
+                  DesignatorStat(
+                    DesignatorStatementOp(
+                      SingleDesig(
+                       niz
+                      ) [SingleDesig]
+                      AssignOperation(
+                        Express(
+                          TermExpr(
+                            SingleTerm(
+                              SingleFactor(
+                                NewExpr(
+                                  IdentType(
+                                   int
+                                  ) [IdentType]
+                                  Express(
+                                    TermExpr(
+                                      SingleTerm(
+                                        SingleFactor(
+                                          NumberConst(
+                                           3
+                                          ) [NumberConst]
+                                        ) [SingleFactor]
+                                      ) [SingleTerm]
+                                    ) [TermExpr]
+                                  ) [Express]
+                                ) [NewExpr]
+                              ) [SingleFactor]
+                            ) [SingleTerm]
+                          ) [TermExpr]
+                        ) [Express]
+                      ) [AssignOperation]
+                    ) [DesignatorStatementOp]
+                  ) [DesignatorStat]
+                ) [SingleStat]
+              ) [ListOfStatements]
+              SingleStat(
+                DesignatorStat(
+                  DesignatorStatementOp(
+                    SingleDesig(
+                     niz2
+                    ) [SingleDesig]
+                    AssignOperation(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NewExpr(
+                                IdentType(
+                                 int
+                                ) [IdentType]
+                                Express(
+                                  TermExpr(
+                                    SingleTerm(
+                                      SingleFactor(
+                                        NumberConst(
+                                         2
+                                        ) [NumberConst]
+                                      ) [SingleFactor]
+                                    ) [SingleTerm]
+                                  ) [TermExpr]
+                                ) [Express]
+                              ) [NewExpr]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                    ) [AssignOperation]
+                  ) [DesignatorStatementOp]
+                ) [DesignatorStat]
+              ) [SingleStat]
+            ) [ListOfStatements]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  DesigList(
+                    DesigName(
+                     niz
+                    ) [DesigName]
+                    SingleField(
+                      FieldBox(
+                        Express(
+                          TermExpr(
+                            SingleTerm(
+                              SingleFactor(
+                                NumberConst(
+                                 0
+                                ) [NumberConst]
+                              ) [SingleFactor]
+                            ) [SingleTerm]
+                          ) [TermExpr]
+                        ) [Express]
+                      ) [FieldBox]
+                    ) [SingleField]
+                  ) [DesigList]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             1
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                DesigList(
+                  DesigName(
+                   niz2
+                  ) [DesigName]
+                  SingleField(
+                    FieldBox(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NumberConst(
+                               1
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                    ) [FieldBox]
+                  ) [SingleField]
+                ) [DesigList]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        SingleFactor(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [SingleFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      DesigList(
+                        DesigName(
+                         niz2
+                        ) [DesigName]
+                        SingleField(
+                          FieldBox(
+                            Express(
+                              TermExpr(
+                                SingleTerm(
+                                  SingleFactor(
+                                    VarDesig(
+                                      DesigList(
+                                        DesigName(
+                                         niz
+                                        ) [DesigName]
+                                        SingleField(
+                                          FieldBox(
+                                            Express(
+                                              TermExpr(
+                                                SingleTerm(
+                                                  SingleFactor(
+                                                    NumberConst(
+                                                     0
+                                                    ) [NumberConst]
+                                                  ) [SingleFactor]
+                                                ) [SingleTerm]
+                                              ) [TermExpr]
+                                            ) [Express]
+                                          ) [FieldBox]
+                                        ) [SingleField]
+                                      ) [DesigList]
+                                    ) [VarDesig]
+                                  ) [SingleFactor]
+                                ) [SingleTerm]
+                              ) [TermExpr]
+                            ) [Express]
+                          ) [FieldBox]
+                        ) [SingleField]
+                      ) [DesigList]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:37:31,046 - ===================================
+INFO  17:37:31,048 - Deklarisana promenljiva x na liniji 2
+INFO  17:37:31,048 - Deklarisana niz niz na liniji 3
+INFO  17:37:31,048 - Deklarisana niz niz2 na liniji 4
+INFO  17:37:31,048 - Obradjuje se funkcija main na liniji 6
+INFO  17:37:31,048 - koriscen globalni simbol: niz na liniji 7
+INFO  17:37:31,048 - koriscen globalni simbol: niz2 na liniji 8
+INFO  17:37:31,048 - koriscen globalni simbol: niz na liniji 9

@@ -1,0 +1,203 @@
+INFO  14:05:30,420 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:05:30,447 - #2 program
+INFO  14:05:30,447 - #51 test301
+INFO  14:05:30,447 - #6 const
+INFO  14:05:30,447 - #51 int
+INFO  14:05:30,447 - #51 nula
+INFO  14:05:30,447 - #7 =
+INFO  14:05:30,447 - #48 0
+INFO  14:05:30,447 - #8 ;
+INFO  14:05:30,448 - #6 const
+INFO  14:05:30,448 - #51 int
+INFO  14:05:30,448 - #51 jedan
+INFO  14:05:30,448 - #7 =
+INFO  14:05:30,448 - #48 1
+INFO  14:05:30,448 - #8 ;
+INFO  14:05:30,448 - #6 const
+INFO  14:05:30,448 - #51 int
+INFO  14:05:30,448 - #51 tri
+INFO  14:05:30,448 - #7 =
+INFO  14:05:30,448 - #48 3
+INFO  14:05:30,449 - #8 ;
+INFO  14:05:30,449 - #6 const
+INFO  14:05:30,449 - #51 int
+INFO  14:05:30,449 - #51 pet
+INFO  14:05:30,449 - #7 =
+INFO  14:05:30,450 - #48 5
+INFO  14:05:30,450 - #8 ;
+INFO  14:05:30,450 - #51 int
+INFO  14:05:30,450 - #51 niz
+INFO  14:05:30,450 - #10 [
+INFO  14:05:30,450 - #11 ]
+INFO  14:05:30,450 - #8 ;
+INFO  14:05:30,450 - #51 char
+INFO  14:05:30,451 - #51 nizch
+INFO  14:05:30,451 - #10 [
+INFO  14:05:30,451 - #11 ]
+INFO  14:05:30,451 - #8 ;
+INFO  14:05:30,451 - #3 {
+INFO  14:05:30,451 - #9 void
+INFO  14:05:30,451 - #51 main
+INFO  14:05:30,451 - #15 (
+INFO  14:05:30,451 - #16 )
+INFO  14:05:30,451 - #3 {
+INFO  14:05:30,452 - #51 niz
+INFO  14:05:30,452 - #10 [
+INFO  14:05:30,452 - #48 3
+INFO  14:05:30,452 - #11 ]
+INFO  14:05:30,453 - #7 =
+INFO  14:05:30,453 - #48 3
+INFO  14:05:30,453 - #8 ;
+INFO  14:05:30,453 - #4 }
+INFO  14:05:30,453 - #4 }
+INFO  14:05:30,457 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        ConstDeclarationList(
+          ConstDeclarationList(
+            ConstDeclarationList(
+              NoDeclaration(
+              ) [NoDeclaration]
+              ConstDeclerations(
+                IdentType(
+                 int
+                ) [IdentType]
+                OneConstant(
+                  NumConstant(
+                   nula
+                   0
+                  ) [NumConstant]
+                ) [OneConstant]
+              ) [ConstDeclerations]
+            ) [ConstDeclarationList]
+            ConstDeclerations(
+              IdentType(
+               int
+              ) [IdentType]
+              OneConstant(
+                NumConstant(
+                 jedan
+                 1
+                ) [NumConstant]
+              ) [OneConstant]
+            ) [ConstDeclerations]
+          ) [ConstDeclarationList]
+          ConstDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            OneConstant(
+              NumConstant(
+               tri
+               3
+              ) [NumConstant]
+            ) [OneConstant]
+          ) [ConstDeclerations]
+        ) [ConstDeclarationList]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             pet
+             5
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarArray(
+           niz
+          ) [VarArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizch
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              DesigList(
+                DesigName(
+                 niz
+                ) [DesigName]
+                SingleField(
+                  FieldBox(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [FieldBox]
+                ) [SingleField]
+              ) [DesigList]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        NumberConst(
+                         3
+                        ) [NumberConst]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  14:05:30,457 - ===================================
+INFO  14:05:30,459 - Definicija constante nula na liniji 5
+INFO  14:05:30,459 - Definicija constante jedan na liniji 6
+INFO  14:05:30,459 - Definicija constante tri na liniji 7
+INFO  14:05:30,459 - Definicija constante pet na liniji 8
+INFO  14:05:30,459 - Deklarisana niz niz na liniji 10
+INFO  14:05:30,459 - Deklarisana niz nizch na liniji 11
+INFO  14:05:30,459 - Obradjuje se funkcija main na liniji 14
+INFO  14:05:30,459 - koriscen globalni simbol: niz na liniji 16
+INFO  14:05:30,459 - ===================================
+INFO  14:05:30,460 - Parsiranje koda uspesno zavrseno
+INFO  14:05:30,462 - Generisanje koda uspesno zavrseno

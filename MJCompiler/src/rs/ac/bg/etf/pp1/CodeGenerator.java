@@ -9,7 +9,9 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor{
 	private int mainPc;
 	private Struct boolType = new Struct(Struct.Bool);
+	
 	private boolean printLen = false;
+	private boolean exprVisited = false;
 	
 	public int getMainPc() {
 		return mainPc;
@@ -20,12 +22,23 @@ public class CodeGenerator extends VisitorAdaptor{
 			Code.loadConst(5);
 		}
 		printLen = false;
-		if(pr.getExpr().struct == Tab.intType || pr.getExpr().struct == boolType) {
-			Code.put(Code.print);
+		if(pr.getExpr().struct.getKind() == Struct.Array) {
+			if(pr.getExpr().struct.getElemType() == Tab.intType || pr.getExpr().struct.getElemType() == boolType) {
+				Code.put(Code.print);
+			}
+			else {
+				Code.put(Code.bprint);
+			}
 		}
 		else {
-			Code.put(Code.bprint);
+			if(pr.getExpr().struct == Tab.intType || pr.getExpr().struct == boolType) {
+				Code.put(Code.print);
+			}
+			else {
+				Code.put(Code.bprint);
+			}
 		}
+
 	}
 	
 	public void visit(NumberConst numCon) {
@@ -38,7 +51,8 @@ public class CodeGenerator extends VisitorAdaptor{
 	public void visit(CharacterConst chrCon) {
 		Obj con = Tab.insert(Obj.Con, "const", Tab.charType);
 		con.setLevel(0);
-		con.setAdr(Character.getNumericValue(chrCon.getVal()));	
+		con.setAdr(chrCon.getVal());	
+		Code.load(con);
 	}
 	
 	public void visit(BooleanConst boolCon) {
@@ -50,6 +64,7 @@ public class CodeGenerator extends VisitorAdaptor{
 		else {
 			con.setAdr(0);
 		}
+		Code.load(con);
 	}
 	
 	public void visit(MethodTypeName meth) {
@@ -70,11 +85,46 @@ public class CodeGenerator extends VisitorAdaptor{
 	}
 	
 	public void visit(DesignatorStatementOp op) {
-		Code.store(op.getDesignator().obj);
+		if(op.getDesignator().getClass().equals(DesigList.class)) {
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			if(op.getDesignator().obj.getType().getElemType() == Tab.charType) {
+				Code.put(Code.bastore);
+			}
+			else {
+				Code.put(Code.astore);
+			}
+		}
+		else {
+			Code.store(op.getDesignator().obj);
+		}
+
+
+	}
+	
+	public void visit(VarDesig des) {
+		if(des.getDesignator().getClass().equals(DesigList.class)) {
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			if(des.getDesignator().obj.getType().getElemType() == Tab.charType) {
+				Code.put(Code.baload);
+			}
+			else {
+				Code.put(Code.aload);
+			}
+		}
 	}
 	
 	public void visit(SingleDesig des) {
 		Code.load(des.obj);
+	}
+	
+	public void visit(DesigList desArr) {
+		Code.load(desArr.obj);
 	}
 	
 	public void visit(Prints prints) {
@@ -94,7 +144,7 @@ public class CodeGenerator extends VisitorAdaptor{
 		}		
 	}
 	
-	public void visit(Terms mulOp) {
+	public void visit(ListFactor mulOp) {
 		if(mulOp.getMulop().getClass().equals(Mul.class)) {
 			Code.put(Code.mul);
 		}
@@ -116,7 +166,7 @@ public class CodeGenerator extends VisitorAdaptor{
 		Code.put(Code.sub);
 	}
 	
-	public void visit(ListFactor coal) {
+	public void visit(Terms coal) {
 		Obj val = Tab.insert(Obj.Var, "#val", Tab.intType);
 		Code.put(Code.dup_x1);
 		Code.put(Code.pop);
@@ -132,12 +182,12 @@ public class CodeGenerator extends VisitorAdaptor{
 	
 	public void visit(NewExpr newArr) {
 		Code.put(Code.newarray);
-		
 		if(newArr.struct.getElemType() == Tab.intType) {
 			Code.put(1);
 		}
 		else {
 			Code.put(0);
 		}
+		//Code.put(Code.dup);
 	}
 }

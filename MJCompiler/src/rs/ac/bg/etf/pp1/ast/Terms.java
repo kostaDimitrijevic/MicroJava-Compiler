@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/7/2022 22:42:26
+// 18/7/2022 12:23:36
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,14 +8,14 @@ package rs.ac.bg.etf.pp1.ast;
 public class Terms extends Term {
 
     private Term Term;
-    private Mulop Mulop;
+    private Negative Negative;
     private Factor Factor;
 
-    public Terms (Term Term, Mulop Mulop, Factor Factor) {
+    public Terms (Term Term, Negative Negative, Factor Factor) {
         this.Term=Term;
         if(Term!=null) Term.setParent(this);
-        this.Mulop=Mulop;
-        if(Mulop!=null) Mulop.setParent(this);
+        this.Negative=Negative;
+        if(Negative!=null) Negative.setParent(this);
         this.Factor=Factor;
         if(Factor!=null) Factor.setParent(this);
     }
@@ -28,12 +28,12 @@ public class Terms extends Term {
         this.Term=Term;
     }
 
-    public Mulop getMulop() {
-        return Mulop;
+    public Negative getNegative() {
+        return Negative;
     }
 
-    public void setMulop(Mulop Mulop) {
-        this.Mulop=Mulop;
+    public void setNegative(Negative Negative) {
+        this.Negative=Negative;
     }
 
     public Factor getFactor() {
@@ -50,20 +50,20 @@ public class Terms extends Term {
 
     public void childrenAccept(Visitor visitor) {
         if(Term!=null) Term.accept(visitor);
-        if(Mulop!=null) Mulop.accept(visitor);
+        if(Negative!=null) Negative.accept(visitor);
         if(Factor!=null) Factor.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Term!=null) Term.traverseTopDown(visitor);
-        if(Mulop!=null) Mulop.traverseTopDown(visitor);
+        if(Negative!=null) Negative.traverseTopDown(visitor);
         if(Factor!=null) Factor.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Term!=null) Term.traverseBottomUp(visitor);
-        if(Mulop!=null) Mulop.traverseBottomUp(visitor);
+        if(Negative!=null) Negative.traverseBottomUp(visitor);
         if(Factor!=null) Factor.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -79,8 +79,8 @@ public class Terms extends Term {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Mulop!=null)
-            buffer.append(Mulop.toString("  "+tab));
+        if(Negative!=null)
+            buffer.append(Negative.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

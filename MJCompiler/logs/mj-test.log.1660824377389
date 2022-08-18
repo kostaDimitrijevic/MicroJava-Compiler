@@ -1,0 +1,204 @@
+INFO  14:05:59,762 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:05:59,787 - #2 program
+INFO  14:05:59,787 - #51 test301
+INFO  14:05:59,787 - #6 const
+INFO  14:05:59,787 - #51 int
+INFO  14:05:59,787 - #51 nula
+INFO  14:05:59,788 - #7 =
+INFO  14:05:59,788 - #48 0
+INFO  14:05:59,788 - #8 ;
+INFO  14:05:59,788 - #6 const
+INFO  14:05:59,788 - #51 int
+INFO  14:05:59,788 - #51 jedan
+INFO  14:05:59,789 - #7 =
+INFO  14:05:59,789 - #48 1
+INFO  14:05:59,789 - #8 ;
+INFO  14:05:59,789 - #6 const
+INFO  14:05:59,789 - #51 int
+INFO  14:05:59,789 - #51 tri
+INFO  14:05:59,789 - #7 =
+INFO  14:05:59,789 - #48 3
+INFO  14:05:59,789 - #8 ;
+INFO  14:05:59,789 - #6 const
+INFO  14:05:59,801 - #51 int
+INFO  14:05:59,801 - #51 pet
+INFO  14:05:59,801 - #7 =
+INFO  14:05:59,801 - #48 5
+INFO  14:05:59,801 - #8 ;
+INFO  14:05:59,801 - #51 int
+INFO  14:05:59,801 - #51 niz
+INFO  14:05:59,801 - #10 [
+INFO  14:05:59,801 - #11 ]
+INFO  14:05:59,801 - #8 ;
+INFO  14:05:59,801 - #51 int
+INFO  14:05:59,802 - #51 niz1
+INFO  14:05:59,802 - #10 [
+INFO  14:05:59,802 - #11 ]
+INFO  14:05:59,802 - #8 ;
+INFO  14:05:59,802 - #51 char
+INFO  14:05:59,802 - #51 nizch
+INFO  14:05:59,802 - #10 [
+INFO  14:05:59,802 - #11 ]
+INFO  14:05:59,802 - #8 ;
+INFO  14:05:59,802 - #3 {
+INFO  14:05:59,802 - #9 void
+INFO  14:05:59,802 - #51 main
+INFO  14:05:59,802 - #15 (
+INFO  14:05:59,803 - #16 )
+INFO  14:05:59,803 - #3 {
+INFO  14:05:59,803 - #51 niz
+INFO  14:05:59,804 - #7 =
+INFO  14:05:59,804 - #51 niz1
+INFO  14:05:59,804 - #8 ;
+INFO  14:05:59,805 - #4 }
+INFO  14:05:59,805 - #4 }
+INFO  14:05:59,808 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      VarDeclarationList(
+        ConstDeclarationList(
+          ConstDeclarationList(
+            ConstDeclarationList(
+              ConstDeclarationList(
+                NoDeclaration(
+                ) [NoDeclaration]
+                ConstDeclerations(
+                  IdentType(
+                   int
+                  ) [IdentType]
+                  OneConstant(
+                    NumConstant(
+                     nula
+                     0
+                    ) [NumConstant]
+                  ) [OneConstant]
+                ) [ConstDeclerations]
+              ) [ConstDeclarationList]
+              ConstDeclerations(
+                IdentType(
+                 int
+                ) [IdentType]
+                OneConstant(
+                  NumConstant(
+                   jedan
+                   1
+                  ) [NumConstant]
+                ) [OneConstant]
+              ) [ConstDeclerations]
+            ) [ConstDeclarationList]
+            ConstDeclerations(
+              IdentType(
+               int
+              ) [IdentType]
+              OneConstant(
+                NumConstant(
+                 tri
+                 3
+                ) [NumConstant]
+              ) [OneConstant]
+            ) [ConstDeclerations]
+          ) [ConstDeclarationList]
+          ConstDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            OneConstant(
+              NumConstant(
+               pet
+               5
+              ) [NumConstant]
+            ) [OneConstant]
+          ) [ConstDeclerations]
+        ) [ConstDeclarationList]
+        VarDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          SingleVar(
+            VarArray(
+             niz
+            ) [VarArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [VarDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarArray(
+           niz1
+          ) [VarArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizch
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        NoStatement(
+        ) [NoStatement]
+        SingleStat(
+          DesignatorStat(
+            DesignatorStatementOp(
+              SingleDesig(
+               niz
+              ) [SingleDesig]
+              AssignOperation(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        VarDesig(
+                          SingleDesig(
+                           niz1
+                          ) [SingleDesig]
+                        ) [VarDesig]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+              ) [AssignOperation]
+            ) [DesignatorStatementOp]
+          ) [DesignatorStat]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  14:05:59,808 - ===================================
+INFO  14:05:59,809 - Definicija constante nula na liniji 5
+INFO  14:05:59,809 - Definicija constante jedan na liniji 6
+INFO  14:05:59,810 - Definicija constante tri na liniji 7
+INFO  14:05:59,810 - Definicija constante pet na liniji 8
+INFO  14:05:59,810 - Deklarisana niz niz na liniji 10
+INFO  14:05:59,810 - Deklarisana niz niz1 na liniji 11
+INFO  14:05:59,810 - Deklarisana niz nizch na liniji 12
+INFO  14:05:59,810 - Obradjuje se funkcija main na liniji 15
+INFO  14:05:59,810 - koriscen globalni simbol: niz na liniji 17
+INFO  14:05:59,810 - koriscen globalni simbol: niz1 na liniji 17
+INFO  14:05:59,810 - ===================================
+INFO  14:05:59,810 - Parsiranje koda uspesno zavrseno
+INFO  14:05:59,812 - Generisanje koda uspesno zavrseno

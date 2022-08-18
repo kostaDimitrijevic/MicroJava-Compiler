@@ -1,0 +1,198 @@
+INFO  20:03:49,072 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  20:03:49,101 - #2 program
+INFO  20:03:49,102 - #51 prog
+INFO  20:03:49,102 - #51 int
+INFO  20:03:49,102 - #51 x
+INFO  20:03:49,102 - #8 ;
+INFO  20:03:49,102 - #51 int
+INFO  20:03:49,102 - #51 niz
+INFO  20:03:49,102 - #10 [
+INFO  20:03:49,103 - #11 ]
+INFO  20:03:49,103 - #8 ;
+INFO  20:03:49,103 - #3 {
+INFO  20:03:49,103 - #9 void
+INFO  20:03:49,103 - #51 main
+INFO  20:03:49,103 - #15 (
+INFO  20:03:49,103 - #16 )
+INFO  20:03:49,104 - #3 {
+INFO  20:03:49,104 - #51 niz
+INFO  20:03:49,104 - #7 =
+INFO  20:03:49,105 - #35 new
+INFO  20:03:49,105 - #51 int
+INFO  20:03:49,105 - #10 [
+INFO  20:03:49,106 - #48 3
+INFO  20:03:49,106 - #11 ]
+INFO  20:03:49,106 - #8 ;
+INFO  20:03:49,106 - #51 niz
+INFO  20:03:49,106 - #10 [
+INFO  20:03:49,106 - #48 3
+INFO  20:03:49,106 - #11 ]
+INFO  20:03:49,106 - #7 =
+INFO  20:03:49,106 - #48 1
+INFO  20:03:49,106 - #8 ;
+INFO  20:03:49,106 - #22 print
+INFO  20:03:49,106 - #15 (
+INFO  20:03:49,106 - #51 x
+INFO  20:03:49,107 - #5 ,
+INFO  20:03:49,107 - #48 5
+INFO  20:03:49,107 - #16 )
+INFO  20:03:49,107 - #8 ;
+INFO  20:03:49,107 - #4 }
+INFO  20:03:49,107 - #4 }
+INFO  20:03:49,111 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         niz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   niz
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NewExpr(
+                              IdentType(
+                               int
+                              ) [IdentType]
+                              Express(
+                                TermExpr(
+                                  SingleTerm(
+                                    SingleFactor(
+                                      NumberConst(
+                                       3
+                                      ) [NumberConst]
+                                    ) [SingleFactor]
+                                  ) [SingleTerm]
+                                ) [TermExpr]
+                              ) [Express]
+                            ) [NewExpr]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                DesigList(
+                  DesigName(
+                   niz
+                  ) [DesigName]
+                  SingleField(
+                    FieldBox(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NumberConst(
+                               3
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                    ) [FieldBox]
+                  ) [SingleField]
+                ) [DesigList]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        SingleFactor(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [SingleFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       x
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  20:03:49,111 - ===================================
+INFO  20:03:49,115 - Deklarisana promenljiva x na liniji 2
+INFO  20:03:49,115 - Deklarisana niz niz na liniji 3
+INFO  20:03:49,115 - Obradjuje se funkcija main na liniji 5
+INFO  20:03:49,115 - koriscen globalni simbol: niz na liniji 6
+ERROR 20:03:49,116 - Greska na liniji 6 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  20:03:49,116 - koriscen globalni simbol: niz na liniji 7
+INFO  20:03:49,116 - koriscen globalni simbol: x na liniji 8
+INFO  20:03:49,116 - ===================================
+INFO  20:03:49,117 - Parsiranje koda uspesno zavrseno
+INFO  20:03:49,117 - Parsiranje koda nije uspesno zavrseno

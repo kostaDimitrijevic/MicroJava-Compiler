@@ -1,0 +1,197 @@
+INFO  20:06:42,032 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  20:06:42,059 - #2 program
+INFO  20:06:42,059 - #51 prog
+INFO  20:06:42,059 - #51 int
+INFO  20:06:42,059 - #51 x
+INFO  20:06:42,059 - #8 ;
+INFO  20:06:42,061 - #51 int
+INFO  20:06:42,061 - #51 niz
+INFO  20:06:42,061 - #10 [
+INFO  20:06:42,061 - #11 ]
+INFO  20:06:42,061 - #8 ;
+INFO  20:06:42,061 - #3 {
+INFO  20:06:42,061 - #9 void
+INFO  20:06:42,061 - #51 main
+INFO  20:06:42,062 - #15 (
+INFO  20:06:42,062 - #16 )
+INFO  20:06:42,062 - #3 {
+INFO  20:06:42,063 - #51 niz
+INFO  20:06:42,063 - #7 =
+INFO  20:06:42,063 - #35 new
+INFO  20:06:42,063 - #51 int
+INFO  20:06:42,063 - #10 [
+INFO  20:06:42,063 - #48 3
+INFO  20:06:42,063 - #11 ]
+INFO  20:06:42,064 - #8 ;
+INFO  20:06:42,064 - #51 niz
+INFO  20:06:42,064 - #10 [
+INFO  20:06:42,064 - #48 3
+INFO  20:06:42,064 - #11 ]
+INFO  20:06:42,064 - #7 =
+INFO  20:06:42,064 - #48 1
+INFO  20:06:42,064 - #8 ;
+INFO  20:06:42,065 - #22 print
+INFO  20:06:42,065 - #15 (
+INFO  20:06:42,065 - #51 x
+INFO  20:06:42,065 - #5 ,
+INFO  20:06:42,065 - #48 5
+INFO  20:06:42,065 - #16 )
+INFO  20:06:42,065 - #8 ;
+INFO  20:06:42,065 - #4 }
+INFO  20:06:42,065 - #4 }
+INFO  20:06:42,069 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      NoDeclaration(
+      ) [NoDeclaration]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarNoArray(
+           x
+          ) [VarNoArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       int
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         niz
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      NoMethodVarDecList(
+      ) [NoMethodVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            NoStatement(
+            ) [NoStatement]
+            SingleStat(
+              DesignatorStat(
+                DesignatorStatementOp(
+                  SingleDesig(
+                   niz
+                  ) [SingleDesig]
+                  AssignOperation(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            NewExpr(
+                              IdentType(
+                               int
+                              ) [IdentType]
+                              Express(
+                                TermExpr(
+                                  SingleTerm(
+                                    SingleFactor(
+                                      NumberConst(
+                                       3
+                                      ) [NumberConst]
+                                    ) [SingleFactor]
+                                  ) [SingleTerm]
+                                ) [TermExpr]
+                              ) [Express]
+                            ) [NewExpr]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                  ) [AssignOperation]
+                ) [DesignatorStatementOp]
+              ) [DesignatorStat]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            DesignatorStat(
+              DesignatorStatementOp(
+                DesigList(
+                  DesigName(
+                   niz
+                  ) [DesigName]
+                  SingleField(
+                    FieldBox(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              NumberConst(
+                               3
+                              ) [NumberConst]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                    ) [FieldBox]
+                  ) [SingleField]
+                ) [DesigList]
+                AssignOperation(
+                  Express(
+                    TermExpr(
+                      SingleTerm(
+                        SingleFactor(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [SingleFactor]
+                      ) [SingleTerm]
+                    ) [TermExpr]
+                  ) [Express]
+                ) [AssignOperation]
+              ) [DesignatorStatementOp]
+            ) [DesignatorStat]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       x
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            Prints(
+             5
+            ) [Prints]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  20:06:42,069 - ===================================
+INFO  20:06:42,071 - Deklarisana promenljiva x na liniji 2
+INFO  20:06:42,071 - Deklarisana niz niz na liniji 3
+INFO  20:06:42,071 - Obradjuje se funkcija main na liniji 5
+INFO  20:06:42,071 - koriscen globalni simbol: niz na liniji 6
+INFO  20:06:42,071 - koriscen globalni simbol: niz na liniji 7
+INFO  20:06:42,071 - koriscen globalni simbol: x na liniji 8
+INFO  20:06:42,071 - ===================================
+INFO  20:06:42,072 - Parsiranje koda uspesno zavrseno
+INFO  20:06:42,073 - Generisanje koda uspesno zavrseno

@@ -62,6 +62,7 @@ nonterminal Label Label;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Field Field;
 nonterminal FieldList FieldList;
+nonterminal Negative Negative;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
 nonterminal ActPars ActPars;
@@ -278,12 +279,12 @@ Expression ::= (AddExpr) Expression:ex Addop:A1 Term:term {: RESULT=new AddExpr(
 		   (TermExpr) Term:term {: RESULT=new TermExpr(term); RESULT.setLine(termleft); :}
 		   ;
 
-Term ::= (Terms) Term:t Mulop:M1 Factor:f {: RESULT=new Terms(t, M1, f); RESULT.setLine(tleft); :}
+Term ::= (Terms) Term:t COALESCE Negative:N1 Factor:f {: RESULT=new Terms(t, N1, f); RESULT.setLine(tleft); :}
 	 |
 	 (SingleTerm) Factor:F1 {: RESULT=new SingleTerm(F1); RESULT.setLine(F1left); :}
 	 ;
 
-Factor 	::= (ListFactor) Factor:F1 COALESCE BaseExp:B2 {: RESULT=new ListFactor(F1, B2); RESULT.setLine(F1left); :}
+Factor 	::= (ListFactor) Factor:F1 Mulop:M2 BaseExp:B3 {: RESULT=new ListFactor(F1, M2, B3); RESULT.setLine(F1left); :}
 		|
 		(SingleFactor) BaseExp:B1 {: RESULT=new SingleFactor(B1); RESULT.setLine(B1left); :}
 		;
@@ -329,5 +330,10 @@ Addop ::= (Plus) PLUS {: RESULT=new Plus(); :}
 	  |
 	  (Minus) MINUS {: RESULT=new Minus(); :}
 	  ;
+
+Negative ::= (NegativNum) MINUS {: RESULT=new NegativNum(); :}
+		 |
+		 (NoNegativ) {: RESULT=new NoNegativ(); :}
+		 ;
 
 Mulop ::= (Mul) MUL {: RESULT=new Mul(); :} | (Div) DIV {: RESULT=new Div(); :} | (Mod) MOD {: RESULT=new Mod(); :};	

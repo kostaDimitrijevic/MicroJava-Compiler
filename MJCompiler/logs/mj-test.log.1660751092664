@@ -1,0 +1,1307 @@
+INFO  17:44:30,926 - Compiling source file: C:\Users\koled\OneDrive\Desktop\etf\PP\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:44:30,951 - #2 program
+INFO  17:44:30,951 - #51 test301
+INFO  17:44:30,951 - #6 const
+INFO  17:44:30,952 - #51 int
+INFO  17:44:30,952 - #51 nula
+INFO  17:44:30,952 - #7 =
+INFO  17:44:30,952 - #48 0
+INFO  17:44:30,952 - #8 ;
+INFO  17:44:30,952 - #6 const
+INFO  17:44:30,952 - #51 int
+INFO  17:44:30,953 - #51 jedan
+INFO  17:44:30,953 - #7 =
+INFO  17:44:30,953 - #48 1
+INFO  17:44:30,953 - #8 ;
+INFO  17:44:30,953 - #6 const
+INFO  17:44:30,953 - #51 int
+INFO  17:44:30,953 - #51 tri
+INFO  17:44:30,953 - #7 =
+INFO  17:44:30,953 - #48 3
+INFO  17:44:30,953 - #8 ;
+INFO  17:44:30,953 - #6 const
+INFO  17:44:30,965 - #51 int
+INFO  17:44:30,965 - #51 pet
+INFO  17:44:30,965 - #7 =
+INFO  17:44:30,965 - #48 5
+INFO  17:44:30,965 - #8 ;
+INFO  17:44:30,965 - #51 int
+INFO  17:44:30,965 - #51 niz
+INFO  17:44:30,965 - #10 [
+INFO  17:44:30,965 - #11 ]
+INFO  17:44:30,965 - #8 ;
+INFO  17:44:30,965 - #51 char
+INFO  17:44:30,965 - #51 nizch
+INFO  17:44:30,966 - #10 [
+INFO  17:44:30,966 - #11 ]
+INFO  17:44:30,966 - #8 ;
+INFO  17:44:30,966 - #3 {
+INFO  17:44:30,966 - #9 void
+INFO  17:44:30,966 - #51 main
+INFO  17:44:30,966 - #15 (
+INFO  17:44:30,967 - #16 )
+INFO  17:44:30,967 - #51 int
+INFO  17:44:30,967 - #51 bodovi
+INFO  17:44:30,967 - #8 ;
+INFO  17:44:30,968 - #51 bool
+INFO  17:44:30,968 - #51 bt
+INFO  17:44:30,968 - #8 ;
+INFO  17:44:30,968 - #3 {
+INFO  17:44:30,968 - #51 bodovi
+INFO  17:44:30,968 - #7 =
+INFO  17:44:30,968 - #48 0
+INFO  17:44:30,968 - #8 ;
+INFO  17:44:30,969 - #51 bodovi
+INFO  17:44:30,969 - #27 ++
+INFO  17:44:30,969 - #8 ;
+INFO  17:44:30,969 - #51 bodovi
+INFO  17:44:30,969 - #7 =
+INFO  17:44:30,969 - #15 (
+INFO  17:44:30,969 - #51 bodovi
+INFO  17:44:30,969 - #33 +
+INFO  17:44:30,969 - #51 jedan
+INFO  17:44:30,970 - #16 )
+INFO  17:44:30,970 - #47 ??
+INFO  17:44:30,970 - #51 tri
+INFO  17:44:30,970 - #8 ;
+INFO  17:44:30,970 - #51 bodovi
+INFO  17:44:30,970 - #7 =
+INFO  17:44:30,970 - #51 bodovi
+INFO  17:44:30,970 - #30 *
+INFO  17:44:30,970 - #51 pet
+INFO  17:44:30,971 - #8 ;
+INFO  17:44:30,971 - #51 bodovi
+INFO  17:44:30,971 - #28 --
+INFO  17:44:30,971 - #8 ;
+INFO  17:44:30,971 - #22 print
+INFO  17:44:30,971 - #15 (
+INFO  17:44:30,971 - #51 bodovi
+INFO  17:44:30,971 - #16 )
+INFO  17:44:30,972 - #8 ;
+INFO  17:44:30,972 - #51 niz
+INFO  17:44:30,972 - #7 =
+INFO  17:44:30,972 - #35 new
+INFO  17:44:30,972 - #51 int
+INFO  17:44:30,972 - #10 [
+INFO  17:44:30,972 - #48 3
+INFO  17:44:30,972 - #11 ]
+INFO  17:44:30,972 - #8 ;
+INFO  17:44:30,972 - #51 niz
+INFO  17:44:30,972 - #10 [
+INFO  17:44:30,972 - #51 nula
+INFO  17:44:30,972 - #11 ]
+INFO  17:44:30,972 - #7 =
+INFO  17:44:30,973 - #51 jedan
+INFO  17:44:30,973 - #8 ;
+INFO  17:44:30,973 - #51 niz
+INFO  17:44:30,973 - #10 [
+INFO  17:44:30,973 - #48 1
+INFO  17:44:30,973 - #11 ]
+INFO  17:44:30,973 - #7 =
+INFO  17:44:30,973 - #48 2
+INFO  17:44:30,973 - #8 ;
+INFO  17:44:30,973 - #51 niz
+INFO  17:44:30,973 - #10 [
+INFO  17:44:30,973 - #51 niz
+INFO  17:44:30,973 - #10 [
+INFO  17:44:30,973 - #51 jedan
+INFO  17:44:30,973 - #11 ]
+INFO  17:44:30,973 - #47 ??
+INFO  17:44:30,973 - #34 -
+ERROR 17:44:30,973 - 
+Sintaksna greska na liniji 29
+INFO  17:44:30,973 - #48 1
+INFO  17:44:30,973 - #11 ]
+INFO  17:44:30,973 - #7 =
+INFO  17:44:30,974 - #51 niz
+INFO  17:44:30,974 - #10 [
+INFO  17:44:30,974 - #15 (
+INFO  17:44:30,974 - #51 niz
+INFO  17:44:30,974 - #10 [
+INFO  17:44:30,974 - #48 0
+INFO  17:44:30,974 - #11 ]
+INFO  17:44:30,974 - #34 -
+INFO  17:44:30,974 - #51 jedan
+INFO  17:44:30,974 - #16 )
+INFO  17:44:30,974 - #47 ??
+INFO  17:44:30,974 - #15 (
+INFO  17:44:30,975 - #51 bodovi
+INFO  17:44:30,975 - #30 *
+INFO  17:44:30,975 - #51 nula
+INFO  17:44:30,975 - #47 ??
+INFO  17:44:30,975 - #51 jedan
+INFO  17:44:30,975 - #16 )
+INFO  17:44:30,975 - #11 ]
+INFO  17:44:30,975 - #30 *
+INFO  17:44:30,975 - #48 3
+INFO  17:44:30,975 - #8 ;
+INFO  17:44:30,975 - #51 bodovi
+INFO  17:44:30,975 - #7 =
+INFO  17:44:30,975 - #51 niz
+ERROR 17:44:30,975 - Izvrsen oporavak do ; u liniji29
+INFO  17:44:30,975 - #10 [
+INFO  17:44:30,975 - #48 2
+INFO  17:44:30,975 - #11 ]
+INFO  17:44:30,975 - #31 /
+INFO  17:44:30,975 - #51 niz
+INFO  17:44:30,976 - #10 [
+INFO  17:44:30,976 - #48 0
+INFO  17:44:30,976 - #11 ]
+INFO  17:44:30,976 - #8 ;
+INFO  17:44:30,976 - #22 print
+INFO  17:44:30,976 - #15 (
+INFO  17:44:30,976 - #51 bodovi
+INFO  17:44:30,976 - #16 )
+INFO  17:44:30,976 - #8 ;
+INFO  17:44:30,976 - #22 print
+INFO  17:44:30,976 - #15 (
+INFO  17:44:30,976 - #51 niz
+INFO  17:44:30,976 - #10 [
+INFO  17:44:30,976 - #48 2
+INFO  17:44:30,976 - #11 ]
+INFO  17:44:30,976 - #16 )
+INFO  17:44:30,976 - #8 ;
+INFO  17:44:30,976 - #51 nizch
+INFO  17:44:30,976 - #7 =
+INFO  17:44:30,976 - #35 new
+INFO  17:44:30,976 - #51 char
+INFO  17:44:30,976 - #10 [
+INFO  17:44:30,976 - #48 3
+INFO  17:44:30,976 - #11 ]
+INFO  17:44:30,976 - #8 ;
+INFO  17:44:30,978 - #51 nizch
+INFO  17:44:30,978 - #10 [
+INFO  17:44:30,978 - #48 0
+INFO  17:44:30,978 - #11 ]
+INFO  17:44:30,978 - #7 =
+INFO  17:44:30,978 - #50 a
+INFO  17:44:30,978 - #8 ;
+INFO  17:44:30,978 - #51 nizch
+INFO  17:44:30,978 - #10 [
+INFO  17:44:30,978 - #51 jedan
+INFO  17:44:30,978 - #11 ]
+INFO  17:44:30,978 - #7 =
+INFO  17:44:30,978 - #50 b
+INFO  17:44:30,978 - #8 ;
+INFO  17:44:30,978 - #51 nizch
+INFO  17:44:30,978 - #10 [
+INFO  17:44:30,978 - #51 pet
+INFO  17:44:30,978 - #34 -
+INFO  17:44:30,978 - #48 3
+INFO  17:44:30,979 - #11 ]
+INFO  17:44:30,979 - #7 =
+INFO  17:44:30,979 - #50 c
+INFO  17:44:30,979 - #8 ;
+INFO  17:44:30,979 - #22 print
+INFO  17:44:30,979 - #15 (
+INFO  17:44:30,979 - #51 nizch
+INFO  17:44:30,979 - #10 [
+INFO  17:44:30,979 - #48 1
+INFO  17:44:30,979 - #11 ]
+INFO  17:44:30,979 - #16 )
+INFO  17:44:30,979 - #8 ;
+INFO  17:44:30,979 - #22 print
+INFO  17:44:30,979 - #15 (
+INFO  17:44:30,979 - #51 nizch
+INFO  17:44:30,979 - #10 [
+INFO  17:44:30,979 - #51 jedan
+INFO  17:44:30,979 - #30 *
+INFO  17:44:30,979 - #48 2
+INFO  17:44:30,979 - #11 ]
+INFO  17:44:30,979 - #16 )
+INFO  17:44:30,979 - #8 ;
+INFO  17:44:30,979 - #51 bodovi
+INFO  17:44:30,979 - #7 =
+INFO  17:44:30,979 - #51 bodovi
+INFO  17:44:30,979 - #33 +
+INFO  17:44:30,979 - #15 (
+INFO  17:44:30,979 - #51 pet
+INFO  17:44:30,979 - #30 *
+INFO  17:44:30,979 - #51 jedan
+INFO  17:44:30,979 - #34 -
+INFO  17:44:30,979 - #48 1
+INFO  17:44:30,980 - #16 )
+INFO  17:44:30,980 - #30 *
+INFO  17:44:30,980 - #51 bodovi
+INFO  17:44:30,980 - #34 -
+INFO  17:44:30,980 - #15 (
+INFO  17:44:30,980 - #48 3
+INFO  17:44:30,980 - #32 %
+INFO  17:44:30,980 - #48 2
+INFO  17:44:30,980 - #33 +
+INFO  17:44:30,980 - #48 3
+INFO  17:44:30,980 - #30 *
+INFO  17:44:30,980 - #48 2
+INFO  17:44:30,980 - #34 -
+INFO  17:44:30,980 - #48 3
+INFO  17:44:30,980 - #16 )
+INFO  17:44:30,980 - #8 ;
+INFO  17:44:30,980 - #22 print
+INFO  17:44:30,980 - #15 (
+INFO  17:44:30,980 - #51 bodovi
+INFO  17:44:30,980 - #16 )
+INFO  17:44:30,980 - #8 ;
+INFO  17:44:30,980 - #23 read
+INFO  17:44:30,981 - #15 (
+INFO  17:44:30,981 - #51 bodovi
+INFO  17:44:30,981 - #16 )
+INFO  17:44:30,981 - #8 ;
+INFO  17:44:30,981 - #22 print
+INFO  17:44:30,981 - #15 (
+INFO  17:44:30,981 - #51 bodovi
+INFO  17:44:30,981 - #16 )
+INFO  17:44:30,981 - #8 ;
+INFO  17:44:30,981 - #4 }
+INFO  17:44:30,981 - #4 }
+INFO  17:44:30,985 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarationList(
+    VarDeclarationList(
+      ConstDeclarationList(
+        ConstDeclarationList(
+          ConstDeclarationList(
+            ConstDeclarationList(
+              NoDeclaration(
+              ) [NoDeclaration]
+              ConstDeclerations(
+                IdentType(
+                 int
+                ) [IdentType]
+                OneConstant(
+                  NumConstant(
+                   nula
+                   0
+                  ) [NumConstant]
+                ) [OneConstant]
+              ) [ConstDeclerations]
+            ) [ConstDeclarationList]
+            ConstDeclerations(
+              IdentType(
+               int
+              ) [IdentType]
+              OneConstant(
+                NumConstant(
+                 jedan
+                 1
+                ) [NumConstant]
+              ) [OneConstant]
+            ) [ConstDeclerations]
+          ) [ConstDeclarationList]
+          ConstDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            OneConstant(
+              NumConstant(
+               tri
+               3
+              ) [NumConstant]
+            ) [OneConstant]
+          ) [ConstDeclerations]
+        ) [ConstDeclarationList]
+        ConstDeclerations(
+          IdentType(
+           int
+          ) [IdentType]
+          OneConstant(
+            NumConstant(
+             pet
+             5
+            ) [NumConstant]
+          ) [OneConstant]
+        ) [ConstDeclerations]
+      ) [ConstDeclarationList]
+      VarDeclerations(
+        IdentType(
+         int
+        ) [IdentType]
+        SingleVar(
+          VarArray(
+           niz
+          ) [VarArray]
+        ) [SingleVar]
+      ) [VarDeclerations]
+    ) [VarDeclarationList]
+    VarDeclerations(
+      IdentType(
+       char
+      ) [IdentType]
+      SingleVar(
+        VarArray(
+         nizch
+        ) [VarArray]
+      ) [SingleVar]
+    ) [VarDeclerations]
+  ) [VarDeclarationList]
+  SingleMethodDeclaration(
+    Method(
+      MethodTypeName(
+        VoidType(
+        ) [VoidType]
+       main
+      ) [MethodTypeName]
+      NoParams(
+      ) [NoParams]
+      HasVarDecList(
+        HasVarDecList(
+          NoMethodVarDecList(
+          ) [NoMethodVarDecList]
+          VarDeclerations(
+            IdentType(
+             int
+            ) [IdentType]
+            SingleVar(
+              VarNoArray(
+               bodovi
+              ) [VarNoArray]
+            ) [SingleVar]
+          ) [VarDeclerations]
+        ) [HasVarDecList]
+        VarDeclerations(
+          IdentType(
+           bool
+          ) [IdentType]
+          SingleVar(
+            VarNoArray(
+             bt
+            ) [VarNoArray]
+          ) [SingleVar]
+        ) [VarDeclerations]
+      ) [HasVarDecList]
+      ListOfStatements(
+        ListOfStatements(
+          ListOfStatements(
+            ListOfStatements(
+              ListOfStatements(
+                ListOfStatements(
+                  ListOfStatements(
+                    ListOfStatements(
+                      ListOfStatements(
+                        ListOfStatements(
+                          ListOfStatements(
+                            ListOfStatements(
+                              ListOfStatements(
+                                ListOfStatements(
+                                  ListOfStatements(
+                                    ListOfStatements(
+                                      ListOfStatements(
+                                        ListOfStatements(
+                                          ListOfStatements(
+                                            ListOfStatements(
+                                              ListOfStatements(
+                                                ListOfStatements(
+                                                  ListOfStatements(
+                                                    NoStatement(
+                                                    ) [NoStatement]
+                                                    SingleStat(
+                                                      DesignatorStat(
+                                                        DesignatorStatementOp(
+                                                          SingleDesig(
+                                                           bodovi
+                                                          ) [SingleDesig]
+                                                          AssignOperation(
+                                                            Express(
+                                                              TermExpr(
+                                                                SingleTerm(
+                                                                  SingleFactor(
+                                                                    NumberConst(
+                                                                     0
+                                                                    ) [NumberConst]
+                                                                  ) [SingleFactor]
+                                                                ) [SingleTerm]
+                                                              ) [TermExpr]
+                                                            ) [Express]
+                                                          ) [AssignOperation]
+                                                        ) [DesignatorStatementOp]
+                                                      ) [DesignatorStat]
+                                                    ) [SingleStat]
+                                                  ) [ListOfStatements]
+                                                  SingleStat(
+                                                    DesignatorStat(
+                                                      DesignatorStatementOp(
+                                                        SingleDesig(
+                                                         bodovi
+                                                        ) [SingleDesig]
+                                                        Inc(
+                                                        ) [Inc]
+                                                      ) [DesignatorStatementOp]
+                                                    ) [DesignatorStat]
+                                                  ) [SingleStat]
+                                                ) [ListOfStatements]
+                                                SingleStat(
+                                                  DesignatorStat(
+                                                    DesignatorStatementOp(
+                                                      SingleDesig(
+                                                       bodovi
+                                                      ) [SingleDesig]
+                                                      AssignOperation(
+                                                        Express(
+                                                          TermExpr(
+                                                            SingleTerm(
+                                                              ListFactor(
+                                                                SingleFactor(
+                                                                  FactorExpr(
+                                                                    Express(
+                                                                      AddExpr(
+                                                                        TermExpr(
+                                                                          SingleTerm(
+                                                                            SingleFactor(
+                                                                              VarDesig(
+                                                                                SingleDesig(
+                                                                                 bodovi
+                                                                                ) [SingleDesig]
+                                                                              ) [VarDesig]
+                                                                            ) [SingleFactor]
+                                                                          ) [SingleTerm]
+                                                                        ) [TermExpr]
+                                                                        Plus(
+                                                                        ) [Plus]
+                                                                        SingleTerm(
+                                                                          SingleFactor(
+                                                                            VarDesig(
+                                                                              SingleDesig(
+                                                                               jedan
+                                                                              ) [SingleDesig]
+                                                                            ) [VarDesig]
+                                                                          ) [SingleFactor]
+                                                                        ) [SingleTerm]
+                                                                      ) [AddExpr]
+                                                                    ) [Express]
+                                                                  ) [FactorExpr]
+                                                                ) [SingleFactor]
+                                                                VarDesig(
+                                                                  SingleDesig(
+                                                                   tri
+                                                                  ) [SingleDesig]
+                                                                ) [VarDesig]
+                                                              ) [ListFactor]
+                                                            ) [SingleTerm]
+                                                          ) [TermExpr]
+                                                        ) [Express]
+                                                      ) [AssignOperation]
+                                                    ) [DesignatorStatementOp]
+                                                  ) [DesignatorStat]
+                                                ) [SingleStat]
+                                              ) [ListOfStatements]
+                                              SingleStat(
+                                                DesignatorStat(
+                                                  DesignatorStatementOp(
+                                                    SingleDesig(
+                                                     bodovi
+                                                    ) [SingleDesig]
+                                                    AssignOperation(
+                                                      Express(
+                                                        TermExpr(
+                                                          Terms(
+                                                            SingleTerm(
+                                                              SingleFactor(
+                                                                VarDesig(
+                                                                  SingleDesig(
+                                                                   bodovi
+                                                                  ) [SingleDesig]
+                                                                ) [VarDesig]
+                                                              ) [SingleFactor]
+                                                            ) [SingleTerm]
+                                                            Mul(
+                                                            ) [Mul]
+                                                            SingleFactor(
+                                                              VarDesig(
+                                                                SingleDesig(
+                                                                 pet
+                                                                ) [SingleDesig]
+                                                              ) [VarDesig]
+                                                            ) [SingleFactor]
+                                                          ) [Terms]
+                                                        ) [TermExpr]
+                                                      ) [Express]
+                                                    ) [AssignOperation]
+                                                  ) [DesignatorStatementOp]
+                                                ) [DesignatorStat]
+                                              ) [SingleStat]
+                                            ) [ListOfStatements]
+                                            SingleStat(
+                                              DesignatorStat(
+                                                DesignatorStatementOp(
+                                                  SingleDesig(
+                                                   bodovi
+                                                  ) [SingleDesig]
+                                                  Dec(
+                                                  ) [Dec]
+                                                ) [DesignatorStatementOp]
+                                              ) [DesignatorStat]
+                                            ) [SingleStat]
+                                          ) [ListOfStatements]
+                                          SingleStat(
+                                            PrintStatement(
+                                              Express(
+                                                TermExpr(
+                                                  SingleTerm(
+                                                    SingleFactor(
+                                                      VarDesig(
+                                                        SingleDesig(
+                                                         bodovi
+                                                        ) [SingleDesig]
+                                                      ) [VarDesig]
+                                                    ) [SingleFactor]
+                                                  ) [SingleTerm]
+                                                ) [TermExpr]
+                                              ) [Express]
+                                              NoPrintable(
+                                              ) [NoPrintable]
+                                            ) [PrintStatement]
+                                          ) [SingleStat]
+                                        ) [ListOfStatements]
+                                        SingleStat(
+                                          DesignatorStat(
+                                            DesignatorStatementOp(
+                                              SingleDesig(
+                                               niz
+                                              ) [SingleDesig]
+                                              AssignOperation(
+                                                Express(
+                                                  TermExpr(
+                                                    SingleTerm(
+                                                      SingleFactor(
+                                                        NewExpr(
+                                                          IdentType(
+                                                           int
+                                                          ) [IdentType]
+                                                          Express(
+                                                            TermExpr(
+                                                              SingleTerm(
+                                                                SingleFactor(
+                                                                  NumberConst(
+                                                                   3
+                                                                  ) [NumberConst]
+                                                                ) [SingleFactor]
+                                                              ) [SingleTerm]
+                                                            ) [TermExpr]
+                                                          ) [Express]
+                                                        ) [NewExpr]
+                                                      ) [SingleFactor]
+                                                    ) [SingleTerm]
+                                                  ) [TermExpr]
+                                                ) [Express]
+                                              ) [AssignOperation]
+                                            ) [DesignatorStatementOp]
+                                          ) [DesignatorStat]
+                                        ) [SingleStat]
+                                      ) [ListOfStatements]
+                                      SingleStat(
+                                        DesignatorStat(
+                                          DesignatorStatementOp(
+                                            DesigList(
+                                              DesigName(
+                                               niz
+                                              ) [DesigName]
+                                              SingleField(
+                                                FieldBox(
+                                                  Express(
+                                                    TermExpr(
+                                                      SingleTerm(
+                                                        SingleFactor(
+                                                          VarDesig(
+                                                            SingleDesig(
+                                                             nula
+                                                            ) [SingleDesig]
+                                                          ) [VarDesig]
+                                                        ) [SingleFactor]
+                                                      ) [SingleTerm]
+                                                    ) [TermExpr]
+                                                  ) [Express]
+                                                ) [FieldBox]
+                                              ) [SingleField]
+                                            ) [DesigList]
+                                            AssignOperation(
+                                              Express(
+                                                TermExpr(
+                                                  SingleTerm(
+                                                    SingleFactor(
+                                                      VarDesig(
+                                                        SingleDesig(
+                                                         jedan
+                                                        ) [SingleDesig]
+                                                      ) [VarDesig]
+                                                    ) [SingleFactor]
+                                                  ) [SingleTerm]
+                                                ) [TermExpr]
+                                              ) [Express]
+                                            ) [AssignOperation]
+                                          ) [DesignatorStatementOp]
+                                        ) [DesignatorStat]
+                                      ) [SingleStat]
+                                    ) [ListOfStatements]
+                                    SingleStat(
+                                      DesignatorStat(
+                                        DesignatorStatementOp(
+                                          DesigList(
+                                            DesigName(
+                                             niz
+                                            ) [DesigName]
+                                            SingleField(
+                                              FieldBox(
+                                                Express(
+                                                  TermExpr(
+                                                    SingleTerm(
+                                                      SingleFactor(
+                                                        NumberConst(
+                                                         1
+                                                        ) [NumberConst]
+                                                      ) [SingleFactor]
+                                                    ) [SingleTerm]
+                                                  ) [TermExpr]
+                                                ) [Express]
+                                              ) [FieldBox]
+                                            ) [SingleField]
+                                          ) [DesigList]
+                                          AssignOperation(
+                                            Express(
+                                              TermExpr(
+                                                SingleTerm(
+                                                  SingleFactor(
+                                                    NumberConst(
+                                                     2
+                                                    ) [NumberConst]
+                                                  ) [SingleFactor]
+                                                ) [SingleTerm]
+                                              ) [TermExpr]
+                                            ) [Express]
+                                          ) [AssignOperation]
+                                        ) [DesignatorStatementOp]
+                                      ) [DesignatorStat]
+                                    ) [SingleStat]
+                                  ) [ListOfStatements]
+                                  SingleStat(
+                                    SingleStatementDerived1(
+                                    ) [SingleStatementDerived1]
+                                  ) [SingleStat]
+                                ) [ListOfStatements]
+                                SingleStat(
+                                  DesignatorStat(
+                                    DesignatorStatementOp(
+                                      SingleDesig(
+                                       bodovi
+                                      ) [SingleDesig]
+                                      AssignOperation(
+                                        Express(
+                                          TermExpr(
+                                            Terms(
+                                              SingleTerm(
+                                                SingleFactor(
+                                                  VarDesig(
+                                                    DesigList(
+                                                      DesigName(
+                                                       niz
+                                                      ) [DesigName]
+                                                      SingleField(
+                                                        FieldBox(
+                                                          Express(
+                                                            TermExpr(
+                                                              SingleTerm(
+                                                                SingleFactor(
+                                                                  NumberConst(
+                                                                   2
+                                                                  ) [NumberConst]
+                                                                ) [SingleFactor]
+                                                              ) [SingleTerm]
+                                                            ) [TermExpr]
+                                                          ) [Express]
+                                                        ) [FieldBox]
+                                                      ) [SingleField]
+                                                    ) [DesigList]
+                                                  ) [VarDesig]
+                                                ) [SingleFactor]
+                                              ) [SingleTerm]
+                                              Div(
+                                              ) [Div]
+                                              SingleFactor(
+                                                VarDesig(
+                                                  DesigList(
+                                                    DesigName(
+                                                     niz
+                                                    ) [DesigName]
+                                                    SingleField(
+                                                      FieldBox(
+                                                        Express(
+                                                          TermExpr(
+                                                            SingleTerm(
+                                                              SingleFactor(
+                                                                NumberConst(
+                                                                 0
+                                                                ) [NumberConst]
+                                                              ) [SingleFactor]
+                                                            ) [SingleTerm]
+                                                          ) [TermExpr]
+                                                        ) [Express]
+                                                      ) [FieldBox]
+                                                    ) [SingleField]
+                                                  ) [DesigList]
+                                                ) [VarDesig]
+                                              ) [SingleFactor]
+                                            ) [Terms]
+                                          ) [TermExpr]
+                                        ) [Express]
+                                      ) [AssignOperation]
+                                    ) [DesignatorStatementOp]
+                                  ) [DesignatorStat]
+                                ) [SingleStat]
+                              ) [ListOfStatements]
+                              SingleStat(
+                                PrintStatement(
+                                  Express(
+                                    TermExpr(
+                                      SingleTerm(
+                                        SingleFactor(
+                                          VarDesig(
+                                            SingleDesig(
+                                             bodovi
+                                            ) [SingleDesig]
+                                          ) [VarDesig]
+                                        ) [SingleFactor]
+                                      ) [SingleTerm]
+                                    ) [TermExpr]
+                                  ) [Express]
+                                  NoPrintable(
+                                  ) [NoPrintable]
+                                ) [PrintStatement]
+                              ) [SingleStat]
+                            ) [ListOfStatements]
+                            SingleStat(
+                              PrintStatement(
+                                Express(
+                                  TermExpr(
+                                    SingleTerm(
+                                      SingleFactor(
+                                        VarDesig(
+                                          DesigList(
+                                            DesigName(
+                                             niz
+                                            ) [DesigName]
+                                            SingleField(
+                                              FieldBox(
+                                                Express(
+                                                  TermExpr(
+                                                    SingleTerm(
+                                                      SingleFactor(
+                                                        NumberConst(
+                                                         2
+                                                        ) [NumberConst]
+                                                      ) [SingleFactor]
+                                                    ) [SingleTerm]
+                                                  ) [TermExpr]
+                                                ) [Express]
+                                              ) [FieldBox]
+                                            ) [SingleField]
+                                          ) [DesigList]
+                                        ) [VarDesig]
+                                      ) [SingleFactor]
+                                    ) [SingleTerm]
+                                  ) [TermExpr]
+                                ) [Express]
+                                NoPrintable(
+                                ) [NoPrintable]
+                              ) [PrintStatement]
+                            ) [SingleStat]
+                          ) [ListOfStatements]
+                          SingleStat(
+                            DesignatorStat(
+                              DesignatorStatementOp(
+                                SingleDesig(
+                                 nizch
+                                ) [SingleDesig]
+                                AssignOperation(
+                                  Express(
+                                    TermExpr(
+                                      SingleTerm(
+                                        SingleFactor(
+                                          NewExpr(
+                                            IdentType(
+                                             char
+                                            ) [IdentType]
+                                            Express(
+                                              TermExpr(
+                                                SingleTerm(
+                                                  SingleFactor(
+                                                    NumberConst(
+                                                     3
+                                                    ) [NumberConst]
+                                                  ) [SingleFactor]
+                                                ) [SingleTerm]
+                                              ) [TermExpr]
+                                            ) [Express]
+                                          ) [NewExpr]
+                                        ) [SingleFactor]
+                                      ) [SingleTerm]
+                                    ) [TermExpr]
+                                  ) [Express]
+                                ) [AssignOperation]
+                              ) [DesignatorStatementOp]
+                            ) [DesignatorStat]
+                          ) [SingleStat]
+                        ) [ListOfStatements]
+                        SingleStat(
+                          DesignatorStat(
+                            DesignatorStatementOp(
+                              DesigList(
+                                DesigName(
+                                 nizch
+                                ) [DesigName]
+                                SingleField(
+                                  FieldBox(
+                                    Express(
+                                      TermExpr(
+                                        SingleTerm(
+                                          SingleFactor(
+                                            NumberConst(
+                                             0
+                                            ) [NumberConst]
+                                          ) [SingleFactor]
+                                        ) [SingleTerm]
+                                      ) [TermExpr]
+                                    ) [Express]
+                                  ) [FieldBox]
+                                ) [SingleField]
+                              ) [DesigList]
+                              AssignOperation(
+                                Express(
+                                  TermExpr(
+                                    SingleTerm(
+                                      SingleFactor(
+                                        CharacterConst(
+                                         a
+                                        ) [CharacterConst]
+                                      ) [SingleFactor]
+                                    ) [SingleTerm]
+                                  ) [TermExpr]
+                                ) [Express]
+                              ) [AssignOperation]
+                            ) [DesignatorStatementOp]
+                          ) [DesignatorStat]
+                        ) [SingleStat]
+                      ) [ListOfStatements]
+                      SingleStat(
+                        DesignatorStat(
+                          DesignatorStatementOp(
+                            DesigList(
+                              DesigName(
+                               nizch
+                              ) [DesigName]
+                              SingleField(
+                                FieldBox(
+                                  Express(
+                                    TermExpr(
+                                      SingleTerm(
+                                        SingleFactor(
+                                          VarDesig(
+                                            SingleDesig(
+                                             jedan
+                                            ) [SingleDesig]
+                                          ) [VarDesig]
+                                        ) [SingleFactor]
+                                      ) [SingleTerm]
+                                    ) [TermExpr]
+                                  ) [Express]
+                                ) [FieldBox]
+                              ) [SingleField]
+                            ) [DesigList]
+                            AssignOperation(
+                              Express(
+                                TermExpr(
+                                  SingleTerm(
+                                    SingleFactor(
+                                      CharacterConst(
+                                       b
+                                      ) [CharacterConst]
+                                    ) [SingleFactor]
+                                  ) [SingleTerm]
+                                ) [TermExpr]
+                              ) [Express]
+                            ) [AssignOperation]
+                          ) [DesignatorStatementOp]
+                        ) [DesignatorStat]
+                      ) [SingleStat]
+                    ) [ListOfStatements]
+                    SingleStat(
+                      DesignatorStat(
+                        DesignatorStatementOp(
+                          DesigList(
+                            DesigName(
+                             nizch
+                            ) [DesigName]
+                            SingleField(
+                              FieldBox(
+                                Express(
+                                  AddExpr(
+                                    TermExpr(
+                                      SingleTerm(
+                                        SingleFactor(
+                                          VarDesig(
+                                            SingleDesig(
+                                             pet
+                                            ) [SingleDesig]
+                                          ) [VarDesig]
+                                        ) [SingleFactor]
+                                      ) [SingleTerm]
+                                    ) [TermExpr]
+                                    Minus(
+                                    ) [Minus]
+                                    SingleTerm(
+                                      SingleFactor(
+                                        NumberConst(
+                                         3
+                                        ) [NumberConst]
+                                      ) [SingleFactor]
+                                    ) [SingleTerm]
+                                  ) [AddExpr]
+                                ) [Express]
+                              ) [FieldBox]
+                            ) [SingleField]
+                          ) [DesigList]
+                          AssignOperation(
+                            Express(
+                              TermExpr(
+                                SingleTerm(
+                                  SingleFactor(
+                                    CharacterConst(
+                                     c
+                                    ) [CharacterConst]
+                                  ) [SingleFactor]
+                                ) [SingleTerm]
+                              ) [TermExpr]
+                            ) [Express]
+                          ) [AssignOperation]
+                        ) [DesignatorStatementOp]
+                      ) [DesignatorStat]
+                    ) [SingleStat]
+                  ) [ListOfStatements]
+                  SingleStat(
+                    PrintStatement(
+                      Express(
+                        TermExpr(
+                          SingleTerm(
+                            SingleFactor(
+                              VarDesig(
+                                DesigList(
+                                  DesigName(
+                                   nizch
+                                  ) [DesigName]
+                                  SingleField(
+                                    FieldBox(
+                                      Express(
+                                        TermExpr(
+                                          SingleTerm(
+                                            SingleFactor(
+                                              NumberConst(
+                                               1
+                                              ) [NumberConst]
+                                            ) [SingleFactor]
+                                          ) [SingleTerm]
+                                        ) [TermExpr]
+                                      ) [Express]
+                                    ) [FieldBox]
+                                  ) [SingleField]
+                                ) [DesigList]
+                              ) [VarDesig]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [TermExpr]
+                      ) [Express]
+                      NoPrintable(
+                      ) [NoPrintable]
+                    ) [PrintStatement]
+                  ) [SingleStat]
+                ) [ListOfStatements]
+                SingleStat(
+                  PrintStatement(
+                    Express(
+                      TermExpr(
+                        SingleTerm(
+                          SingleFactor(
+                            VarDesig(
+                              DesigList(
+                                DesigName(
+                                 nizch
+                                ) [DesigName]
+                                SingleField(
+                                  FieldBox(
+                                    Express(
+                                      TermExpr(
+                                        Terms(
+                                          SingleTerm(
+                                            SingleFactor(
+                                              VarDesig(
+                                                SingleDesig(
+                                                 jedan
+                                                ) [SingleDesig]
+                                              ) [VarDesig]
+                                            ) [SingleFactor]
+                                          ) [SingleTerm]
+                                          Mul(
+                                          ) [Mul]
+                                          SingleFactor(
+                                            NumberConst(
+                                             2
+                                            ) [NumberConst]
+                                          ) [SingleFactor]
+                                        ) [Terms]
+                                      ) [TermExpr]
+                                    ) [Express]
+                                  ) [FieldBox]
+                                ) [SingleField]
+                              ) [DesigList]
+                            ) [VarDesig]
+                          ) [SingleFactor]
+                        ) [SingleTerm]
+                      ) [TermExpr]
+                    ) [Express]
+                    NoPrintable(
+                    ) [NoPrintable]
+                  ) [PrintStatement]
+                ) [SingleStat]
+              ) [ListOfStatements]
+              SingleStat(
+                DesignatorStat(
+                  DesignatorStatementOp(
+                    SingleDesig(
+                     bodovi
+                    ) [SingleDesig]
+                    AssignOperation(
+                      Express(
+                        AddExpr(
+                          AddExpr(
+                            TermExpr(
+                              SingleTerm(
+                                SingleFactor(
+                                  VarDesig(
+                                    SingleDesig(
+                                     bodovi
+                                    ) [SingleDesig]
+                                  ) [VarDesig]
+                                ) [SingleFactor]
+                              ) [SingleTerm]
+                            ) [TermExpr]
+                            Plus(
+                            ) [Plus]
+                            Terms(
+                              SingleTerm(
+                                SingleFactor(
+                                  FactorExpr(
+                                    Express(
+                                      AddExpr(
+                                        TermExpr(
+                                          Terms(
+                                            SingleTerm(
+                                              SingleFactor(
+                                                VarDesig(
+                                                  SingleDesig(
+                                                   pet
+                                                  ) [SingleDesig]
+                                                ) [VarDesig]
+                                              ) [SingleFactor]
+                                            ) [SingleTerm]
+                                            Mul(
+                                            ) [Mul]
+                                            SingleFactor(
+                                              VarDesig(
+                                                SingleDesig(
+                                                 jedan
+                                                ) [SingleDesig]
+                                              ) [VarDesig]
+                                            ) [SingleFactor]
+                                          ) [Terms]
+                                        ) [TermExpr]
+                                        Minus(
+                                        ) [Minus]
+                                        SingleTerm(
+                                          SingleFactor(
+                                            NumberConst(
+                                             1
+                                            ) [NumberConst]
+                                          ) [SingleFactor]
+                                        ) [SingleTerm]
+                                      ) [AddExpr]
+                                    ) [Express]
+                                  ) [FactorExpr]
+                                ) [SingleFactor]
+                              ) [SingleTerm]
+                              Mul(
+                              ) [Mul]
+                              SingleFactor(
+                                VarDesig(
+                                  SingleDesig(
+                                   bodovi
+                                  ) [SingleDesig]
+                                ) [VarDesig]
+                              ) [SingleFactor]
+                            ) [Terms]
+                          ) [AddExpr]
+                          Minus(
+                          ) [Minus]
+                          SingleTerm(
+                            SingleFactor(
+                              FactorExpr(
+                                Express(
+                                  AddExpr(
+                                    AddExpr(
+                                      TermExpr(
+                                        Terms(
+                                          SingleTerm(
+                                            SingleFactor(
+                                              NumberConst(
+                                               3
+                                              ) [NumberConst]
+                                            ) [SingleFactor]
+                                          ) [SingleTerm]
+                                          Mod(
+                                          ) [Mod]
+                                          SingleFactor(
+                                            NumberConst(
+                                             2
+                                            ) [NumberConst]
+                                          ) [SingleFactor]
+                                        ) [Terms]
+                                      ) [TermExpr]
+                                      Plus(
+                                      ) [Plus]
+                                      Terms(
+                                        SingleTerm(
+                                          SingleFactor(
+                                            NumberConst(
+                                             3
+                                            ) [NumberConst]
+                                          ) [SingleFactor]
+                                        ) [SingleTerm]
+                                        Mul(
+                                        ) [Mul]
+                                        SingleFactor(
+                                          NumberConst(
+                                           2
+                                          ) [NumberConst]
+                                        ) [SingleFactor]
+                                      ) [Terms]
+                                    ) [AddExpr]
+                                    Minus(
+                                    ) [Minus]
+                                    SingleTerm(
+                                      SingleFactor(
+                                        NumberConst(
+                                         3
+                                        ) [NumberConst]
+                                      ) [SingleFactor]
+                                    ) [SingleTerm]
+                                  ) [AddExpr]
+                                ) [Express]
+                              ) [FactorExpr]
+                            ) [SingleFactor]
+                          ) [SingleTerm]
+                        ) [AddExpr]
+                      ) [Express]
+                    ) [AssignOperation]
+                  ) [DesignatorStatementOp]
+                ) [DesignatorStat]
+              ) [SingleStat]
+            ) [ListOfStatements]
+            SingleStat(
+              PrintStatement(
+                Express(
+                  TermExpr(
+                    SingleTerm(
+                      SingleFactor(
+                        VarDesig(
+                          SingleDesig(
+                           bodovi
+                          ) [SingleDesig]
+                        ) [VarDesig]
+                      ) [SingleFactor]
+                    ) [SingleTerm]
+                  ) [TermExpr]
+                ) [Express]
+                NoPrintable(
+                ) [NoPrintable]
+              ) [PrintStatement]
+            ) [SingleStat]
+          ) [ListOfStatements]
+          SingleStat(
+            ReadStatement(
+              SingleDesig(
+               bodovi
+              ) [SingleDesig]
+            ) [ReadStatement]
+          ) [SingleStat]
+        ) [ListOfStatements]
+        SingleStat(
+          PrintStatement(
+            Express(
+              TermExpr(
+                SingleTerm(
+                  SingleFactor(
+                    VarDesig(
+                      SingleDesig(
+                       bodovi
+                      ) [SingleDesig]
+                    ) [VarDesig]
+                  ) [SingleFactor]
+                ) [SingleTerm]
+              ) [TermExpr]
+            ) [Express]
+            NoPrintable(
+            ) [NoPrintable]
+          ) [PrintStatement]
+        ) [SingleStat]
+      ) [ListOfStatements]
+    ) [Method]
+  ) [SingleMethodDeclaration]
+) [Program]
+INFO  17:44:30,986 - ===================================
+INFO  17:44:30,989 - Definicija constante nula na liniji 5
+INFO  17:44:30,989 - Definicija constante jedan na liniji 6
+INFO  17:44:30,989 - Definicija constante tri na liniji 7
+INFO  17:44:30,989 - Definicija constante pet na liniji 8
+INFO  17:44:30,989 - Deklarisana niz niz na liniji 10
+INFO  17:44:30,989 - Deklarisana niz nizch na liniji 11
+INFO  17:44:30,989 - Obradjuje se funkcija main na liniji 14
+INFO  17:44:30,989 - Deklarisana lokalna promenljiva bodovi metode main na liniji 15
+INFO  17:44:30,989 - Deklarisana lokalna promenljiva bt metode main na liniji 16
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 18
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 19
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 20
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 20
+INFO  17:44:30,989 - koriscen globalni simbol: jedan na liniji 20
+INFO  17:44:30,989 - koriscen globalni simbol: tri na liniji 20
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 21
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 21
+INFO  17:44:30,989 - koriscen globalni simbol: pet na liniji 21
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 22
+INFO  17:44:30,989 - koriscen lokalni simbol: bodovi na liniji 23
+INFO  17:44:30,990 - koriscen globalni simbol: niz na liniji 26
+INFO  17:44:30,990 - koriscen globalni simbol: niz na liniji 27
+INFO  17:44:30,990 - koriscen globalni simbol: nula na liniji 27
+INFO  17:44:30,990 - koriscen globalni simbol: jedan na liniji 27
+INFO  17:44:30,990 - koriscen globalni simbol: niz na liniji 28
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 30
+INFO  17:44:30,990 - koriscen globalni simbol: niz na liniji 30
+INFO  17:44:30,990 - koriscen globalni simbol: niz na liniji 30
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 31
+INFO  17:44:30,990 - koriscen globalni simbol: niz na liniji 32
+INFO  17:44:30,990 - koriscen globalni simbol: nizch na liniji 35
+INFO  17:44:30,990 - koriscen globalni simbol: nizch na liniji 36
+INFO  17:44:30,990 - koriscen globalni simbol: nizch na liniji 37
+INFO  17:44:30,990 - koriscen globalni simbol: jedan na liniji 37
+INFO  17:44:30,990 - koriscen globalni simbol: nizch na liniji 38
+INFO  17:44:30,990 - koriscen globalni simbol: pet na liniji 38
+INFO  17:44:30,990 - koriscen globalni simbol: nizch na liniji 39
+INFO  17:44:30,990 - koriscen globalni simbol: nizch na liniji 40
+INFO  17:44:30,990 - koriscen globalni simbol: jedan na liniji 40
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 43
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 43
+INFO  17:44:30,990 - koriscen globalni simbol: pet na liniji 43
+INFO  17:44:30,990 - koriscen globalni simbol: jedan na liniji 43
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 43
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 44
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 46
+INFO  17:44:30,990 - koriscen lokalni simbol: bodovi na liniji 47
+INFO  17:44:30,990 - ===================================
+INFO  17:44:30,991 - Parsiranje koda uspesno zavrseno
+INFO  17:44:30,993 - Generisanje koda uspesno zavrseno

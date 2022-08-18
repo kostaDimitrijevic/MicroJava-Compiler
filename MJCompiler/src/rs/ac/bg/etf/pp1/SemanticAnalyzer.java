@@ -21,7 +21,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	private Obj currentMethod = null;
 	private Obj currentDesig = null;
 	private int currentLvl = 0;
-	
+
 	private Stack<Obj> stack = new Stack<Obj>();
 	
 	public void report_error(String message, SyntaxNode info) {
@@ -129,7 +129,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		if(c == Tab.noObj) {
 			if(currentType.equals(Tab.charType)) {
 				Obj con = Tab.insert(Obj.Con, charConst.getVarName(), Tab.charType);
-				con.setAdr(Character.getNumericValue(charConst.getVal()));
+				con.setAdr(charConst.getVal());
 				charConst.obj = con;
 				report_info("Definicija constante " + charConst.getVarName(), charConst);
 			}
@@ -248,7 +248,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		if(var.getDesignator() instanceof DesigList) {
 			Obj d = stack.pop();
 			if(d != null) {
-				var.struct = d.getType();
+				var.struct = d.getType().getElemType();
 			}
 		}
 		else {
@@ -259,27 +259,28 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 	}
 	
-	public void visit(Terms mulop) {
-		Struct t = mulop.getTerm().struct;
-		Struct f = mulop.getFactor().struct;
-		if(t == Tab.intType && f == Tab.intType) {
+	public void visit(ListFactor mulop) {
+		
+		Struct f1 = mulop.getFactor().struct;
+		Struct f2 = mulop.getBaseExp().struct;
+		if(f1 == Tab.intType && f2 == Tab.intType) {
 			mulop.struct = Tab.intType;
 		}
 		else {
-			report_error("Greska na liniji " + mulop.getLine() + " : nekompatibilni tipovi u izrazu racunske operacije.",
+			report_error("Greska na liniji " + mulop.getLine() + " : nekompatibilni tipovi u izrazu coalesce operacije.",
 					null);
 			mulop.struct = Tab.noType;
 		}
 	}
 	
-	public void visit(ListFactor coal) {
-		Struct f1 = coal.getFactor().struct;
-		Struct f2 = coal.getBaseExp().struct;
-		if(f1 == Tab.intType && f2 == Tab.intType) {
+	public void visit(Terms coal) {
+		Struct t = coal.getTerm().struct;
+		Struct f = coal.getFactor().struct;
+		if(t == Tab.intType && f == Tab.intType) {
 			coal.struct = Tab.intType;
 		}
 		else {
-			report_error("Greska na liniji " + coal.getLine() + " : nekompatibilni tipovi u izrazu coalesce operacije.",
+			report_error("Greska na liniji " + coal.getLine() + " : nekompatibilni tipovi u izrazu racunske operacije.",
 					null);
 			coal.struct = Tab.noType;
 		}
@@ -347,10 +348,19 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	
 	public void visit(PrintStatement pr) {
 		Struct ex = pr.getExpr().struct;
-		if(ex != Tab.intType && ex != Tab.charType && ex != boolType) {
-			report_error("Greska na liniji " + pr.getLine() + " : "
-					+ "nekompatibilni tip promenljive u pozivu print funkcije! ", null);
+		if(ex.getKind() == Struct.Array) {
+			if(ex.getElemType() != Tab.intType && ex.getElemType() != Tab.charType && ex.getElemType() != boolType) {
+				report_error("Greska na liniji " + pr.getLine() + " : "
+						+ "nekompatibilni tip promenljive u pozivu print funkcije! ", null);
+			}
 		}
+		else {
+			if(ex != Tab.intType && ex != Tab.charType && ex != boolType) {
+				report_error("Greska na liniji " + pr.getLine() + " : "
+						+ "nekompatibilni tip promenljive u pozivu print funkcije! ", null);
+			}
+		}
+
 	}
 	
 	public void visit(ReadStatement read) {
@@ -405,7 +415,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 			newArr.struct = Tab.noType;
 		}
 		else {
-			newArr.struct = newArr.getType().struct;
+			newArr.struct = new Struct(Struct.Array, newArr.getType().struct);
 		}
 	}
 }
