@@ -1,6 +1,0 @@
-package rs.ac.bg.etf.pp1;
-import rs.etf.pp1.symboltable.visitors.*;
-
-public class MyDumpSymbolTableVisitor extends SymbolTableVisitor{
-
-}
