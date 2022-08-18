@@ -11,7 +11,7 @@ public class CodeGenerator extends VisitorAdaptor{
 	private Struct boolType = new Struct(Struct.Bool);
 	
 	private boolean printLen = false;
-	private boolean exprVisited = false;
+	private boolean readVisited = false;
 	
 	public int getMainPc() {
 		return mainPc;
@@ -188,6 +188,41 @@ public class CodeGenerator extends VisitorAdaptor{
 		else {
 			Code.put(0);
 		}
-		//Code.put(Code.dup);
+	}
+	
+	public void visit(ReadStatement read) {
+		readVisited = true;
+		if(read.getDesignator().getClass().equals(DesigList.class)) {
+			if(read.getDesignator().obj.getType().getElemType() == Tab.intType) {
+				Code.put(Code.read);
+			}
+			else if(read.getDesignator().obj.getType().getElemType() == Tab.charType){
+				Code.put(Code.bread);
+			}
+			
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			if(read.getDesignator().obj.getType().getElemType() == Tab.charType) {
+				Code.put(Code.bastore);
+			}
+			else {
+				Code.put(Code.astore);
+			}
+			
+		}
+		else {
+			if(read.getDesignator().obj.getType() == Tab.intType) {
+				Code.put(Code.read);
+			}
+			else {
+				Code.put(Code.bread);
+			}
+			
+			Code.store(read.getDesignator().obj);
+		}
 	}
 }

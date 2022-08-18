@@ -43,7 +43,8 @@ program test301
 		bodovi = bodovi + (pet * jedan - 1) * bodovi - (3 % 2 + 3 * 2 - 3); 
 		print(bodovi);
 		
-		print(bodovi);		
+		read(nizch[0]);
+		print(nizch[0]);		
 	}
 }
 
