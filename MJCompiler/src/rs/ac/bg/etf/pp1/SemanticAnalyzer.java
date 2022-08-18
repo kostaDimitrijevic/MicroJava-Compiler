@@ -366,7 +366,13 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	public void visit(ReadStatement read) {
 		Obj d = Tab.find(read.getDesignator().obj.getName());
 		if(d != Tab.noObj) {
-			Struct st = d.getType();
+			Struct st;
+			if(read.getDesignator().getClass().equals(DesigList.class)) {
+				st = d.getType().getElemType();
+			}
+			else {
+				st = d.getType();
+			}
 			if(st != Tab.intType && st != Tab.charType && st != boolType) {
 				report_error("Greska na liniji " + read.getLine() + " : "
 						+ "nekompatibilni tip promenljive u pozivu read funkcije! ", null);
