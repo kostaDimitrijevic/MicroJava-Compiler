@@ -12,6 +12,8 @@ public class CodeGenerator extends VisitorAdaptor{
 	
 	private boolean printLen = false;
 	private boolean readVisited = false;
+	private boolean addMinusExpr = false;
+	private boolean arrayVisited = false;
 	
 	public int getMainPc() {
 		return mainPc;
@@ -67,6 +69,16 @@ public class CodeGenerator extends VisitorAdaptor{
 		Code.load(con);
 	}
 	
+	public void visit(MinusExpress mexpr) {
+		if(!addMinusExpr) {
+			Code.loadConst(-1);
+			Code.put(Code.mul);
+		}
+		else {
+			addMinusExpr = true;
+		}
+	}
+	
 	public void visit(MethodTypeName meth) {
 		if("main".equalsIgnoreCase(meth.getMethodName())) {
 			mainPc = Code.pc;
@@ -85,24 +97,33 @@ public class CodeGenerator extends VisitorAdaptor{
 	}
 	
 	public void visit(DesignatorStatementOp op) {
-		if(op.getDesignator().getClass().equals(DesigList.class)) {
-			Code.put(Code.dup_x2);
-			Code.put(Code.pop);
-			Code.put(Code.dup_x2);
-			Code.put(Code.pop);
-			Code.put(Code.dup_x1);
-			Code.put(Code.pop);
-			if(op.getDesignator().obj.getType().getElemType() == Tab.charType) {
-				Code.put(Code.bastore);
+		if(op.getOperations().getClass().equals(Inc.class) || op.getOperations().getClass().equals(Dec.class)) {
+			if(op.getDesignator().getClass().equals(DesigList.class)) {
+				Code.put(Code.astore);
 			}
 			else {
-				Code.put(Code.astore);
+				Code.store(op.getDesignator().obj);
 			}
 		}
 		else {
-			Code.store(op.getDesignator().obj);
+			if(op.getDesignator().getClass().equals(DesigList.class)) {
+				Code.put(Code.dup_x2);
+				Code.put(Code.pop);
+				Code.put(Code.dup_x2);
+				Code.put(Code.pop);
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+				if(op.getDesignator().obj.getType().getElemType() == Tab.charType) {
+					Code.put(Code.bastore);
+				}
+				else {
+					Code.put(Code.astore);
+				}
+			}
+			else {
+				Code.store(op.getDesignator().obj);
+			}
 		}
-
 
 	}
 	
@@ -124,6 +145,7 @@ public class CodeGenerator extends VisitorAdaptor{
 	}
 	
 	public void visit(DesigList desArr) {
+		arrayVisited = true;
 		Code.load(desArr.obj);
 	}
 	
@@ -136,6 +158,13 @@ public class CodeGenerator extends VisitorAdaptor{
 	}
 	
 	public void visit(AddExpr addOp) {
+		if(addOp.getParent().getClass().equals(MinusExpress.class)) {
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			Code.loadConst(-1);
+			Code.put(Code.mul);
+			addMinusExpr = true;
+		}
 		if(addOp.getAddop().getClass().equals(Minus.class)){
 			Code.put(Code.sub);
 		}
@@ -157,13 +186,37 @@ public class CodeGenerator extends VisitorAdaptor{
 	}
 	
 	public void visit(Inc inc) {
-		Code.loadConst(1);
-		Code.put(Code.add);
+		if(arrayVisited) {
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			Code.put(Code.dup2);
+			Code.put(Code.aload);
+			Code.loadConst(1);
+			Code.put(Code.add);
+			arrayVisited = false;
+		}
+		else {
+			Code.loadConst(1);
+			Code.put(Code.add);
+		}
+
 	}
 	
 	public void visit(Dec dec) {
-		Code.loadConst(1);
-		Code.put(Code.sub);
+		if(arrayVisited) {
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			Code.put(Code.dup2);
+			Code.put(Code.aload);
+			Code.loadConst(1);
+			Code.put(Code.sub);
+			arrayVisited = false;
+		}
+		else {
+			Code.loadConst(1);
+			Code.put(Code.sub);
+		}
+
 	}
 	
 	public void visit(Terms coal) {
